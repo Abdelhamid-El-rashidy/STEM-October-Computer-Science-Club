@@ -267,8 +267,9 @@ header .hero-section .hero-content h1{
 .gallery {
   width: 500px;
   height: 400px;
+  position: relative;
 }
-.gallery slider-wrapper {
+.gallery .slider-wrapper {
   width: 100%;
   height: 100%;
 }
@@ -296,6 +297,14 @@ header .hero-section .hero-content h1{
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+}
+.gallery .slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
 }
 .gallery .slider-nav a {
   width: 0.5rem;
