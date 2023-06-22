@@ -1,0 +1,21 @@
+header {
+    position: relative;
+}
+header h1, header p {
+    margin: 0;
+}
+header .instructors {
+    color: var(--main-color);
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+.track-hero-section {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    translate: -50%;
+}
+.cards-article-grid {
+    display: flex;
+}

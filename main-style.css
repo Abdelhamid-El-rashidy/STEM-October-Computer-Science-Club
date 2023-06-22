@@ -27,21 +27,22 @@
   padding: 0 1rem;
 }
 .social-link a {
-  font-size: 22px;
+  font-size: 26px;
   color: var(--main-color);
-  transition: 1s;
+  transition: 0.2s;
 }
 .social-link a:hover {
-  font-size: 24px;
+  filter: drop-shadow(2px 4px 6px black);
 }
 .bt {
   color: white;
   background-color: var(--main-color);
   padding: 0.6rem;
-  transition: 1s;
+  transition: 0.5s;
 }
 .bt:hover {
-  background-color: var(--bg-color);
+  box-shadow: 0 0 10px #2f51eb;
+  scale: 1.05;
 }
 .text-link {
   color: white;
@@ -166,14 +167,14 @@ nav ul li {
   margin: 0;
 }
 
-nav a:hover, .dropdown:hover .dropbtn {
-  color: cornflowerblue;
+.dropdown:hover .dropbtn {
+  color: var(--main-color);
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: hsl(0deg 0% 0% / 50%);
+  background-color: hsl(0deg 0% 0% / 70%);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -267,46 +268,42 @@ header .hero-section .hero-content h1{
   width: 500px;
   height: 400px;
 }
-.gallery swiper-container {
+.gallery slider-wrapper {
   width: 100%;
   height: 100%;
 }
 
-.gallery swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+.gallery .slider {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  aspect-ratio: 16 / 9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 2px 2px 4px black;
 }
 
-.gallery swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
+.gallery .slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
   object-fit: cover;
-}
-.gallery swiper-slide:nth-child(1n) {
-  background-image: url('imgs/media#1.jpeg');
-  background-size: cover;
-}
 
-.gallery swiper-slide:nth-child(2n) {
-  background-image: url('imgs/media#2.jpeg');
-  background-size: cover;}
-
-.gallery swiper-slide:nth-child(3n) {
-  background-image: url('imgs/media#3.jpeg');
-  background-size: cover;}
-
-.gallery swiper-slide:nth-child(4n) {
-  background-image: url('imgs/media#4.jpeg');
-  background-size: cover;
 }
-.gallery swiper-slide:nth-child(5n) {
-  background-image: url('imgs/Ziad.jpg');
-  background-size: cover;
+.gallery .slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.gallery .slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
 }
 /* Why us end */
 
@@ -463,7 +460,8 @@ header .hero-section .hero-content h1{
   transition: 0.5s;
   background-color: hsl(0deg 0% 0% / 50%);
   border-radius: 12px;
-  padding: 2px 4px;
+  padding: 4px 8px;
+  text-transform: capitalize;
 }
 .track-tag:hover {
   color: var(--main-color);
@@ -486,7 +484,7 @@ header .hero-section .hero-content h1{
   position: relative;
   display: flex;
   align-items: flex-end;
-  box-shadow: 0 7px 10px (0,0,0,0.5);
+  box-shadow: 2px 2px 10px black;
   transition: 0.5s ease-in-out;
 }
 .project-card:hover {
@@ -506,7 +504,7 @@ header .hero-section .hero-content h1{
   opacity: 0;
 }
 .project-card:hover::before{
-  opacity: 1;
+  opacity: 0.9;
 }
 .project-card img {
   width: 100%;
@@ -515,6 +513,11 @@ header .hero-section .hero-content h1{
   position: absolute;
   top: 0;
   left: 0;
+}
+.project-card h4 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  text-shadow: 2px 2px black;
 }
 .project-card .info {
   position: relative;
@@ -544,12 +547,30 @@ header .hero-section .hero-content h1{
 .team-container {
   padding: 2rem 0;
 }
-swiper-container {
+.swiper {
+  position: relative;
+  width: 240px;
+  height: 320px;
+}
+
+.swiper-slide {
+  border-radius: 18px;
+  width: 270px !important;
+  height: 360px !important;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+}
+.swiper-container {
   width: 280px;
   height: 440px;
 }
 
-swiper-slide {
+.swiper-slide {
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -560,7 +581,7 @@ swiper-slide {
   color: #fff;
   position: relative;
 }
-swiper-slide::after {
+.swiper-slide::after {
   content: '';
   display: block;
   width: 100%;
@@ -570,32 +591,21 @@ swiper-slide::after {
   bottom: 0;
   left: 0;
   opacity: 0.4;
+} 
+.swiper-slide p {
+  position: absolute;
+  bottom: 8px;
+  left: 5px;
+  z-index: 2;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 300;
+}
+.swiper-slide p span {
+  display: block;
+  font-size: 13px;
 }
 
-.our_team swiper-slide:nth-child(1n) {
-  background-image: url('imgs/Mostafa.jpeg');
-  background-size: cover;
-}
-.our_team swiper-slide:nth-child(2n) {
-  background-image: url('imgs/Mody.jpg');
-  background-size: cover;}
-
-.our_team swiper-slide:nth-child(3n) {
-  background-image: url('imgs/Moi.jpg');
-  background-size: cover;}
-
-.our_team swiper-slide:nth-child(4n) {
-  background-image: url('imgs/Ragab.jpeg');
-  background-size: cover;
-}
-.our_team swiper-slide:nth-child(5n) {
-  background-image: url('imgs/Ziad.jpg');
-  background-size: cover;
-}
-.our_team swiper-slide:nth-child(6n) {
-  background-image: url('imgs/Kevin.jpeg');
-  background-size: cover;
-}
 /* team section end */
 
 /* Footer Start */

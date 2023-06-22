@@ -1,0 +1,34 @@
+{
+    "Article":[
+        {
+            "id": 1,
+            "image": "imgs/article-img-1.png",
+            "title": "Using Chatgpt academically",
+            "date": "Thursday, June 1, 2023",
+            "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
+            "readMoreLink": "https://example.com/article-1",
+            "trackTagName": "Web development",
+            "trackTagLink": "pages/tracks/web-development.html"
+        },
+        {
+            "id": 2,
+            "image": "imgs/article-img-2.png",
+            "title": "Modorn Robots",
+            "date": "Friday, June 2, 2023",
+            "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non orci nec lacus sodales varius. Ut auctor tellus eu finibus commodo. Nulla mattis lorem eu justo feugiat ullamcorper. In consectetur magna sed urna scelerisque rutrum.",
+            "readMoreLink": "https://example.com/article-2",
+            "trackTagName": "Robotics",
+            "trackTagLink": "pages/tracks/Robotics.html"
+        },
+        {
+            "id": 3,
+            "image": "imgs/article-img-3.png",
+            "title": "Basic of electronics",
+            "date": "Friday, June 2, 2023",
+            "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non orci nec lacus sodales varius. Ut auctor tellus eu finibus commodo. Nulla mattis lorem eu justo feugiat ullamcorper. In consectetur magna sed urna scelerisque rutrum.",
+            "readMoreLink": "https://example.com/article-2",
+            "trackTagName": "Robotics",
+            "trackTagLink": "pages/tracks/Robotics.html"
+        }
+    ]
+}

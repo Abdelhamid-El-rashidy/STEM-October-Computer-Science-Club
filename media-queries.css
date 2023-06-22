@@ -1,0 +1,74 @@
+/* mobile screen */
+@media only screen and (max-width: 700px) {
+    header .hero-section .hero-content h1 {
+        font-size: 1.6rem;
+    }
+    
+    header p {
+        padding: 0 1rem;
+    }
+    .hero-section .hero-stats {
+        width: 100%;
+    }
+    .hero-section .hero-stats div {
+        height: 100px;
+        width: 102px;
+        font-size: 0.7rem;
+    }
+    .hero-section .hero-stats div span {
+        font-size: 1.1rem;
+    } 
+    #why-us .container {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0;
+        align-items: center;
+    }
+    #why-us .container p {
+        margin: 0;
+        width: 100%;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .gallery {
+        width: 100%;
+        height: 400px;
+    }
+    .project-card {
+        margin: 1rem 0;
+    }
+
+    .our_team .team-info {
+        width: 100%;
+    }
+    #about .container {
+        flex-direction: column;
+    }
+    footer .upper-footer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    footer .upper-footer div {
+        margin: 1rem 0;
+    }
+    footer .upper-footer .footer-logo {
+        width: auto;
+    }
+    footer .upper-footer .footer-hyperlinks ul {
+        padding: 0 2rem;
+    }
+    .subscribe h5 {
+        font-size: 1.2rem;
+    }
+    
+    .subscribe p {
+        font-size: 0.8rem;
+    }
+    footer .lower-footer {
+        margin: 0;
+    }
+}
+
+
+/* Tablet screen */
