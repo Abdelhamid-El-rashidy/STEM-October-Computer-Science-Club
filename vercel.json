@@ -1,10 +1,14 @@
 {
-    "builds": [
-      { "src": "package.json", "use": "@vercel/static-build" }
-    ],
-    "env": {
-      "INITIALIZE_JSON_SERVER": "npm start"
-    },
-    "version": 2
+  "version": 2,
+  "builds": [
+    { "src": "package.json", "use": "@vercel/static-build" }
+  ],
+  "routes": [
+    { "src": "/api/articles", "dest": "/database/articles.json" },
+    { "src": "/api/projects", "dest": "/database/projects.json" },
+    { "src": "/(.*)", "dest": "/$1.html" }
+  ],
+  "env": {
+    "INITIALIZE_JSON_SERVER": "npm start"
   }
-  
+}
