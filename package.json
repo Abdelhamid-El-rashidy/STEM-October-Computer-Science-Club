@@ -13,7 +13,7 @@
   "version": "1.0.0",
   "main": "script.js",
   "scripts": {
-    "start": "json-server --watch database/articles.json --port 3001 & json-server --watch database/projects.json --port 3002",
+    "start": "node server.js",    
     "build": "npm-run-all build:*"
   },
   "keywords": [],
