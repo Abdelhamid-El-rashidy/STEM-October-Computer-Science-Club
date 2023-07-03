@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "json-server": "^0.17.1",
+    "leaflet": "^1.9.4",
+    "main": "script.js",
+    "engines": {
+      "node": "14.x"
+    }
+  },
+  "name": "ocsc-website",
+  "description": "Fira Code Variable Font",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "start": "node server.js",    
+    "build": "npm-run-all build:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.2"
+  }
+}
