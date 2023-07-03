@@ -195,7 +195,7 @@ slider.addEventListener("mouseout", () => {
 let articleContainer = document.getElementById("articles-container");
 
 // fetch json data
-fetch("http://localhost:3001/Article?id_like=1&id_like=2&id_like=3")
+fetch("https://csc-e925.onrender.com")
     .then(res => res.json())
     .then(json => {
         json.map(data => {
@@ -237,7 +237,7 @@ let projectContainer = document.getElementById("project-contianer");
 
 
 // fetch json data
-fetch("http://localhost:3002/Projects?id_like=1&id_like=2&id_like=3")
+fetch("https://csc-e925.onrender.com")
   .then(res => res.json())
   .then(json => {
     json.map(data => {
