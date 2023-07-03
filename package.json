@@ -10,7 +10,9 @@
   "main": "script.js",
   "scripts": {
     "start": "concurrently \"json-server --watch database/articles.json --port 3001\" \"json-server --watch database/projects.json --port 3002\"",
-    "build": "echo 'No build step required'"
+    "build": "npm-run-all build:*",
+    "build:copy-files": "cp -R database dist/database",
+    "build:other-tasks": "echo 'Perform other build tasks here'"
   },
   "keywords": [],
   "author": "",
