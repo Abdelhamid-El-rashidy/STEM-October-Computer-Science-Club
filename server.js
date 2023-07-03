@@ -1,7 +1,7 @@
 const jsonServer = require('json-server');
 const server = jsonServer.create();
-const router1 = jsonServer.router('database/articles.json');
-const router2 = jsonServer.router('database/projects.json');
+const router1 = jsonServer.router('public/database/articles.json');
+const router2 = jsonServer.router('public/database/projects.json');
 const middlewares = jsonServer.defaults();
 
 const PORT_ARTICLES = process.env.PORT_ARTICLES || 3001;
