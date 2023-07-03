@@ -4,8 +4,8 @@ const fs = require('fs');
 const path = require('path');
 
 const server = jsonServer.create();
-const router1 = jsonServer.router('database/articles.json');
-const router2 = jsonServer.router('database/projects.json');
+const router1 = jsonServer.router('public/database/articles.json');
+const router2 = jsonServer.router('public/database/projects.json');
 const middlewares = jsonServer.defaults();
 
 const PORT_ARTICLES = process.env.PORT_ARTICLES || 3001;
@@ -13,7 +13,6 @@ const PORT_PROJECTS = process.env.PORT_PROJECTS || 3002;
 
 server.use('/articles', router1);
 server.use('/projects', router2);
-
 server.use(middlewares);
 
 // Create a basic HTTP server
