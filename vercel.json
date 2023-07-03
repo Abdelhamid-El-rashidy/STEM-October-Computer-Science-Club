@@ -1,5 +1,14 @@
 {
     "version": 2,
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "permissions": "rwx"
+        }
+      }
+    ],
     "routes": [
       { "src": "/api/articles", "dest": "/database/articles.json" },
       { "src": "/api/projects", "dest": "/database/projects.json" }
