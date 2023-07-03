@@ -2,10 +2,11 @@
     "Projects":[
         {
             "id": 1,
-            "image": "imgs/mobile-developement-project.jpg",
-            "title": "Deaf Helpe",
+            "image": "imgs/deaf-helper.jpeg",
+            "title": "Deaf Helper",
+            "contributor": "Mostafa Ibrahim & Mohamed Ihab",
             "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
-            "trackTagName": "Mobile development",
+            "trackTagName": "Robotics",
             "trackTagLink": "pages/tracks/Robotics.html",
             "githubLink": "https://example.com/article-1"
         },
@@ -13,6 +14,7 @@
             "id": 2,
             "image": "imgs/web-developement-project.jpg",
             "title": "CyberSkate",
+            "contributor": "Mostafa Ibrahim & Mohamed Ihab",
             "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
             "trackTagName": "Robotics",
             "trackTagLink": "pages/tracks/Robotics.html",
@@ -22,8 +24,29 @@
             "id": 3,
             "image": "imgs/article-img-1.png",
             "title": "Using Chatgpt academically",
+            "contributor": "Mostafa Ibrahim & Mohamed Ihab",
             "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
             "trackTagName": "Web development",
+            "trackTagLink": "pages/tracks/Robotics.html",
+            "githubLink": "https://example.com/article-1"
+        },
+        {
+            "id": 4,
+            "image": "imgs/article-img-1.png",
+            "title": "Using Chatgpt academically",
+            "contributor": "Mostafa Ibrahim",
+            "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
+            "trackTagName": "Web development",
+            "trackTagLink": "pages/tracks/Robotics.html",
+            "githubLink": "https://example.com/article-1"
+        },
+        {
+            "id": 5,
+            "image": "imgs/article-img-1.png",
+            "title": "Using Chatgpt academically",
+            "contributor": "Abdelhamid Ahmed",
+            "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
+            "trackTagName": "Robotics",
             "trackTagLink": "pages/tracks/Robotics.html",
             "githubLink": "https://example.com/article-1"
         }

@@ -2,33 +2,53 @@
     "Article":[
         {
             "id": 1,
-            "image": "imgs/article-img-1.png",
-            "title": "Using Chatgpt academically",
-            "date": "Thursday, June 1, 2023",
-            "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
-            "readMoreLink": "https://example.com/article-1",
-            "trackTagName": "Web development",
-            "trackTagLink": "pages/tracks/web-development.html"
+            "image": "imgs/article-img-5.jpeg",
+            "title": "Binary Search Vs Linear Search",
+            "date": "Sunday, July 2, 2023",
+            "intro": "We discuss the difference between Binary Search and Linear Search.",
+            "readMoreLink": "https://www.linkedin.com/feed/update/urn:li:activity:7081019136008421376",
+            "trackTagName": "Alg&DS",
+            "trackTagLink": "pages/tracks/Alg&DS.html"
         },
         {
             "id": 2,
-            "image": "imgs/article-img-2.png",
-            "title": "Modorn Robots",
-            "date": "Friday, June 2, 2023",
-            "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non orci nec lacus sodales varius. Ut auctor tellus eu finibus commodo. Nulla mattis lorem eu justo feugiat ullamcorper. In consectetur magna sed urna scelerisque rutrum.",
-            "readMoreLink": "https://example.com/article-2",
+            "image": "imgs/article-img-4.png",
+            "title": "Basics of Electronics",
+            "date": "Thursday, June 1, 2023",
+            "intro": "This article talks about the main electronic components to make a real circuit.",
+            "readMoreLink": "https://www.linkedin.com/feed/update/urn:li:activity:7070134578442551296",
             "trackTagName": "Robotics",
             "trackTagLink": "pages/tracks/Robotics.html"
         },
         {
             "id": 3,
             "image": "imgs/article-img-3.png",
-            "title": "Basic of electronics",
-            "date": "Friday, June 2, 2023",
-            "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non orci nec lacus sodales varius. Ut auctor tellus eu finibus commodo. Nulla mattis lorem eu justo feugiat ullamcorper. In consectetur magna sed urna scelerisque rutrum.",
-            "readMoreLink": "https://example.com/article-2",
+            "title": "How can modern robots benefit the world",
+            "date": "Friday, May 12, 2023",
+            "intro": "This article talks about modern robots and how they develop to benefit our world.",
+            "readMoreLink": "https://www.linkedin.com/feed/update/urn:li:activity:7062789766714396673",
             "trackTagName": "Robotics",
             "trackTagLink": "pages/tracks/Robotics.html"
+        },
+        {
+            "id": 4,
+            "image": "imgs/article-img-2.png",
+            "title": "How may ChatGPT help you with your studies?",
+            "date": "Friday, May 12, 2023",
+            "intro": "This article talks about ChatGPT. Additionally, How can it aid in the student’s studies?",
+            "readMoreLink": "https://www.linkedin.com/feed/update/urn:li:activity:7062781059028987905",
+            "trackTagName": "Machine-Learning",
+            "trackTagLink": "pages/tracks/machine-learning.html"
+        },
+        {
+            "id": 5,
+            "image": "imgs/article-img-1.jpeg",
+            "title": "Add To Your Knowledge in Algorithms",
+            "date": "Friday, May 12, 2023",
+            "intro": "This article talks about some types of algorithms that can help in solving challenging problems in the Computer Science field.",
+            "readMoreLink": "https://www.linkedin.com/feed/update/urn:li:activity:7062776643328630786",
+            "trackTagName": "Alg&DS",
+            "trackTagLink": "pages/tracks/Alg&DS.html"
         }
     ]
 }

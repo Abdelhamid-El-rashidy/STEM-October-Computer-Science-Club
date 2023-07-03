@@ -8,25 +8,83 @@
     <title>SECSC | Alg & DS</title>
     <link rel="stylesheet" href="../../main-style.css">
     <link rel="stylesheet" href="../../tracks.css">
+    <link rel="stylesheet" href="../../media-queries.css">
+    <script src="../../menu-bar.js"></script>
     <!-- external links -->
     <script src="https://kit.fontawesome.com/6617a0ca29.js" crossorigin="anonymous"></script>
     </head>
     <body id="home">
     <header>
-        <nav>
-            <a class="logo" href="../../index.html"><div class="logo">
-                <img src="../../imgs/official-logo.png" alt="">
-            </div></a>
-            <ul>
-                <li><a class="text-link" href="../../index.html">Home</a></li>
-                <li><a class="text-link" href="../articles.html">Articles</a></li>
-                <li><a class="text-link" href="../projects.html">Projects</a></li>
-            </ul>
-            <a class="bt" href="#">Apply Now</a>
-        </nav>
+      <div class="side-bar">
+        <div class="close-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="menu">
+          <div class="item"><a href="../../index.html"><i class="fas fa-desktop"></i>Home</a></div>
+          <div class="item">
+            <a class="sub-btn"><i class="fas fa-table"></i>Tracks<i class="fas fa-angle-right dropdown"></i></a>
+            <div class="sub-menu">
+              <a href="../../pages/tracks/web-development.html" class="sub-item">Web development</a>
+              <a href="../../pages/tracks/app-development.html" class="sub-item">Mobile developement</a>
+              <a href="../../pages/tracks/machine-learning.html" class="sub-item">Machine Learning</a>
+              <a href="../../pages/tracks/Robotics.html" class="sub-item">Robotics</a>
+              <a href="../../pages/tracks/Alg&DS.html" class="sub-item">Alg & DS</a>
+              <a href="../../pages/tracks/programming-fundmentals.html" class="sub-item">Programming Fundamentals</a>
+            </div>
+          </div>
+          <div class="item"><a href="../../pages/articles.html"><i class="fas fa-th"></i>Articles</a></div>
+          <div class="item"><a href="../../pages/projects.html"><i class="fas fa-cogs"></i>Projects</a></div>
+          <a class="bt" href="../../login.html">Subscribe</a>
+        </div>
+      </div>
+      <nav>
+        <a class="logo" href="../../index.html">
+          <div  class="logo"><img src="../../imgs/official-logo.png" alt=""></div>
+        </a>
+        <ul class="main-list">
+          <li><a class="text-link" href="../../index.html">Home</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">Tracks 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="web-development.html">Web development</a>
+              <a href="app-development.html">Mobile developement</a>
+              <a href="machine-learning.html">Machine Learning</a>
+              <a href="Robotics.html">Robotics</a>
+              <a href="Alg&DS.html">Alg & DS</a>
+              <a href="programming-fundmentals.html">Programming Fundamentals</a>
+            </div>
+          </div>          
+          <li><a class="text-link" href="../../pages/articles.html">Articles</a></li>
+          <li><a class="text-link" href="../../pages/projects.html">Projects</a></li>
+          <a class="bt" href="../../login.html">Subscribe</a>
+        </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
         <div class="track-hero-section">
-            <h1>Tracks/ Algorithms & Data Structures</h1>
-            <p class="instructors"><span>Instructors: </span>Kevin Atef & Mohamed Omar</p>
+            <h1>Tracks/ <span>Algorithms & Data Structures</span></h1>
+            <p class="instructors"><span>Instructors</p>
+            <div class="instructor-imgs">
+              <div class="member">
+                <img src="../../imgs/members/Kevin.jpeg" alt="" srcset="">
+                <p>Kevin Atef</p>
+              </div>
+              <div class="member">
+                <img src="../../imgs/members/Moi.jpg" alt="" srcset="">
+                <p>Mohamed Omar</p>
+              </div>
+            </div>
+            <p class="track-info">
+              Unleash your inner problem-solving genius with our Algorithms and Data Structures Track.
+               Embark on a thrilling adventure through the enchanting realm of algorithms, 
+               where you'll unravel the mysteries of C++ and its powerful applications. From greedy algorithms to dynamic programming,
+                you'll unlock the secrets of efficient coding techniques that shape the digital landscape. Sharpen your coding sword,
+                 embrace the challenges, and become a master of computational wizardry.
+               Get ready to conquer the coding realm and leave your mark on the world of technology.
+            </p>
             <ul>
                 <li><img src="" alt="" srcset=""></li>
                 <li><img src="" alt="" srcset=""></li>
@@ -36,100 +94,66 @@
     </header>
     <main>
         
-        <section class="articles-section">
-            Articles
+        <section id="articles-section">
+            <h2>Articles</h2>
             <div class="cards-article-grid" id="articles-container">
     
             </div>
-        </div>
+        </section>
         <section id="projects">
-            <h2>Recent Projects</h2>
-            <div class="container">
-              <div class="project-card">
-                <img src="../../imgs/mobile-developement-project.jpg" alt="">
-                <div class="info">
-                  <h4>Project Title</h4>
-                  <span class="tag">mobile developement</span> <!-- Note: May I need this to make categories table for articles and projects databases in backend -->
-                  <p>Aperiam impedit illum excepturi pariatur eius dolor repellendus culpa ipsum odio?</p>
-                  <ul class="social-bar">
-                    <li class="social-link"><a href=""><i class="fa-solid fa-info"></i></a></li>
-                    <li class="social-link"><a href=""><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="project-card">
-                <img src="../../imgs/mobile-developement-project.jpg" alt="">
-                <div class="info">
-                  <h4>Project Title</h4>
-                  <span class="tag">mobile developement</span>
-                  <p>Aperiam impedit illum excepturi pariatur eius dolor repellendus culpa ipsum odio?</p>
-                  <ul class="social-bar">
-                    <li class="social-link"><a href=""><i class="fa-solid fa-info"></i></a></li>
-                    <li class="social-link"><a href=""><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="project-card">
-                <img src="../../imgs/web-developement-project.jpg" alt="">
-                <div class="info">
-                  <h4>Project Title</h4>
-                  <span class="tag">web developement</span> 
-                  <p>Consequuntur dignissimos fugiat consequatur. Perferendis, quod illo quasi asperiores dolor corporis. Aperiam impedit illum excepturi pariatur eius dolor repellendus culpa ipsum odio?</p>
-                  <ul class="social-bar">
-                    <li class="social-link"><a href=""><i class="fa-solid fa-info"></i></a></li>
-                    <li class="social-link"><a href=""><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </section>
+          <h2>Projects</h2>
+          <div class="container" id="project-contianer">
+              
+          </div>
+        </section>
 
     </main>
 
     <footer>
-        <div class="upper-footer">
-          <div class="footer-logo">
-            <img src="../../imgs/official-logo.png" alt="">
-          </div>
-          <div class="footer-hyperlinks">
-            <ul>
-              <li><a class="text-link" href="#home">Home</a></li>
-              <li><a class="text-link" href="#about">About</a></li>
-              <li><a class="text-link" href="#why-us">Why Us</a></li>
-            </ul>
-            <ul>
-              <li><a class="text-link" href="#tracks">Tracks</a></li>
-              <li><a class="text-link" href="#projects">Projects</a></li>
-              <li><a class="text-link" href="#articles">Articles</a></li>
-            </ul>
-          </div>
-          <div class="subscribe">
-            <form>
-              <h5>Subscribe to our newsletter</h5>
-              <p>Monthly digest of what's new and exciting from us.</p>
-              <div class="input-row">
-                <input id="newsletter1" type="email" class="form-control" placeholder="Email address" required>
-                <input type="submit" class="bt" value="Subscribe Now">
-              </div>
-            </form>
-          </div>
+      <div class="upper-footer">
+        <div class="footer-logo">
+          <img src="../../imgs/official-logo.png" alt="">
         </div>
-    
-        <div class="lower-footer">
-          <p>copywrits 2023 all rights presereved.</p>
-          <ul class="social-bar">
-            <li class="social-link"><a href="https://www.linkedin.com/company/stem-computer-science-club/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-            <li class="social-link"><a href="https://www.instagram.com/stem_computer_science_club/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-            <li class="social-link"><a href="https://github.com/stemcomputerscienceclub"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+        <div class="footer-hyperlinks">
+          <ul>
+            <li><a class="text-link" href="../../index.html">Home</a></li>
+            <li><a class="text-link" href="../../index.html#tracks">Tracks</a></li>
+          </ul>
+          <ul>
+            <li><a class="text-link" href="../projects.html">Projects</a></li>
+            <li><a class="text-link" href="../../index.html#about">About</a></li>
           </ul>
         </div>
-      </footer>
+        <div class="extra-contact">
+          <div class="subscribe">
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <a class="bt" href="../../login.html">Subscribe</a>
+          </div>
+          <ul>
+            <li><i class="fa-solid fa-envelope"></i><a href="mailto:csse@stemegypt.edu.eg" target="_blank">Email Us</a></li>
+            <li><i class="fa-solid fa-location-dot"></i><a href="https://goo.gl/maps/CwkXUJ9geuvyVccUA" target="_blank"> Cosmic Village, 6th October, Egypt </a></li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <hr style="width: 100%;">
+      <div class="lower-footer">
+        <h6>Copyright © 2023 All Rights Reserved | STEM Computer Science Club</h6>      
+        <ul class="social-bar">
+          <li class="social-link"><a href="https://www.linkedin.com/company/stem-computer-science-club/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+          <li class="social-link"><a href="https://www.facebook.com/profile.php?id=100094026166056"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+          <li class="social-link"><a href="https://github.com/stemcomputerscienceclub"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </footer>
 
       <script>
+
+        // Articles
         let articleContainer = document.getElementById("articles-container");
 
         // fetch json data
-        fetch("http://localhost:3000/Article?trackTagName=Robotics")
+        fetch("http://localhost:3001/Article?trackTagName=Alg&DS")
         .then(res => res.json())
         .then(json => {
             json.map(data => {
@@ -161,6 +185,65 @@
         `;
 
         return articleCard;
+        }
+
+        // projects
+        let projectContainer = document.getElementById("project-contianer");
+
+
+
+        // fetch json data
+        fetch("http://localhost:3002/Projects?trackTagName=Alg&DS")
+          .then(res => res.json())
+          .then(json => {
+            json.map(data => {
+              projectContainer.appendChild(project_fun(data));
+            })
+          })
+
+          .catch(error => {
+            console.log("Error fetching JSON data:", error);
+          });
+
+        // Project card 
+        function project_fun(data) {
+          let projectCard = document.createElement('div');
+          projectCard.classList.add('project-card');
+
+          projectCard.innerHTML = `
+            <img src="../../${data["image"]}" alt="">
+            <div class="info">
+              <h4>${data["title"]}</h4>
+              <p><i class="fa-solid fa-user"></i>${data["contributor"]}</p>
+              <a class="track-tag" href="../../../${data["trackTagLink"]}">${data["trackTagName"]}</a>
+              <p>${data["intro"]}</p>
+              <ul class="social-bar">
+                <li class="social-link"><a href="${data["githubLink"]}"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          `;
+
+          return projectCard;
+        }
+
+        const articleCards = articleContainer.getElementsByClassName('article-card');
+
+        if (articleCards.length === 0) {
+          // The articles container does not contain any article cards
+          articleContainer.innerHTML = '<div class="callout">Upcoming...&#x23F3</div>';
+        } else {
+          // The articles container contains article cards
+          console.log('The articles container is not empty');
+        }
+
+        const projectCards = projectContainer.getElementsByClassName('project-card');
+
+        if (projectCards.length === 0) {
+          // The project container does not contain any project cards
+          projectContainer.innerHTML = '<div class="callout">Upcoming...&#x23F3</div>';
+        } else {
+          // The project container contains project cards
+          console.log('The project container is not empty');
         }
       </script>
     </body>

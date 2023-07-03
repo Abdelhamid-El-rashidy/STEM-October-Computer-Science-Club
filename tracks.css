@@ -1,8 +1,38 @@
+:root {
+    --main-color: #2f51eb;
+    --bg-color: #0E1636;
+    --sec-bg-color: #0d1220;
+  }
+*{
+  scroll-behavior: smooth;
+}
+
+/* start page */
 header {
     position: relative;
+    background-image: url(imgs/sl_031420_28950_10.png);
+    background-color: var(--bg-color);
 }
 header h1, header p {
     margin: 0;
+}
+header h1 {
+    text-align: center;
+}
+header h1 {
+    text-shadow: -2px 1.5px var(--main-color);
+}
+header p {
+    max-width: 700px;
+    text-align: center;
+    padding: 1rem;
+}
+.track-hero-section {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    translate: -50%;
+    width: 100%;
 }
 header .instructors {
     color: var(--main-color);
@@ -10,12 +40,81 @@ header .instructors {
     font-weight: bold;
     padding: 1rem 0;
 }
+.instructor-imgs {
+    display: flex;
+    justify-content: center;
+}
+header .member {
+    margin: 1rem;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #2f51eb;
+    border: 2px solid var(--main-color);
+}
+.member img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.member p {
+    text-align: center;
+    font-size: 14px;
+}
 .track-hero-section {
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    translate: -50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.track-hero-section .track-info {
+    text-align: center;
+    margin: 2.5rem 0;
+    font-size: 14px;
+}
+#articles-section {
+    background-color: var(--sec-bg-color);
 }
 .cards-article-grid {
     display: flex;
+    margin: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.article-card {
+    background-color: var(--bg-color);
+    padding: 15px;
+    margin: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0 0 0 / 20%);
+    transition: 0.5s;
+    flex-basis: 240px;
+}
+#projects {
+    background-color: var(--bg-color);
+}
+
+/* Media queries */
+@media only screen and (max-width: 700px) {
+    body {
+        font-size: 90%;
+    }
+    p.track-info {
+        padding: 1rem 2rem;
+        font-size: 13px !important;
+    }
+    header .member {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .member p {
+        text-align: center;
+        font-size: 14px;
+        padding: 0.5rem;
+    }
 }

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/official-logo.png" type="image/x-icon">
+    <title>CSC | Subscribe</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="main-style.css">
+    <script src="https://kit.fontawesome.com/6617a0ca29.js" crossorigin="anonymous"></script>
+
+</head>
+<body style="color: #333;">
+    <a href="index.html">    <div class="back">
+        <i class="fa-sharp fa-solid fa-house"></i>
+    </div></a>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <div class="official-logo">
+                    <img src="imgs/official-logo.png" alt="" srcset="">
+                </div>
+                <h1>Add liscence</h1>
+                <button><a href="https://forms.gle/KW4otmPZ4MmBwKJ56" target="_blank">liscence Form</a></button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form method="post" action="https://script.google.com/macros/s/AKfycbyE7XyC6_bsbm-NnIEMKf_TGxmIl-JKnAL9KwkWgnVB_KNHC2MrkGl3shi4MfQHOGB0hw/exec" name="contactform" id="contactform">
+                <div class="official-logo">
+                    <img src="imgs/official-logo.png" alt="" srcset="">
+                </div>
+                <h1>Subscribe</h1>
+                <input name="name" id="name" type="text" placeholder="Your Name" required/>
+                <input name="email" id="email" type="email" placeholder="Your Email" required/>
+                <input name="number" id="phone" type="number" placeholder="Your Phone" required/>
+                <input type="submit" id="submit" value="Submit" class="bt">
+                <span id="success" style="color: blue;"></span>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Subscribe!</h1>
+                    <p>Fuel your knowledge through dynamic bootcamps, competitive hackathons, and impactful events.</p>
+                    <button class="ghost" id="signIn">Subscribe</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Add liscence!</h1>
+                    <p>Empower New Chapters Worldwide with Proper Licensing. </p>
+                    <button class="ghost" id="signUp">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+        const submitButton = document.getElementById('submit');
+
+        submitButton.addEventListener('click', () => {
+            // Access the input element
+            const inputElement = document.getElementById('submit');
+
+            // Change the value attribute
+            inputElement.value = 'Sending....';
+        });
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyE7XyC6_bsbm-NnIEMKf_TGxmIl-JKnAL9KwkWgnVB_KNHC2MrkGl3shi4MfQHOGB0hw/exec'
+			const form = document.forms['contactform']
+            const success = document.getElementById('success');
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => {
+                    success.innerHTML = "Data submission successful&#x1F389! Welcome to our club. Stay tuned for email updates."
+                    const inputElement = document.getElementById('submit');
+
+                    // Change the value attribute
+                    inputElement.value = 'Submitted';
+
+
+                    setTimeout(function() {
+                        success.innerHTML= "";
+                    }, 5000);
+
+                    form.reset();
+                })
+				.catch(error => console.error('Error!', error.message))
+			})
+        
+    </script>
+</body>
+</html>

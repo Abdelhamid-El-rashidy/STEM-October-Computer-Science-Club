@@ -1,5 +1,12 @@
 /* mobile screen */
 @media only screen and (max-width: 700px) {
+    .bt {
+        padding: 0.5rem 0.7rem;
+        transition: 0.5s;
+    }
+    /* navbar */
+
+    /* navbar */
     header .hero-section .hero-content h1 {
         font-size: 1.6rem;
     }
@@ -18,6 +25,11 @@
     .hero-section .hero-stats div span {
         font-size: 1.1rem;
     } 
+    .community {
+        font-size: 10px;
+        padding: 0.2rem;
+        z-index: 2;
+    }
     #why-us .container {
         display: flex;
         flex-direction: column;
@@ -37,13 +49,6 @@
     .project-card {
         margin: 1rem 0;
     }
-
-    .our_team .team-info {
-        width: 100%;
-    }
-    #about .container {
-        flex-direction: column;
-    }
     footer .upper-footer {
         display: flex;
         flex-direction: column;
@@ -58,17 +63,149 @@
     footer .upper-footer .footer-hyperlinks ul {
         padding: 0 2rem;
     }
-    .subscribe h5 {
-        font-size: 1.2rem;
-    }
-    
     .subscribe p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     footer .lower-footer {
         margin: 0;
+    }
+    .lower-footer h6 {
+        font-size: 8px;
+        margin: 0;
+    }
+    
+    .social-bar .social-link {
+        padding: 0 0.4rem;
     }
 }
 
 
 /* Tablet screen */
+
+/* navbar */
+.side-bar{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: right;
+    z-index: 9999;
+   }
+   
+   .side-bar.active{
+    right: 0;
+   }
+   
+   .side-bar .menu{
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+   }
+   
+   .side-bar .menu .item{
+    position: relative;
+    cursor: pointer;
+   }
+   
+   .side-bar .menu .item a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+   }
+   
+   .side-bar .menu .item a:hover{
+    background: var(--main-color);
+    transition: 0.3s ease;
+   }
+   
+   .side-bar .menu .item i{
+    margin-right: 15px;
+   }
+   
+   .side-bar .menu .item a .dropdown{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+   }
+   
+   .side-bar .menu .item .sub-menu{
+    background: rgba(255, 255, 255, 0.1);
+    display: none;
+   }
+   
+   .side-bar .menu .item .sub-menu a{
+    padding-left: 80px;
+    font-size: 12px;
+   }
+   
+   .rotate{
+    transform: rotate(90deg);
+   }
+   
+   .close-btn{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    right: 0;
+    margin: 25px;
+    cursor: pointer;
+   }
+   
+   .menu-btn{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10000;
+    display: none;
+   }
+   
+   .main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+   }
+   
+   .main h1{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 60px;
+    text-align: center;
+    line-height: 80px;
+   }
+   
+   @media (max-width: 1120px){
+    body {
+        font-size: 95%;
+    }
+    .main h1{
+      font-size: 40px;
+      line-height: 60px;
+    }
+    .menu-btn {
+       display: block;
+    }
+    nav .nav-extra {
+        display: none;
+    }
+    nav .main-list, nav .bt {
+       display: none;
+    }
+    
+    .our_team .team-info {
+        width: 100%;
+    }
+    #about .container {
+        flex-direction: column;
+    }
+   }

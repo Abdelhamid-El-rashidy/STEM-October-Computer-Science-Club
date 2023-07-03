@@ -5,42 +5,77 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="imgs/official-logo.png" type="image/x-icon">
-  <title>SECSC</title>
+  <title>CSC</title>
   <link rel="stylesheet" href="main-style.css">
   <link rel="stylesheet" href="media-queries.css">
+  <script src="menu-bar.js"></script>
   <!-- external links -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   <script src="https://kit.fontawesome.com/6617a0ca29.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body id="home">
+  
   <header>
 
+    <div class="side-bar">
+      <div class="close-btn">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="menu">
+        <div class="item"><a href="#home"><i class="fas fa-desktop"></i>Home</a></div>
+        <div class="item"><a href="#why-us"><i class="fas fa-th"></i>Why US</a></div>
+        <div class="item">
+          <a class="sub-btn"><i class="fas fa-table"></i>Tracks<i class="fas fa-angle-right dropdown"></i></a>
+          <div class="sub-menu">
+            <a href="pages/tracks/web-development.html" class="sub-item">Web development</a>
+            <a href="pages/tracks/app-development.html" class="sub-item">Mobile developement</a>
+            <a href="pages/tracks/machine-learning.html" class="sub-item">Machine Learning</a>
+            <a href="pages/tracks/Robotics.html" class="sub-item">Robotics</a>
+            <a href="pages/tracks/Alg&DS.html" class="sub-item">Alg & DS</a>
+            <a href="pages/tracks/programming-fundmentals.html" class="sub-item">Programming Fundamentals</a>
+          </div>
+        </div>
+        <div class="item"><a href="pages/articles.html"><i class="fas fa-th"></i>Articles</a></div>
+        <div class="item"><a href="pages/projects.html"><i class="fas fa-cogs"></i>Projects</a></div>
+        <div class="item"><a href="#about"><i class="fas fa-info-circle"></i>About</a></div>
+        <div class="nav-extra">      
+          <a href="https://discord.gg/bhNm7jc7js" target="_blank"><i class="discord fa-brands fa-discord"></i></a>
+          <a class="bt" href="login.html">Apply Now</a>
+        </div>      
+      </div>
+    </div>
     <nav>
-      <a class="logo" href="index.html"><div  class="logo">
-        <img src="imgs/official-logo.png" alt="">
-    </div></a>
-        <ul>
-          <li><a class="text-link" href="#home">Home</a></li>
-          <li><a class="text-link" href="#why-us">Why Us</a></li>
-          <div class="dropdown">
-            <button class="dropbtn">Tracks 
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="pages/tracks/web-development.html">Web development</a>
-              <a href="pages/tracks/app-development.html">Mobile developement</a>
-              <a href="pages/tracks/machine-learning.html">Machine Learning</a>
-              <a href="pages/tracks/Robotics.html">Robotics</a>
-              <a href="pages/tracks/Alg&DS.html">Alg & DS</a>
-              <a href="pages/tracks/python.html">Python</a>
-            </div>
-          </div>          
-          <li><a class="text-link" href="pages/articles.html">Articles</a></li>
-          <li><a class="text-link" href="pages/projects.html">Projects</a></li>
-          <li><a class="text-link" href="#about">About</a></li>
-        </ul>
-      <a class="bt" href="#">Subscribe</a>
+      <a class="logo" href="index.html">
+        <div  class="logo"><img src="imgs/official-logo.png" alt=""></div>
+      </a>
+      <ul class="main-list">
+        <li><a class="text-link" href="#home">Home</a></li>
+        <li><a class="text-link" href="#why-us">Why Us</a></li>
+        <div class="dropdown">
+          <button class="dropbtn">Tracks 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="pages/tracks/web-development.html">Web development</a>
+            <a href="pages/tracks/app-development.html">Mobile developement</a>
+            <a href="pages/tracks/machine-learning.html">Machine Learning</a>
+            <a href="pages/tracks/Robotics.html">Robotics</a>
+            <a href="pages/tracks/Alg&DS.html">Alg & DS</a>
+            <a href="pages/tracks/programming-fundmentals.html">Programming Fundamentals</a>
+          </div>
+        </div>          
+        <li><a class="text-link" href="pages/articles.html">Articles</a></li>
+        <li><a class="text-link" href="pages/projects.html">Projects</a></li>
+        <li><a class="text-link" href="#about">About</a></li>
+      </ul>
+      <div class="nav-extra">      
+        <a href="https://discord.gg/bhNm7jc7js" target="_blank"><i class="discord fa-brands fa-discord"></i></a>
+        <a class="bt" href="login.html">Apply Now</a>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
     </nav>
 
     <section class="hero-section">
@@ -49,14 +84,14 @@
         <p>Unleash your inner tech genuis. Join us and become part of a community that pushes the boundaries of what's possible in the digital world.</p>
         <ul class="social-bar">
           <li class="social-link"><a href="https://www.linkedin.com/company/stem-computer-science-club/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-          <li class="social-link"><a href="https://www.instagram.com/stem_computer_science_club/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+          <li class="social-link"><a href="https://www.facebook.com/profile.php?id=100094026166056"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
           <li class="social-link"><a href="https://github.com/stemcomputerscienceclub"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
         </ul>
       </div>
       <div class="hero-stats">
-        <div class="applicants-stats"><span>+50</span> applicants</div>
-        <div class="projects-stats"><span>+10</span> projects</div>
-        <div class="articles-stats"><span>+20</span> articles</div>
+        <div class="applicants-stats"><span id="applicants-stats">0</span> applicants</div>
+        <div class="projects-stats"><span id="projects-stats">0</span> projects</div>
+        <div class="articles-stats"><span id="articles-stats">0</span> articles</div>
       </div>
     </section>
   </header>
@@ -67,56 +102,81 @@
       <h2>Why US?</h2>
       <div class="container">
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum possimus maxime aut fuga ullam autem! Animi corrupti libero commodi quibusdam velit voluptatem non quam nihil explicabo, voluptate cum veritatis distinctio!
-        </p>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="imgs/media#1.jpeg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="imgs/article-img-2.png" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="imgs/Ziad.jpg" alt="Third slide">
+          <!-- "Chart Your Path to Tech Brilliance with Our Club" -->
+
+          Welcome to the <b>Computer Science Club of STEM High School, 6th of October!</b><br> We are a passionate community 
+          of students dedicated to exploring the exciting world of computer science and technology. 
+          At our club, we strive to foster a love for coding, innovation, and problem-solving, empowering our members 
+          to excel in this ever-evolving field.<br><br>
+          <span class="headers">Exciting Projects:</span><br>Get ready to embark on thrilling coding projects that 
+          challenge your problem-solving skills and ignite your imagination. From creating interactive websites to 
+          developing mobile apps and exploring artificial intelligence, our club offers a wide range of projects designed 
+          to keep you engaged and inspired. <br><br>
+          <span class="headers">Competitions and Hackathons:</span><br>Are you ready to put your skills to the test? Join us in various coding competitions 
+          and hackathons, where you'll have the opportunity to showcase your talents, collaborate with teammates, and even 
+          win prestigious awards. <br><br>
+          <span class="headers">Guest Speakers and Workshops:</span><br>Learn from industry professionals and gain valuable insights into the ever-evolving world of technology. Our club regularly invites guest speakers from diverse backgrounds to share their expertise, provide career guidance, and inspire you to pursue your passion for computer science.        </p>
+        
+        <div class="slider">
+          <div class="slide active">
+            <img src="imgs/media1.jpeg" alt="">
+            <div class="info">
+              <h2>Winter Mountains</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+          <div class="slide">
+            <img src="imgs/media2.jpeg" alt="">
+            <div class="info">
+              <h2>Tropical Desert</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="imgs/media3.jpeg" alt="">
+            <div class="info">
+              <h2>Steaming Volcanoes</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="imgs/media4.jpeg" alt="">
+            <div class="info">
+              <h2>Mountain River</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="imgs/media6.jpeg" alt="">
+            <div class="info">
+              <h2>Egypt Pyramids</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="navigation">
+            <i class="fas fa-chevron-left prev-btn"></i>
+            <i class="fas fa-chevron-right next-btn"></i>
+          </div>
+          <div class="navigation-visibility">
+            <div class="slide-icon active"></div>
+            <div class="slide-icon"></div>
+            <div class="slide-icon"></div>
+            <div class="slide-icon"></div>
+            <div class="slide-icon"></div>
+          </div>
+          <a href="https://discord.gg/bhNm7jc7js" target="_blank"><p class="community">Join our Discord Community Now! <i class="discord fa-brands fa-discord"></i></p></a>
+
         </div>
-        <!-- <div class="gallery">
-          <div class="slider-wrapper">
-            <div class="slider">
-              <img id="slider-1" src="imgs/Ziad.jpg" alt="">
-              <img id="slider-2" src="imgs/Kevin.jpeg" alt="" srcset="">
-              <img id="slider-3" src="imgs/Mody.jpg" alt="" srcset="">
-            </div>
-            <div class="slider-nav">
-              <a href="#slider-1"></a>
-              <a href="#slider-2"></a>
-              <a href="#slider-3"></a>
-            </div>
-          </div>
-        </div> -->
+
       </div>
     </section>
+
     <section id="tracks">
       <h2>
         Tracks
       </h2>
       <div class="container">
-        <a href="pages/tracks/web-development.html"><div class="card">
+        <a href="pages/tracks/web-development.html" id="track-card"><div class="card">
           <div class="face face-1">
             <div class="content">
               <img src="imgs/web-developement.png" alt="">
@@ -124,14 +184,17 @@
             </div>
           </div>
           <div class="face face-2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deserunt reprehenderit architecto odit vero est facere beatae maiores sit sapiente accusamus adipisci rerum tenetur facilis sunt ducimus quas, eius ea.</p>
+            <p>
+              Dive into the dynamic world of web development and discover the art of creating captivating digital experiences, 
+              Journey through the realms of HTML, CSS, and JavaScript, 
+            </p>
             <ul class="track-stats">
-                <li>Projects: <span>+20</span></li>
-                <li>Articles: <span>+20</span></li>
+                <li>Projects: <span id="web-proj">0</span></li>
+                <li>Articles: <span id="web-art">0</span></li>
             </ul>
           </div>
         </div></a>
-        <a href="pages/tracks/app-development.html"><div class="card">
+        <a href="pages/tracks/app-development.html" id="track-card"><div class="card">
           <div class="face face-1">
             <div class="content">
               <img src="imgs/mobile-developement.png" alt="">
@@ -139,14 +202,17 @@
             </div>
           </div>
           <div class="face face-2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deserunt reprehenderit architecto odit vero est facere beatae maiores sit sapiente accusamus adipisci rerum tenetur facilis sunt ducimus quas, eius ea.</p>
+            <p>
+              Transform your app dreams into reality as you delve into the world of Dart and Flutter,
+               crafting stunning mobile experiences that captivate users and push the boundaries of innovation.
+            </p>
             <ul class="track-stats">
-              <li>Projects: <span>+20</span></li>
-              <li>Articles: <span>+20</span></li>
+              <li>Projects: <span id="mobile-proj">0</span></li>
+              <li>Articles: <span id="mobile-art">0</span></li>
             </ul>
           </div>
         </div></a>
-        <a href="pages/tracks/machine-learning.html"><div class="card">
+        <a href="pages/tracks/machine-learning.html" id="track-card"><div class="card">
           <div class="face face-1">
             <div class="content">
               <img src="imgs/machine-learning.png" alt="">
@@ -154,14 +220,18 @@
             </div>
           </div>
           <div class="face face-2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deserunt reprehenderit architecto odit vero est facere beatae maiores sit sapiente accusamus adipisci rerum tenetur facilis sunt ducimus quas, eius ea.</p>
+            <p>
+              Dive into the fascinating realm of machine learning, where data-driven insights
+               and predictive models shape the future. Equip yourself with the skills to harness
+                the power of AI and unlock untapped potential.
+            </p>
             <ul class="track-stats">
-              <li>Projects: <span>+20</span></li>
-              <li>Articles: <span>+20</span></li>
+              <li>Projects: <span id="machine-learning-proj">0</span></li>
+              <li>Articles: <span id="machine-learning-art">0</span></li>
             </ul>
           </div>
         </div></a>
-        <a href="pages/tracks/Robotics.html"><div class="card">
+        <a href="pages/tracks/Robotics.html" id="track-card"><div class="card">
           <div class="face face-1">
             <div class="content">
               <img src="imgs/Robotics.png" alt="">
@@ -169,14 +239,17 @@
             </div>
           </div>
           <div class="face face-2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deserunt reprehenderit architecto odit vero est facere beatae maiores sit sapiente accusamus adipisci rerum tenetur facilis sunt ducimus quas, eius ea.</p>
+            <p>
+              Become a visionary engineer as you wield the power of Arduino, programming in C/C++,
+               and unleash your creativity to construct cutting-edge robots that shape the future.
+            </p>
             <ul class="track-stats">
-              <li>Projects: <span>+20</span></li>
-              <li>Articles: <span>+20</span></li>
+              <li>Projects: <span id="robotics-proj">0</span></li>
+              <li>Articles: <span id="robotics-art">0</span></li>
             </ul>
           </div>
         </div></a>
-        <a href="pages/tracks/Alg&DS.html"><div class="card">
+        <a href="pages/tracks/Alg&DS.html" id="track-card"><div class="card">
           <div class="face face-1">
             <div class="content">
               <img src="imgs/Alg-DS.png" alt="">
@@ -184,88 +257,52 @@
             </div>
           </div>
           <div class="face face-2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deserunt reprehenderit architecto odit vero est facere beatae maiores sit sapiente accusamus adipisci rerum tenetur facilis sunt ducimus quas, eius ea.</p>
+            <p>
+              Unleash your inner problem-solving genius and delve into the intricate world of algorithms,
+               equipping yourself with the tools to tackle complex computational challenges head-on.
+            </p>
             <ul class="track-stats">
-              <li>Projects: <span>+20</span></li>
-              <li>Articles: <span>+20</span></li>
+              <li>Projects: <span id="alg-DS-proj">0</span></li>
+              <li>Articles: <span id="alg-DS-art">0</span></li>
             </ul>
           </div>
         </div></a>
-        <a href="pages/tracks/programming-fundmentals.html"><div class="card">
+        <a href="pages/tracks/programming-fundmentals.html" id="track-card"><div class="card">
           <div class="face face-1">
             <div class="content">
               <img src="imgs/Python.png" alt="">
-              <h3>Programming Fundmentals</h3>
+              <h3>Programming Fundamentals</h3>
             </div>
           </div>
           <div class="face face-2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deserunt reprehenderit architecto odit vero est facere beatae maiores sit sapiente accusamus adipisci rerum tenetur facilis sunt ducimus quas, eius ea.</p>
+            <p>Unleash your coding prowess and embark on an extraordinary journey through the realm of Python,
+               mastering loops, functions, and other fundamental programming concepts that open
+                the doors to innovation and artificial intelligence.</p>
             <ul class="track-stats">
-              <li>Projects: <span>+10</span></li>
-              <li>Articles: <span>+10</span></li>
+              <li>Projects: <span id="fundamentals-proj">0</span></li>
+              <li>Articles: <span id="fundamentals-art">0</span></li>
             </ul>
           </div>
         </div></a>
       </div>
     </section>
+
     <section id="articles">
       <h2>Our Latest Articles</h2>
       <div class="container">
         <div class="cards-article-grid" id="articles-container">
-          <!-- <div class="article-card">
-            <div class="card-top">
-              <img src="imgs/article-img-1.png" alt="">
-            </div>
-            <div class="card-info">
-              <h3>Card title</h3>
-              <span>Thursday, June 1, 2023</span>
-              <p class="intro">possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.</p>
-            </div>
-            <div class="card-bottom">
-              <a href="" class="read-more">Read more</a>
-              <a href="" class="track-tag">track title</a> 
-            </div>
-          </div> -->
-
-          <!-- <div class="article-card">
-            <div class="card-top">
-              <img src="imgs/article-img-2.png" alt="">
-            </div>
-            <div class="card-info">
-              <h3>Card title</h3>
-              <span>Thursday, June 1, 2023</span>
-              <p class="intro">Iure laboriosam recusandae possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est sunt soluta dolorem sit corrupti sint ratione, odit ab quo asperiores delectus consequuntur maiores, vel eos fugit neque quaerat minus sed.</p>
-            </div>
-            <div class="card-bottom">
-              <a href="" class="read-more">Read more</a>
-              <a href="" class="track-tag">track title</a> 
-            </div>
-          </div>
-
-          <div class="article-card">
-            <div class="card-top">
-              <img src="imgs/article-img-3.png" alt="">
-            </div>
-            <div class="card-info">
-              <h3>Basicis of Electronics</h3>
-              <span>Thursday, June 1, 2023</span>
-              <p class="intro">Iure laboriosam recusandae possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, hic molestiae impedit officiis distinctio perferendis maiores. Consequatur officiis saepe eligendi, doloribus officia distinctio quos maxime sequi sapiente deserunt, nam iste.</p>
-            </div>
-            <div class="card-bottom">
-              <a href="" class="read-more">Read more</a>
-              <a href="pages/tracks/Robotics.html" class="track-tag">#Robotics</a> 
-            </div>
-          </div> -->
 
         </div>
       </div>
     </section>
+
     <section id="projects">
       <h2>Recent Projects</h2>
       <div class="container" id="project-contianer">
 
       </div>
     </section>
+
     <section class="our_team pt-5" id="about">
         <h2>Our Team</h2>
         <div class="container">
@@ -278,40 +315,72 @@
               <div class="swiper Slider-container">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img src="imgs/Mostafa.jpeg" alt="Slide Image" />
+                    <img src="imgs/members/Mostafa.jpeg" alt="Slide Image" />
                     <p>Mostafa Ibrahim <span>President & Mobile Developement Head</span></p>
                   </div>
                   <div class="swiper-slide">
-                    <img src="imgs/Mody.jpg" alt="Slide Image" />
+                    <img src="imgs/members/Mody.jpg" alt="Slide Image" />
                     <p>Mohammed Abdallah<span>Vice-President & Robotics Head</span></p>
                   </div>
                   <div class="swiper-slide">
-                    <img src="imgs/Belal.jpg" alt="Slide Image" />
+                    <img src="imgs/members/Belal.jpg" alt="Slide Image" />
                     <p>Belal Hassan<span>Robotics Vice-Head</span></p>
                   </div>
                   <div class="swiper-slide">
-                    <img src="imgs/3bha.jpg" alt="Slide Image" />
+                    <img src="imgs/members/3bha.jpg" alt="Slide Image" />
                     <p>Abdelhamid Ahmed<span>Website Manager & Web Development Head</span></p>
                   </div>
                   <div class="swiper-slide">
-                    <img src="imgs/talaat.jpg" alt="Slide Image" />
+                    <img src="imgs/members/Talaat.jpg" alt="Slide Image" />
                     <p>Mohammed Talaat<span>Web Development Vice-Head</span></p>
                   </div>
                   <div class="swiper-slide">
-                    <img src="imgs/Ragab.jpeg" alt="Slide Image" />
+                    <img src="imgs/members/Ragab.jpeg" alt="Slide Image" />
                     <p>Mohammed Ragab<span>Machine Learning Head</span></p>
                   </div>
                   <div class="swiper-slide">
-                    <img src="imgs/Kevin.jpeg" alt="Slide Image" />
-                    <p>Kevin Atef<span>Alg & DS Head</span></p>
+                    <img src="imgs/members/Kevin.jpeg" alt="Slide Image" />
+                    <p>Kevin Atef<span>Alg & DS Co-Head</span></p>
                   </div>
                   <div class="swiper-slide">
-                    <img src="imgs/Moi.jpg" alt="Slide Image" />
-                    <p>Mohammed Omar<span>Alg & DS Head</span></p>
+                    <img src="imgs/members/Moi.jpg" alt="Slide Image" />
+                    <p>Mohammed Omar<span>Alg & DS Co-Head</span></p>
                   </div>
                   <div class="swiper-slide">
-                    <img src="imgs/Ziad.jpg" alt="Slide Image" />
-                    <p>Ziad Aboud<span>HR Manager</span></p>
+                    <img src="imgs/members/Amr taha.jpeg" alt="Slide Image" />
+                    <p>Amr Taha<span>Fundamentals of programming Co-Head</span></p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/members/Abido.jpg" alt="Slide Image" />
+                    <p>Malek Ahmed<span>Fundamentals of programming Co-Head</span></p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/members/Amir.jpg" alt="Slide Image" />
+                    <p>Mohamed Amir<span>Human Resources Head</span></p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/members/Ziad.jpg" alt="Slide Image" />
+                    <p>Ziad Aboud<span>Human Resources Vice-Head</span></p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/members/Bavly.jpeg" alt="Slide Image" />
+                    <p>Bavly Romany<span>Social Media Head</span></p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/members/Marwan.jpeg" alt="Slide Image" />
+                    <p>Marwan Ahmed<span>Graphic design Co-Head</span></p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/members/Omar-Negm.jpeg" alt="Slide Image" />
+                    <p>Omar Negm<span>Graphic design Co-Head</span></p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/members/Jimmy.jpeg" alt="Slide Image" />
+                    <p>Ahmed Gamal<span>Content Writing Co-Head</span></p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/members/Shalaby.jpeg" alt="Slide Image" />
+                    <p>Ahmed Shalaby<span>Content Writing Co-Head</span></p>
                   </div>
                 </div>
               </div>
@@ -328,36 +397,39 @@
       <div class="footer-hyperlinks">
         <ul>
           <li><a class="text-link" href="#home">Home</a></li>
-          <li><a class="text-link" href="#about">About</a></li>
           <li><a class="text-link" href="#why-us">Why Us</a></li>
+          <li><a class="text-link" href="#tracks">Tracks</a></li>
         </ul>
         <ul>
-          <li><a class="text-link" href="#tracks">Tracks</a></li>
-          <li><a class="text-link" href="#projects">Projects</a></li>
           <li><a class="text-link" href="#articles">Articles</a></li>
+          <li><a class="text-link" href="#projects">Projects</a></li>
+          <li><a class="text-link" href="#about">About</a></li>
+
         </ul>
       </div>
-      <div class="subscribe">
-        <form>
-          <h5>Subscribe to recieve any updates</h5>
+      <div class="extra-contact">
+        <div class="subscribe">
           <p>Monthly digest of what's new and exciting from us.</p>
-          <div class="input-row">
-            <input id="newsletter1" type="email" class="form-control" placeholder="Email address" required>
-            <input type="submit" class="bt" value="Subscribe Now">
-          </div>
-        </form>
+          <a class="bt" href="login.html">Subscribe</a>
+        </div>
+        <ul>
+          <li><i class="fa-solid fa-envelope"></i><a href="mailto:csse@stemegypt.edu.eg" target="_blank">Email Us</a></li>
+          <li><i class="fa-solid fa-location-dot"></i><a href="https://goo.gl/maps/CwkXUJ9geuvyVccUA" target="_blank"> Cosmic Village, 6th October, Egypt </a></li>
+        </ul>
       </div>
     </div>
-
+    <br>
+    <hr style="width: 100%;">
     <div class="lower-footer">
-      <p>copywrits 2023 all rights presereved.</p>
+      <h6>Copyright © 2023 All Rights Reserved | STEM Computer Science Club</h6>      
       <ul class="social-bar">
         <li class="social-link"><a href="https://www.linkedin.com/company/stem-computer-science-club/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-        <li class="social-link"><a href="https://www.instagram.com/stem_computer_science_club/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+        <li class="social-link"><a href="https://www.facebook.com/profile.php?id=100094026166056"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
         <li class="social-link"><a href="https://github.com/stemcomputerscienceclub"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
       </ul>
     </div>
   </footer>
+
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
