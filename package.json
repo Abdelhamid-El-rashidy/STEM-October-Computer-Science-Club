@@ -2,7 +2,6 @@
   "dependencies": {
     "bootstrap": "^5.3.0",
     "json-server": "^0.17.1",
-    "concurrently": "^8.2.0",
     "leaflet": "^1.9.4",
     "main": "script.js",
     "engines": {
@@ -14,7 +13,7 @@
   "version": "1.0.0",
   "main": "script.js",
   "scripts": {
-    "start": "concurrently \"json-server --watch database/articles.json --port 3001\" \"json-server --watch database/projects.json --port 3002\"",
+    "start": "json-server --watch database/articles.json --port 3001 & json-server --watch database/projects.json --port 3002",
     "build": "npm-run-all build:*"
   },
   "keywords": [],
