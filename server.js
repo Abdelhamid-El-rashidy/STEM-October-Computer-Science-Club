@@ -25,8 +25,7 @@ const httpServer = http.createServer((req, res) => {
 
 httpServer.listen(PORT_ARTICLES, () => {
   console.log(`JSON Server (Articles) is running on port ${PORT_ARTICLES}`);
-});
-
-httpServer.listen(PORT_PROJECTS, () => {
-  console.log(`JSON Server (Projects) is running on port ${PORT_PROJECTS}`);
+  httpServer.listen(PORT_PROJECTS, () => {
+    console.log(`JSON Server (Projects) is running on port ${PORT_PROJECTS}`);
+  });
 });
