@@ -1,6 +1,6 @@
 {
     "builds": [
-      { "src": "package.json", "use": "@vercel/static-build" }
+      { "src": "package.json", "use": "@vercel/node" }
     ],
     "env": {
       "INITIALIZE_JSON_SERVER": "npm start"
