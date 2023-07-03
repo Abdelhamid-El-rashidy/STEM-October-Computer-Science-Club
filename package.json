@@ -11,14 +11,13 @@
   "scripts": {
     "start": "concurrently \"json-server --watch database/articles.json --port 3001\" \"json-server --watch database/projects.json --port 3002\"",
     "build": "npm-run-all build:*",
-    "build:copy-files": "cpy 'database/**' 'dist/database'"
+    "build:copy-files": "xcopy /s /e /y database dist\\database"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^8.2.0",
-    "npm-run-all": "^4.1.2",
-    "cpy-cli": "^3.2.0"
+    "npm-run-all": "^4.1.2"
   }
 }
