@@ -7,6 +7,9 @@ const middlewares = jsonServer.defaults();
 const PORT_ARTICLES = process.env.PORT_ARTICLES || 3001;
 const PORT_PROJECTS = process.env.PORT_PROJECTS || 3002;
 
+// Serve static files
+server.use(jsonServer.static('public'));
+
 server.use('/articles', router1);
 server.use('/projects', router2);
 server.use(middlewares);
