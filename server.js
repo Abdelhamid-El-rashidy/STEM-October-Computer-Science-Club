@@ -1,14 +1,16 @@
 const jsonServer = require('json-server');
+const path = require('path');
+
 const server = jsonServer.create();
-const router1 = jsonServer.router('public/database/articles.json');
-const router2 = jsonServer.router('public/database/projects.json');
+const router1 = jsonServer.router(path.join(__dirname, 'public', 'database', 'articles.json'));
+const router2 = jsonServer.router(path.join(__dirname, 'public', 'database', 'projects.json'));
 const middlewares = jsonServer.defaults();
 
 const PORT_ARTICLES = process.env.PORT_ARTICLES || 3001;
 const PORT_PROJECTS = process.env.PORT_PROJECTS || 3002;
 
-// Serve static files
-server.use(jsonServer.static('public'));
+// Serve static files from the public directory
+server.use(jsonServer.static(path.join(__dirname, 'public')));
 
 server.use('/articles', router1);
 server.use('/projects', router2);
