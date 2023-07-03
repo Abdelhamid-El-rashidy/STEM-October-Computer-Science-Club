@@ -5,11 +5,12 @@
     "leaflet": "^1.9.4"
   },
   "name": "ocsc-website",
-  "description": "Fira Code Variable Font =======================",
+  "description": "Fira Code Variable Font",
   "version": "1.0.0",
   "main": "script.js",
   "scripts": {
-    "start": "concurrently \"json-server --watch database/articles.json --port 3001\" \"json-server --watch database/projects.json --port 3002\""
+    "start": "concurrently \"json-server --watch database/articles.json --port 3001\" \"json-server --watch database/projects.json --port 3002\"",
+    "build": "echo 'No build step required'"
   },
   "keywords": [],
   "author": "",
