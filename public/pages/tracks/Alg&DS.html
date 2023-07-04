@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../imgs/official-logo.png" type="image/x-icon">
-    <title>SECSC | Alg & DS</title>
+    <title>STEM CSC | Alg & DS</title>
     <link rel="stylesheet" href="../../main-style.css">
     <link rel="stylesheet" href="../../tracks.css">
     <link rel="stylesheet" href="../../media-queries.css">
@@ -14,6 +14,11 @@
     <script src="https://kit.fontawesome.com/6617a0ca29.js" crossorigin="anonymous"></script>
     </head>
     <body id="home">
+      <div class="preload">
+        <div class="loader">
+          <span>0</span><span><img src="../../imgs/official-logo.png" alt=""></span><span>1</span>
+        </div>
+      </div>
     <header>
       <div class="side-bar">
         <div class="close-btn">
@@ -29,15 +34,19 @@
               <a href="../../pages/tracks/machine-learning.html" class="sub-item">Machine Learning</a>
               <a href="../../pages/tracks/Robotics.html" class="sub-item">Robotics</a>
               <a href="../../pages/tracks/Alg&DS.html" class="sub-item">Alg & DS</a>
-              <a href="../../pages/tracks/programming-fundmentals.html" class="sub-item">Programming Fundamentals</a>
+              <a href="../../pages/tracks/programming-fundmentals.html" class="sub-item">Fundmentals of programming</a>
             </div>
           </div>
           <div class="item"><a href="../../pages/articles.html"><i class="fas fa-th"></i>Articles</a></div>
           <div class="item"><a href="../../pages/projects.html"><i class="fas fa-cogs"></i>Projects</a></div>
-          <a class="bt" href="../../login.html">Subscribe</a>
+          <div class="nav-extra">      
+            <a href="https://discord.gg/bhNm7jc7js" target="_blank"><i class="discord fa-brands fa-discord"></i></a>
+            <a class="bt" href="../../login.html">Apply Now</a>
+          </div>            
         </div>
-      </div>
-      <nav>
+    </div>
+    
+    <nav>
         <a class="logo" href="../../index.html">
           <div  class="logo"><img src="../../imgs/official-logo.png" alt=""></div>
         </a>
@@ -53,17 +62,20 @@
               <a href="machine-learning.html">Machine Learning</a>
               <a href="Robotics.html">Robotics</a>
               <a href="Alg&DS.html">Alg & DS</a>
-              <a href="programming-fundmentals.html">Programming Fundamentals</a>
+              <a href="programming-fundmentals.html">Fundmentals of programming</a>
             </div>
           </div>          
           <li><a class="text-link" href="../../pages/articles.html">Articles</a></li>
           <li><a class="text-link" href="../../pages/projects.html">Projects</a></li>
-          <a class="bt" href="../../login.html">Subscribe</a>
+          <div class="nav-extra">      
+            <a href="https://discord.gg/bhNm7jc7js" target="_blank"><i class="discord fa-brands fa-discord"></i></a>
+            <a class="bt" href="../../login.html">Apply Now</a>
+          </div>            
         </ul>
         <div class="menu-btn">
           <i class="fas fa-bars"></i>
         </div>
-      </nav>
+    </nav>
         <div class="track-hero-section">
             <h1>Tracks/ <span>Algorithms & Data Structures</span></h1>
             <p class="instructors"><span>Instructors</p>
@@ -153,7 +165,7 @@
         let articleContainer = document.getElementById("articles-container");
 
         // fetch json data
-        fetch("http://localhost:3001/Article?trackTagName=Alg&DS")
+        fetch("https://csc-e925.onrender.com/api/articles?trackTagName=Alg&DS")
         .then(res => res.json())
         .then(json => {
             json.map(data => {
@@ -193,7 +205,7 @@
 
 
         // fetch json data
-        fetch("http://localhost:3002/Projects?trackTagName=Alg&DS")
+        fetch("https://csc-e925.onrender.com/api/projects?trackTagName=Alg&DS")
           .then(res => res.json())
           .then(json => {
             json.map(data => {

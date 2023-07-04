@@ -94,6 +94,50 @@ section .container {
   font-style: italic;
   font-weight: bold;
 }
+.preload {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; 
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  background-image: url('imgs/sl_031420_28950_10.png');
+  position: fixed;
+  z-index: 1000;
+}
+.preload-finish {
+    opacity: 0;
+    pointer-events: none;
+    transition-delay: 1s;
+}
+
+.loader {
+    color: var(--secondary-color);    
+    font-family: Consolas, Menlo, Monaco, monospace;
+    font-weight: bold;
+    font-size: 20vh;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader span {
+  display: inline-block;
+  animation: pulse 0.4s alternate infinite ease-in-out;
+}
+.loader span:nth-child(odd) {
+  animation-delay: 0.4s;
+}
+
+@keyframes pulse {
+  to {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
 /* Gloabl elements end */
 
 

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imgs/official-logo.png" type="image/x-icon">
-    <title>CSC | Articles</title>
+    <title>STEM CSC | Articles</title>
     <link rel="stylesheet" href="../main-style.css">
     <link rel="stylesheet" href="../media-queries.css">
     <link rel="stylesheet" href="../tracks.css">
@@ -14,6 +14,11 @@
     <script src="https://kit.fontawesome.com/6617a0ca29.js" crossorigin="anonymous"></script>
     </head>
     <body id="home">
+      <div class="preload">
+        <div class="loader">
+          <span>0</span><span><img src="../imgs/official-logo.png" alt=""></span><span>1</span>
+        </div>
+      </div>
     <header>
 
       <div class="side-bar">
@@ -30,7 +35,7 @@
               <a href="tracks/machine-learning.html" class="sub-item">Machine Learning</a>
               <a href="tracks/Robotics.html" class="sub-item">Robotics</a>
               <a href="tracks/Alg&DS.html" class="sub-item">Alg & DS</a>
-              <a href="tracks/programming-fundmentals.html" class="sub-item">Programming Fundamentals</a>
+              <a href="tracks/programming-fundmentals.html" class="sub-item">Fundmentals of programming</a>
             </div>
           </div>
           <div class="item"><a href="projects.html"><i class="fas fa-cogs"></i>Projects</a></div>
@@ -56,7 +61,7 @@
               <a href="tracks/machine-learning.html">Machine Learning</a>
               <a href="tracks/Robotics.html">Robotics</a>
               <a href="tracks/Alg&DS.html">Alg & DS</a>
-              <a href="tracks/programming-fundmentals.html">Programming Fundamentals</a>
+              <a href="tracks/programming-fundmentals.html">Fundmentals of programming</a>
             </div>
           </div>          
           <li><a class="text-link" href="projects.html">Projects</a></li>
@@ -129,7 +134,7 @@
       let articleContainer = document.getElementById("articles-container");
 
       // fetch json data
-      fetch("http://localhost:3001/Article")
+      fetch("https://csc-e925.onrender.com/api/articles")
       .then(res => res.json())
       .then(json => {
           json.map(data => {

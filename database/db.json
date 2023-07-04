@@ -2,7 +2,7 @@
     "articles": [
       {
         "id": 1,
-        "image": "imgs/article-img-5.jpeg",
+        "image": "imgs/articles-cover/article-img-5.jpeg",
         "title": "Binary Search Vs Linear Search",
         "date": "Sunday, July 2, 2023",
         "intro": "We discuss the difference between Binary Search and Linear Search.",
@@ -12,7 +12,7 @@
       },
       {
         "id": 2,
-        "image": "imgs/article-img-4.png",
+        "image": "imgs/articles-cover/article-img-4.png",
         "title": "Basics of Electronics",
         "date": "Thursday, June 1, 2023",
         "intro": "This article talks about the main electronic components to make a real circuit.",
@@ -22,7 +22,7 @@
       },
       {
         "id": 3,
-        "image": "imgs/article-img-3.png",
+        "image": "imgs/articles-cover/article-img-3.png",
         "title": "How can modern robots benefit the world",
         "date": "Friday, May 12, 2023",
         "intro": "This article talks about modern robots and how they develop to benefit our world.",
@@ -32,7 +32,7 @@
       },
       {
         "id": 4,
-        "image": "imgs/article-img-2.png",
+        "image": "imgs/articles-cover/article-img-2.png",
         "title": "How may ChatGPT help you with your studies?",
         "date": "Friday, May 12, 2023",
         "intro": "This article talks about ChatGPT. Additionally, How can it aid in the student’s studies?",
@@ -42,7 +42,7 @@
       },
       {
         "id": 5,
-        "image": "imgs/article-img-1.jpeg",
+        "image": "imgs/articles-cover/article-img-1.jpeg",
         "title": "Add To Your Knowledge in Algorithms",
         "date": "Friday, May 12, 2023",
         "intro": "This article talks about some types of algorithms that can help in solving challenging problems in the Computer Science field.",
@@ -54,53 +54,43 @@
     "projects": [
       {
         "id": 1,
+        "image": "imgs/web-page.png",
+        "title": "Web developer page",
+        "contributor": "Mostafa Ibrahim & Mohamed Ihab",
+        "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
+        "trackTagName": "Web-Development",
+        "trackTagLink": "pages/tracks/web-development.html",
+        "githubLink": "https://example.com/article-1"
+      },
+      {
+        "id": 2,
+        "image": "imgs/projects/telegram-bot.jpeg",
+        "title": "Telegram bot",
+        "contributor": "Ahmed Adel",
+        "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
+        "trackTagName": "Fundamentals",
+        "trackTagLink": "pages/tracks/programming-fundmentals.html",
+        "githubLink": "https://github.com/medo962006/Ahmed-Adel-Rashad-CS-club-Project"
+      },
+      {
+        "id": 3,
         "image": "imgs/deaf-helper.jpeg",
         "title": "Deaf Helper",
         "contributor": "Mostafa Ibrahim & Mohamed Ihab",
         "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
         "trackTagName": "Robotics",
         "trackTagLink": "pages/tracks/Robotics.html",
-        "githubLink": "https://example.com/article-1"
-      },
-      {
-        "id": 2,
-        "image": "imgs/web-developement-project.jpg",
-        "title": "CyberSkate",
-        "contributor": "Mostafa Ibrahim & Mohamed Ihab",
-        "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
-        "trackTagName": "Robotics",
-        "trackTagLink": "pages/tracks/Robotics.html",
-        "githubLink": "https://example.com/article-1"
-      },
-      {
-        "id": 3,
-        "image": "imgs/article-img-1.png",
-        "title": "Using Chatgpt academically",
-        "contributor": "Mostafa Ibrahim & Mohamed Ihab",
-        "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
-        "trackTagName": "Web development",
-        "trackTagLink": "pages/tracks/Robotics.html",
-        "githubLink": "https://example.com/article-1"
+        "githubLink": "https://github.com/mostafaibrahim10010/deafhelper/"
       },
       {
         "id": 4,
-        "image": "imgs/article-img-1.png",
-        "title": "Using Chatgpt academically",
-        "contributor": "Mostafa Ibrahim",
-        "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
-        "trackTagName": "Web development",
-        "trackTagLink": "pages/tracks/Robotics.html",
-        "githubLink": "https://example.com/article-1"
-      },
-      {
-        "id": 5,
-        "image": "imgs/article-img-1.png",
-        "title": "Using Chatgpt academically",
+        "image": "imgs/projects/Guess-game.png",
+        "title": "Guess Game",
         "contributor": "Abdelhamid Ahmed",
         "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
-        "trackTagName": "Robotics",
-        "trackTagLink": "pages/tracks/Robotics.html",
-        "githubLink": "https://example.com/article-1"
+        "trackTagName": "Web-Development",
+        "trackTagLink": "pages/tracks/web-development.html",
+        "githubLink": "https://abdelhamid-el-rashidy.github.io/Guess-Number/"
       }
     ]
   }
