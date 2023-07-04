@@ -1,4 +1,10 @@
-
+// Preloader
+window.addEventListener('load', () => {
+  const preload = document.querySelector('.preload');
+  const navbar = document.querySelector('.nav-bar');
+  preload.classList.add('preload-finish');  
+  
+});
 
 // Counter hero section
 const updatedCounters = [
