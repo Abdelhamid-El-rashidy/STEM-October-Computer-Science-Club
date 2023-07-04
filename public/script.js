@@ -1,16 +1,3 @@
-// preloader screen
-// var loader = document.getElementById('preloader');
-
-// window.addEventListener("load", function() {
-//     loader.style.transitionDelay = "5s";
-//     loader.style.o = "none";
-// })
-window.addEventListener('load', () => {
-  const preload = document.querySelector('.preload');
-  const navbar = document.querySelector('.nav-bar');
-  preload.classList.add('preload-finish');  
-  
-});
 
 
 // Counter hero section
@@ -206,32 +193,22 @@ slider.addEventListener("mouseout", () => {
   repeater();
 });
 
+
 let articleContainer = document.getElementById("articles-container");
 
 // fetch json data
 fetch("https://csc-e925.onrender.com/api/articles")
-  .then(res => res.json())
-  .then(json => {
-    // Convert the ID field to numerical values
-    json.articles.forEach(article => {
-      article.id = parseInt(article.id);
+    .then(res => res.json())
+    .then(json => {
+        json.map(data => {
+        articleContainer.appendChild(article_fun(data));
+        })
+    })
+
+    .catch(error => {
+        console.log("Error fetching JSON data:", error);
     });
-
-    // Sort the articles by ID in descending order
-    json.articles.sort((a, b) => b.id - a.id);
-
-    // Get the top three articles
-    const topThreeArticles = json.articles.slice(0, 3);
-
-    topThreeArticles.forEach(data => {
-      articleContainer.appendChild(article_fun(data));
-    });
-  })
-  .catch(error => {
-    console.log("Error fetching JSON data:", error);
-  });
-
-// Articles card
+// Articles card 
 function article_fun(data) {
   let articleCard = document.createElement('div');
   articleCard.classList.add('article-card');
@@ -248,55 +225,16 @@ function article_fun(data) {
       </div>
       <div class="card-bottom">
         <a href="${data["readMoreLink"]}" target="_blank" class="read-more">Read more</a>
-        <a href="${data["trackTagLink"]}" class="track-tag">${data["trackTagName"]}</a>
+        <a href="${data["trackTagLink"]}" class="track-tag">${data["trackTagName"]}</a> 
       </div>
-    </a>
+    </a> 
   `;
-
+  
   return articleCard;
 }
 
-// let articleContainer = document.getElementById("articles-container");
 
-// // fetch json data
-// fetch("https://csc-e925.onrender.com/api/articles")
-//     .then(res => res.json())
-//     .then(json => {
-//         json.map(data => {
-//         articleContainer.appendChild(article_fun(data));
-//         })
-//     })
-
-//     .catch(error => {
-//         console.log("Error fetching JSON data:", error);
-//     });
-// // Articles card 
-// function article_fun(data) {
-//   let articleCard = document.createElement('div');
-//   articleCard.classList.add('article-card');
-
-//   articleCard.innerHTML = `
-//     <a href="${data["readMoreLink"]}">
-//       <div class="card-top">
-//         <img src="../../${data["image"]}" alt="">
-//       </div>
-//       <div class="card-info">
-//         <h3>${data["title"]}</h3>
-//         <span>${data["date"]}</span>
-//         <p class="intro">${data["intro"]}</p>
-//       </div>
-//       <div class="card-bottom">
-//         <a href="${data["readMoreLink"]}" target="_blank" class="read-more">Read more</a>
-//         <a href="${data["trackTagLink"]}" class="track-tag">${data["trackTagName"]}</a> 
-//       </div>
-//     </a> 
-//   `;
-  
-//   return articleCard;
-// }
-
-
-// let projectContainer = document.getElementById("project-contianer");
+let projectContainer = document.getElementById("project-contianer");
 
 
 
