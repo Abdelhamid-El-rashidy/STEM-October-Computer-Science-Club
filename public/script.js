@@ -196,17 +196,28 @@ let articleContainer = document.getElementById("articles-container");
 
 // fetch json data
 fetch("https://csc-e925.onrender.com/api/articles")
-    .then(res => res.json())
-    .then(json => {
-        json.map(data => {
-        articleContainer.appendChild(article_fun(data));
-        })
-    })
-
-    .catch(error => {
-        console.log("Error fetching JSON data:", error);
+  .then(res => res.json())
+  .then(json => {
+    // Convert the ID field to numerical values
+    json.articles.forEach(article => {
+      article.id = parseInt(article.id);
     });
-// Articles card 
+
+    // Sort the articles by ID in descending order
+    json.articles.sort((a, b) => b.id - a.id);
+
+    // Get the top three articles
+    const topThreeArticles = json.articles.slice(0, 3);
+
+    topThreeArticles.forEach(data => {
+      articleContainer.appendChild(article_fun(data));
+    });
+  })
+  .catch(error => {
+    console.log("Error fetching JSON data:", error);
+  });
+
+// Articles card
 function article_fun(data) {
   let articleCard = document.createElement('div');
   articleCard.classList.add('article-card');
@@ -223,48 +234,65 @@ function article_fun(data) {
       </div>
       <div class="card-bottom">
         <a href="${data["readMoreLink"]}" target="_blank" class="read-more">Read more</a>
-        <a href="${data["trackTagLink"]}" class="track-tag">${data["trackTagName"]}</a> 
+        <a href="${data["trackTagLink"]}" class="track-tag">${data["trackTagName"]}</a>
       </div>
-    </a> 
+    </a>
   `;
-  
+
   return articleCard;
 }
 
 
-let projectContainer = document.getElementById("project-contianer");
 
-
+let projectContainer = document.getElementById("projects-container");
 
 // fetch json data
-fetch("https://csc-e925.onrender.com/api/projects")
+fetch("https://csc-e925.onrender.com/api/articles")
   .then(res => res.json())
   .then(json => {
-    json.map(data => {
+    // Convert the ID field to numerical values
+    json.projects.forEach(project => {
+      project.id = parseInt(project.id);
+    });
+
+    // Sort the projects by ID in descending order
+    json.projects.sort((a, b) => b.id - a.id);
+
+    // Get the top three projects
+    const topThreeProjects = json.projects.slice(0, 3);
+
+    topThreeProjects.forEach(data => {
       projectContainer.appendChild(project_fun(data));
-    })
+    });
+  })
+  .catch(error => {
+    console.log("Error fetching JSON data:", error);
   });
 
-// Project card 
+// Project card
 function project_fun(data) {
   let projectCard = document.createElement('div');
   projectCard.classList.add('project-card');
 
   projectCard.innerHTML = `
-    <img src="${data["image"]}" alt="">
-    <div class="info">
-    <h4>${data["title"]}</h4>
-    <p><i class="fa-solid fa-user"></i>${data["contributor"]}</p>
-    <a class="track-tag" href="${data["trackTagLink"]}">${data["trackTagName"]}</a>
-    <p>${data["intro"]}</p>
-    <ul class="social-bar">
-      <li class="social-link"><a href="${data["githubLink"]}"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-    </ul>
-  </div>
+    <a href="${data["githubLink"]}">
+      <div class="card-top">
+        <img src="../../${data["image"]}" alt="">
+      </div>
+      <div class="card-info">
+        <h3>${data["title"]}</h3>
+        <span>Contributor: ${data["contributor"]}</span>
+      </div>
+      <div class="card-bottom">
+        <a href="${data["githubLink"]}" target="_blank" class="read-more">View on GitHub</a>
+        <a href="${data["trackTagLink"]}" class="track-tag">${data["trackTagName"]}</a>
+      </div>
+    </a>
   `;
 
   return projectCard;
 }
+
 
 
 

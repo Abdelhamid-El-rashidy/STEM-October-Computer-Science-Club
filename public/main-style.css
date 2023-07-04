@@ -59,23 +59,28 @@ section {
   padding: 2rem;
 }
 section h2 {
+  width: fit-content;
   font-family: 'Monsterrat';
   font-size: 2rem;
   letter-spacing: 1.3px;
-  text-align: center;
-  margin: 0;
+  margin: auto;
   position: relative;
+  text-align: center;
 }
 section h2::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 3px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -4px;
-  background-color: var(--main-color);
+    content: '';
+    display: block;
+    width: 110%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0%;
+    /* background-color: var(--main-color); */
+    border: none;
+    border-radius: 20px;
+    border-right: 4px solid var(--main-color);
+    border-left: 4px solid var(--main-color);
 }
 section .container {
   margin: 2.5rem auto;
@@ -764,7 +769,6 @@ header .hero-section .hero-content h1{
   justify-content: space-around;
 }
 .project-card {
-  height: 410px;
   margin: 1.5rem 0;
   padding: 2rem 1rem;
   background-color: #fff;
@@ -797,7 +801,7 @@ header .hero-section .hero-content h1{
 .project-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   position: absolute;
   top: 0;
   left: 0;
@@ -814,6 +818,9 @@ header .hero-section .hero-content h1{
   opacity: 0;
   transform: translateY(30px);
   transition: 0.5s all;
+}
+i.fa-solid.fa-user {
+  margin: 0 8px;
 }
 .project-card:hover .info {
   opacity: 1;
