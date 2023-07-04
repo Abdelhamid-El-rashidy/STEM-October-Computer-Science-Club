@@ -54,7 +54,7 @@
     "projects": [
       {
         "id": 1,
-        "image": "imgs/web-page.png",
+        "image": "imgs/Projects/web-page.png",
         "title": "Web developer page",
         "contributor": "Mostafa Ibrahim & Mohamed Ihab",
         "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
@@ -64,7 +64,7 @@
       },
       {
         "id": 2,
-        "image": "imgs/projects/telegram-bot.jpeg",
+        "image": "imgs/Projects/telegram-bot.jpeg",
         "title": "Telegram bot",
         "contributor": "Ahmed Adel",
         "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
@@ -74,7 +74,7 @@
       },
       {
         "id": 3,
-        "image": "imgs/deaf-helper.jpeg",
+        "image": "imgs/Projects/deaf-helper.jpeg",
         "title": "Deaf Helper",
         "contributor": "Mostafa Ibrahim & Mohamed Ihab",
         "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
@@ -84,7 +84,7 @@
       },
       {
         "id": 4,
-        "image": "imgs/projects/Guess-game.png",
+        "image": "imgs/Projects/Guess-game.png",
         "title": "Guess Game",
         "contributor": "Abdelhamid Ahmed",
         "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
