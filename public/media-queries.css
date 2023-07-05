@@ -1,4 +1,28 @@
 /* mobile screen */
+@media only screen and (max-width: 440px) {
+    section h2 {
+        font-size: 1.5rem;
+      }
+    header .hero-section .hero-content {
+        width: auto;
+    }
+    .hero-section .hero-stats div {
+        height: 84px;
+        width: 86px;
+        font-size: 0.5rem;
+    }
+    .hero-section .hero-stats div span {
+        font-size: 0.8rem;
+    }
+    #about .container {
+        padding: 0 1rem;
+    }
+  .swiper-slide {
+    border-radius: 18px;
+    width: 230px !important;
+    height: 310px !important;
+  }
+}
 @media only screen and (max-width: 700px) {
     .bt {
         padding: 0.5rem 0.7rem;

@@ -76,7 +76,6 @@ section h2::after {
     left: 50%;
     transform: translateX(-50%);
     bottom: 0%;
-    /* background-color: var(--main-color); */
     border: none;
     border-radius: 20px;
     border-right: 4px solid var(--main-color);

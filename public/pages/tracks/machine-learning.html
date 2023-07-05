@@ -179,19 +179,21 @@
         let articleCard = document.createElement('div');
         articleCard.classList.add('article-card');
 
-        articleCard.innerHTML = `
-            <div class="card-top">
+      articleCard.innerHTML = `
+        <a href="${data["readMoreLink"]}">
+          <div class="card-top">
             <img src="../../${data["image"]}" alt="">
-            </div>
-            <div class="card-info">
+          </div>
+          <div class="card-info">
             <h3>${data["title"]}</h3>
             <span>${data["date"]}</span>
-            </div>
-            <div class="card-bottom">
-            <a href="" class="read-more">Read more</a>
-            <a href="#" class="track-tag">${data["trackTagName"]}</a> 
-            </div>
-        `;
+          </div>
+          <div class="card-bottom">
+            <a href="${data["readMoreLink"]}" target="_blank" class="read-more">Read more</a>
+            <a href="${data["trackTagLink"]}" class="track-tag">${data["trackTagName"]}</a> 
+          </div>
+        </a> 
+      `;
 
         return articleCard;
         }
