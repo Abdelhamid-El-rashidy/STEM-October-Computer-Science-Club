@@ -1,21 +1,49 @@
 /* mobile screen */
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 440px){
     section h2 {
         font-size: 1.5rem;
       }
+    header {
+        height: 100vh;
+        background-color: var(--bg-color);
+        background-image: url(imgs/sl_031420_28950_10.png), url(imgs/Team.jpeg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-blend-mode: normal;
+    }
     header .hero-section .hero-content {
         width: auto;
     }
+    header p {
+        padding: 0 !important;
+        font-size: 11px !important;
+    }
+    .hero-section .hero-stats {
+        align-items: center;
+    }
     .hero-section .hero-stats div {
-        height: 64px;
-        width: 66px;
-        font-size: 0.5rem;
+        height: 64px !important;
+        width: 66px !important;
+        font-size: 0.5rem !important;
     }
     .hero-section .hero-stats div span {
-        font-size: 0.8rem;
+        font-size: 0.8rem !important;
     }
     section .container {
-        padding: 0 1rem;
+        padding: 0;
+    }
+    .slider {
+        height: 335px;
+    }
+    .community {
+        width: 240px !important;
+    }
+    #why-us .container .headers {
+        font-size: 0.8rem;
+    }
+    #why-us .container p {
+        font-size: 0.8rem;
     }
   .swiper-slide {
     border-radius: 18px;
@@ -23,9 +51,15 @@
     height: 310px !important;
   }
   .team-container {
-    padding: 2rem 0;
-    display: none;
-}
+        padding: 2rem 0;
+        display: none;
+    }
+    .subscribe p {
+        font-size: 0.4rem;
+    }
+    .extra-contact ul li {
+        font-size: 0.6rem;
+    }
 }
 @media only screen and (max-width: 700px) {
     .bt {
