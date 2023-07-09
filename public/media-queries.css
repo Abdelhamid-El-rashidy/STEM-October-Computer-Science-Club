@@ -22,11 +22,21 @@
     width: 230px !important;
     height: 310px !important;
   }
+  .team-container {
+    padding: 2rem 0;
+    display: none;
+}
 }
 @media only screen and (max-width: 700px) {
     .bt {
         padding: 0.5rem 0.7rem;
         transition: 0.5s;
+    }
+    iconify-icon {
+        font-size: 1.5rem;
+      }
+      .callout {
+        padding: 1rem;
     }
     /* navbar */
 

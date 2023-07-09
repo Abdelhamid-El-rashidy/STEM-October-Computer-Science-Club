@@ -30,7 +30,7 @@ header p {
 .track-hero-section {
     position: absolute;
     left: 50%;
-    top: 20%;
+    top: 12%;
     translate: -50%;
     width: 100%;
 }
@@ -39,6 +39,7 @@ header .instructors {
     text-align: center;
     font-weight: bold;
     padding: 1rem 0;
+    margin: auto;
 }
 .instructor-imgs {
     display: flex;
@@ -61,17 +62,25 @@ header .member {
 .member p {
     text-align: center;
     font-size: 14px;
-}
-.track-hero-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-wrap: nowrap;
 }
 .track-hero-section .track-info {
     text-align: center;
-    margin: 2.5rem 0;
+    margin: 1rem auto;
     font-size: 14px;
+}
+.track-hero-section ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.track-hero-section ul li {
+    margin: 0 0.5rem;
+}
+.track-hero-section ul li img {
+    width: 65px;
+    height: 100%;
 }
 #articles-section {
     background-color: var(--sec-bg-color);
@@ -98,12 +107,26 @@ header .member {
 
 /* Media queries */
 @media only screen and (max-width: 700px) {
+    p {
+        font-size: 85% !important;
+    }
+}
+@media only screen and (max-width: 500px) {
     body {
-        font-size: 90%;
+        font-size: 85% ;
+    }
+    header {
+        height: 110vh;
+    }
+    header h1 {
+        font-size: 1.5rem;
     }
     p.track-info {
-        padding: 1rem 2rem;
-        font-size: 13px !important;
+        padding: 0.5rem;
+        font-size: 10px !important;
+    }
+    header .instructors {
+        padding: 0.5rem 0;
     }
     header .member {
         width: 80px;
@@ -114,7 +137,11 @@ header .member {
     }
     .member p {
         text-align: center;
-        font-size: 14px;
+        font-size: 12px;
         padding: 0.5rem;
+    }
+    .track-hero-section ul li img {
+        width: 40px;
+        height: 100%;
     }
 }

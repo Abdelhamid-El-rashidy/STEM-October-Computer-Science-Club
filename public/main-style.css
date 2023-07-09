@@ -22,6 +22,17 @@
 }
 
 /* Global elements start */
+iconify-icon {
+  font-size: 2.5rem;
+  border-radius: 30px;
+  background-color: var(--bg-color);
+  padding: 0.5rem;
+  box-shadow: 0px 0px 4px 0px black;
+  cursor: pointer;
+}
+iconify-icon:active {
+  box-shadow: 0px 0px 4px 0px var(--main-color);
+}
 .social-bar {
   display: flex;
   justify-content: center;
@@ -121,7 +132,6 @@ section .container {
     color: var(--secondary-color);    
     font-family: Consolas, Menlo, Monaco, monospace;
     font-weight: bold;
-    font-size: 20vh;
     opacity: 0.8;
     display: flex;
     justify-content: center;
@@ -134,6 +144,7 @@ section .container {
 }
 .loader span:nth-child(odd) {
   animation-delay: 0.4s;
+  font-size: 1.5rem;
 }
 
 @keyframes pulse {
