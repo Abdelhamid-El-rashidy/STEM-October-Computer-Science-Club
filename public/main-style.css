@@ -348,6 +348,7 @@ header .hero-section .hero-content h1{
   font-size: 1.4rem;
 }
 .team-img {
+  display: none;
   width: 100%;
   height: 100%;
   position: absolute;

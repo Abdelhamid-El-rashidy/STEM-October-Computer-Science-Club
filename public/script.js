@@ -1,3 +1,16 @@
+const r = rolly({
+  view: document.querySelector('.app'),
+  native: true,
+  // other options
+});
+r.init();
+AOS.init({
+  duration: 1500
+});
+
+
+
+
 // Counter hero section
 const updatedCounters = [
   { target: 60, elementId: "applicants-stats" },
@@ -231,6 +244,17 @@ function article_fun(data) {
   return articleCard;
 }
 
+// Select and process odd nth-child elements
+var article_oddChildren = articleContainer.querySelectorAll(":nth-child(odd)");
+for (var i = 0; i < article_oddChildren.length; i++) {
+  article_oddChildren[i].setAttribute("data-aos", "fade-left");
+}
+
+// Select and process even nth-child elements
+var article_evenChildren = articleContainer.querySelectorAll(":nth-child(even)");
+for (var i = 0; i < article_evenChildren.length; i++) {
+  article_evenChildren[i].setAttribute("data-aos", "fade-right");
+}
 
 let projectContainer = document.getElementById("project-contianer");
 
@@ -265,7 +289,17 @@ function project_fun(data) {
   return projectCard;
 }
 
+// Select and process odd nth-child elements
+var project_oddChildren = projectContainer.querySelectorAll(":nth-child(odd)");
+for (var i = 0; i < project_oddChildren.length; i++) {
+  project_oddChildren[i].setAttribute("data-aos", "fade-left");
+}
 
+// Select and process even nth-child elements
+var project_evenChildren = projectContainer.querySelectorAll(":nth-child(even)");
+for (var i = 0; i < project_evenChildren.length; i++) {
+  project_evenChildren[i].setAttribute("data-aos", "fade-right");
+}
 
 
 var swiper = new Swiper('.Slider-container', {

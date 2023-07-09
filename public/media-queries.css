@@ -3,6 +3,9 @@
     section h2 {
         font-size: 1.5rem;
       }
+    .team-img {
+        display: block;
+      }
     header {
         height: 100vh;
         background-color: var(--bg-color);
@@ -14,6 +17,11 @@
     }
     header .hero-section .hero-content {
         width: auto;
+    }
+    .hero-section .social-bar .social-link {
+        padding: 0 0.6rem;
+        background-color: var(--bg-color);
+        border-radius: 5px;
     }
     header p {
         padding: 0 !important;
