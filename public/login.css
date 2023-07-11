@@ -270,6 +270,16 @@ footer a {
     color: #3c97bf;
     text-decoration: none;
 }
+.sign-in-container button {
+	display: block;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    translate: -50%;
+    margin: auto;
+    box-shadow: 0px 2px 8px var(--main-color);
+    border-radius: 10px;
+}
 
 /* @media only screen and (max-width: 700px) {
     body {
@@ -289,19 +299,22 @@ footer a {
 	}
   
 	.overlay-container {
-	  position: relative;
-	  height: auto;
+	  display: none;
 	}
   
 	.overlay {
-	  left: 0;
-	  width: 100%;
-	  transform: none;
+	  display: none;
 	}
   
 	.overlay-panel {
 	  width: 100%;
 	  transform: none;
+	}
+	.sign-up-container {
+		display: none;
+	}
+	.sign-in-container button {
+		display: block;
 	}
   }
   
