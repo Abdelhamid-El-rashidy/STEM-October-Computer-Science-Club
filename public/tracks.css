@@ -10,8 +10,9 @@
 /* start page */
 header {
     position: relative;
-    background-image: url(imgs/sl_031420_28950_10.png);
-    background-color: var(--bg-color);
+    background-image: url(imgs/sl_031420_28950_10.png) !important;
+    background-color: var(--bg-color) !important;
+    background-size: cover !important;
 }
 header h1, header p {
     margin: 0;
@@ -122,7 +123,6 @@ header .member {
         font-size: 1.5rem;
     }
     p.track-info {
-        padding: 0.5rem;
         font-size: 10px !important;
     }
     header .instructors {

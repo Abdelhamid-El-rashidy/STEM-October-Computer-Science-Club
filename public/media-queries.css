@@ -24,7 +24,7 @@
         border-radius: 5px;
     }
     header p {
-        padding: 0 !important;
+        padding: 0 0.5rem !important;
         font-size: 11px !important;
     }
     .hero-section .hero-stats {
