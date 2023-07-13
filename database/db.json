@@ -2,6 +2,26 @@
     "articles": [
       {
         "id": 1,
+        "image": "imgs/articles-cover/article-img-7.jpeg",
+        "title": "Numpy and Pandas",
+        "date": "Sunday, July 9, 2023",
+        "intro": "Numpy and Pandas are indispensable tools in machine learning. Numpy is a fundamental package for scientific computing. Pandas is an open-source data manipulation for Python.",
+        "readMoreLink": "https://www.linkedin.com/feed/update/urn:li:activity:7081019136008421376",
+        "trackTagName": "Machine-Learning",
+        "trackTagLink": "pages/tracks/machine-learning.html"
+      },
+      {
+        "id": 2,
+        "image": "imgs/articles-cover/article-img-6.jpeg",
+        "title": "Cross-Platform Showdown: Flutter vs. The Rest - A Simplified Deep Dive",
+        "date": "Wednesday, July 5, 2023",
+        "intro": "In recent years, the tech industry has witnessed a surge in cross-platform frameworks. Among the leading players, Flutter and such each, bring unique strengths to the table.",
+        "readMoreLink": "https://www.linkedin.com/feed/update/urn:li:activity:7081019136008421376",
+        "trackTagName": "Mobile-Developement",
+        "trackTagLink": "pages/tracks/app-development.html"
+      },
+      {
+        "id": 3,
         "image": "imgs/articles-cover/article-img-5.jpeg",
         "title": "Binary Search Vs Linear Search",
         "date": "Sunday, July 2, 2023",
@@ -11,7 +31,7 @@
         "trackTagLink": "pages/tracks/Alg&DS.html"
       },
       {
-        "id": 2,
+        "id": 4,
         "image": "imgs/articles-cover/article-img-4.png",
         "title": "Basics of Electronics",
         "date": "Thursday, June 1, 2023",
@@ -21,7 +41,7 @@
         "trackTagLink": "pages/tracks/Robotics.html"
       },
       {
-        "id": 3,
+        "id": 5,
         "image": "imgs/articles-cover/article-img-3.png",
         "title": "How can modern robots benefit the world",
         "date": "Friday, May 12, 2023",
@@ -31,7 +51,7 @@
         "trackTagLink": "pages/tracks/Robotics.html"
       },
       {
-        "id": 4,
+        "id": 6,
         "image": "imgs/articles-cover/article-img-2.png",
         "title": "How may ChatGPT help you with your studies?",
         "date": "Friday, May 12, 2023",
@@ -41,7 +61,7 @@
         "trackTagLink": "pages/tracks/machine-learning.html"
       },
       {
-        "id": 5,
+        "id": 7,
         "image": "imgs/articles-cover/article-img-1.jpeg",
         "title": "Add To Your Knowledge in Algorithms",
         "date": "Friday, May 12, 2023",

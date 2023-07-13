@@ -6,7 +6,7 @@ Articles data
 image: 
 Title:
 date (ex: "Thursday, June 1, 2023"):
-Intro (25-35 words): 
+Intro (30 - 40 words): 
 LinkedIn article linK:
 Track Name (choices: 
 - Alg&DS 

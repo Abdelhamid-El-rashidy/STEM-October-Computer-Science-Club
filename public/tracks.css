@@ -40,7 +40,7 @@ header .instructors {
     text-align: center;
     font-weight: bold;
     padding: 1rem 0;
-    margin: auto;
+    margin: 1rem auto 0 auto;
 }
 .instructor-imgs {
     display: flex;
@@ -120,13 +120,13 @@ header .member {
         height: 110vh;
     }
     header h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     p.track-info {
-        font-size: 10px !important;
+        font-size: 9px !important;
     }
     header .instructors {
-        padding: 0.5rem 0;
+        padding: 0 !important;
     }
     header .member {
         width: 80px;

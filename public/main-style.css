@@ -886,12 +886,6 @@ i.fa-solid.fa-user {
   height: 320px;
 }
 
-.swiper-slide {
-  border-radius: 18px;
-  width: 270px !important;
-  height: 360px !important;
-}
-
 .swiper-slide img {
   width: 100%;
   height: 100%;
@@ -913,6 +907,9 @@ i.fa-solid.fa-user {
   text-align: center;
   color: #fff;
   position: relative;
+  border-radius: 18px;
+  width: 270px !important;
+  height: 360px !important;
 }
 .swiper-slide::after {
   content: '';
@@ -941,6 +938,120 @@ i.fa-solid.fa-user {
 .swiper-slide p span {
   display: block;
   font-size: 12px;
+}
+/* slider for mobile view */
+.wrapper {
+  width: 300px;
+  position: relative;
+  display: none;
+}
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  opacity: 0.8;
+  background: var(--bg-color);
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child{
+  left: -22px;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 334px;
+  list-style: none;
+  background-image: url(imgs/sl_031420_28950_10.png);
+  background-image: url(imgs/sl_031420_28950_10.png), var(--primary-gd);
+  background-size: cover;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carousel .card .img {
+  background: var(--secondary-color);
+  height: 188px;
+  width: 188px;
+  border-radius: 50%;
+}
+.card .img img {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--bg-color);
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 20px 0 5px;
+}
+.carousel .card span {
+  padding: 0.5rem 0;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  background-color: var(--bg-color);
+  box-shadow: 2px 2px 2px var(--bg-color);
+  width: 94%;
+  border-radius: 20px;
+  border: none;
+  border-right: 4px solid var(--secondary-color);
+  border-left: 4px solid var(--secondary-color);
+}
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
 }
 
 /* team section end */

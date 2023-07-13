@@ -24,7 +24,7 @@
         border-radius: 5px;
     }
     header p {
-        padding: 0 0.5rem !important;
+        padding: 1rem !important;
         font-size: 11px !important;
     }
     .hero-section .hero-stats {
@@ -58,12 +58,14 @@
     width: 230px !important;
     height: 310px !important;
   }
-  .team-container {
-        padding: 2rem 0;
-        display: none;
+  .swiper {
+        display: none !important;
+    }
+    .wrapper {
+        display: block;
     }
     .subscribe p {
-        font-size: 0.4rem;
+        font-size: 0.58rem !important;
     }
     .extra-contact ul li {
         font-size: 0.6rem;

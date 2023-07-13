@@ -271,7 +271,7 @@ footer a {
     text-decoration: none;
 }
 .sign-in-container button {
-	display: block;
+	display: none;
     position: absolute;
     top: -5px;
     left: 50%;
@@ -315,6 +315,9 @@ footer a {
 	}
 	.sign-in-container button {
 		display: block;
+	}
+	a {
+		font-size: 10px;
 	}
   }
   
