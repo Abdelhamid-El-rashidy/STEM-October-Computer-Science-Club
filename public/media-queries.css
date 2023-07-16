@@ -1,5 +1,8 @@
 /* mobile screen */
 @media only screen and (max-width: 440px){
+    section {
+        padding: 1rem 0.5rem;
+    }
     section h2 {
         font-size: 1.5rem;
       }
@@ -124,6 +127,12 @@
     .right {
         width: 100%;
       }
+    .right p {
+        font-size: 0.7rem;
+    }
+    .p_right span {
+        font-size: 1rem;
+    }
     .gallery {
         width: 100%;
         height: 400px;
