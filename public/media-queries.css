@@ -39,6 +39,7 @@
         font-size: 0.8rem !important;
     }
     section .container {
+        margin: 1rem 0;
         padding: 0;
     }
     .slider {
@@ -114,12 +115,15 @@
         padding: 1rem 0;
         align-items: center;
     }
-    #why-us .container p {
-        margin: 0;
-        width: 100%;
-        margin-bottom: 1rem;
+    #why-us .intro {
+        padding: 0;
+        margin: 0.5rem 0;
+        font-size: 1.1rem;
         text-align: center;
     }
+    .right {
+        width: 100%;
+      }
     .gallery {
         width: 100%;
         height: 400px;

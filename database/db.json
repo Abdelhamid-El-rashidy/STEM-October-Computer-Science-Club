@@ -2,7 +2,7 @@
     "articles": [
       {
         "id": 1,
-        "image": "imgs/articles-cover/article-img-7.jpeg",
+        "image": "imgs/articles-cover/article-img-7.jpg",
         "title": "Numpy and Pandas",
         "date": "Sunday, July 9, 2023",
         "intro": "Numpy and Pandas are indispensable tools in machine learning. Numpy is a fundamental package for scientific computing. Pandas is an open-source data manipulation for Python.",
@@ -12,7 +12,7 @@
       },
       {
         "id": 2,
-        "image": "imgs/articles-cover/article-img-6.jpeg",
+        "image": "imgs/articles-cover/article-img-6.jpg",
         "title": "Cross-Platform Showdown: Flutter vs. The Rest - A Simplified Deep Dive",
         "date": "Wednesday, July 5, 2023",
         "intro": "In recent years, the tech industry has witnessed a surge in cross-platform frameworks. Among the leading players, Flutter and such each, bring unique strengths to the table.",
@@ -96,7 +96,7 @@
         "id": 3,
         "image": "imgs/Projects/deaf-helper.jpeg",
         "title": "Deaf Helper",
-        "contributor": "Mostafa Ibrahim & Mohamed Ihab",
+        "contributor": "Mostafa Ibrahim & Mina Ashraf",
         "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
         "trackTagName": "Mobile-Developement",
         "trackTagLink": "pages/tracks/app-development.html",
