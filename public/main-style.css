@@ -368,6 +368,8 @@ header .hero-section .hero-content h1{
 .team-img img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  z-index: -4;
   filter: brightness(0.7);
 }
 /* header end */
