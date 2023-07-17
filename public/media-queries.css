@@ -18,6 +18,12 @@
         background-position: top;
         background-blend-mode: normal;
     }
+    header .hero-section {
+        padding: 0 1rem;
+        background-image: url(imgs/sl_031420_28950_10.png);
+        background-size: cover;
+        background-position: top;
+    }
     header .hero-section .hero-content {
         width: auto;
     }
