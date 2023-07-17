@@ -217,6 +217,7 @@ fetch("https://csc-e925.onrender.com/api/articles?id_like=1&id_like=2&id_like=3"
 function article_fun(data) {
   let articleCard = document.createElement('div');
   articleCard.classList.add('article-card');
+  articleCard.setAttribute('data-aos', 'zoom-in-up');
 
   articleCard.innerHTML = `
     <a href="${data["readMoreLink"]}">
@@ -267,6 +268,7 @@ fetch("https://csc-e925.onrender.com/api/projects?id_like=1&id_like=2&id_like=3"
 function project_fun(data) {
   let projectCard = document.createElement('div');
   projectCard.classList.add('project-card');
+  projectCard.setAttribute('data-aos', 'zoom-in-up');
 
   projectCard.innerHTML = `
     <img src="${data["image"]}" alt="">
