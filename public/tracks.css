@@ -110,7 +110,7 @@ header .member {
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0 0 0 / 20%);
     transition: 0.5s;
-    flex-basis: 240px;
+    flex-basis: 20rem;
 }
 #projects {
     background-color: var(--bg-color);
