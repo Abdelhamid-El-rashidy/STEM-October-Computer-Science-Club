@@ -467,6 +467,17 @@ section#tech {
   height: 100%;
   clip-path: circle(0% at 0 50%);
 }
+.slide::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: 1;
+  opacity: 0.2;
+}
 
 .slider .slide.active{
   clip-path: circle(150% at 0 50%);

@@ -12,8 +12,8 @@ const updatedCounters = [
   { target: 5, elementId: "articles-stats" }
 ];
 
-const updatedDuration = 2000; // The duration in milliseconds for the counter effect
-const updatedInterval = 50; // The interval in milliseconds between each count update
+const updatedDuration = 3000; // The duration in milliseconds for the counter effect
+const updatedInterval = 100; // The interval in milliseconds between each count update
 
 function updatedEaseOutQuad(t) {
   return t * (2 - t);
