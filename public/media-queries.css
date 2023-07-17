@@ -26,6 +26,7 @@
     }
     header .hero-section .hero-content {
         width: auto;
+        padding: 3rem 0 1.5rem 0;
     }
     .hero-section .social-bar .social-link {
         padding: 0 0.6rem;
@@ -34,14 +35,14 @@
     }
     header p {
         padding: 1rem !important;
-        font-size: 11px !important;
+        font-size: 12px !important;
     }
     .hero-section .hero-stats {
         align-items: center;
     }
     .hero-section .hero-stats div {
-        height: 64px !important;
-        width: 66px !important;
+        height: 74px !important;
+        width: 76px !important;
         font-size: 0.5rem !important;
     }
     .hero-section .hero-stats div span {
@@ -96,7 +97,7 @@
 
     /* navbar */
     header .hero-section .hero-content h1 {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
     
     header p {
