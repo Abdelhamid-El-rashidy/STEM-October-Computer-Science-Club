@@ -24,7 +24,7 @@
 /* Global elements start */
 iconify-icon {
   font-size: 2.5rem;
-  border-radius: 30px;
+  border-radius: 10px;
   background-color: var(--bg-color);
   padding: 0.5rem;
   box-shadow: 0px 0px 4px 0px black;
@@ -33,10 +33,16 @@ iconify-icon {
 iconify-icon:active {
   box-shadow: 0px 0px 4px 0px var(--main-color);
 }
+a.explore {
+  text-align: center;
+  display: block;
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
 span.bef-header {
   display: block;
   text-align: center;
-  opacity: 0.8;
+  opacity: 0.6 !important;
   margin: 0.5rem 0;
 }
 .social-bar {
@@ -297,16 +303,13 @@ header .hero-section .hero-content h1{
 .community {
   margin: 0;
   color: white;
-  position: absolute;
-  width: 280px !important;
+  width: 100%;
+  font-size: 1.6rem;
+  background: var(--bg-color);
   left: 50%;
-  font-size: 13px;
   bottom: 5px;
-  translate: -50%;
   text-align: center !important;
-  padding: 0.4rem;
-  background-image: var(--primary-gd);
-  animation: beat 1s ease-in-out 0.5s infinite;
+  padding: 1rem;
   border-radius: 30px;
 }
 .discord {
@@ -368,6 +371,28 @@ header .hero-section .hero-content h1{
   filter: brightness(0.7);
 }
 /* header end */
+/* Tech start */
+section#tech {
+  background-color: var(--bg-color);
+}
+#tech ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#tech li {
+  margin: 1rem;
+}
+#tech li iconify-icon {
+  /* background-color: var(--main-color); */
+  color: var(--main-color);
+}
+#tech li iconify-icon:hover {
+  background-color: var(--main-color);
+  color: Var(--bg-color);
+}
+/* Tech end */
 
 /* Why us start */
 #why-us {
@@ -388,6 +413,13 @@ header .hero-section .hero-content h1{
   display: flex;
   flex-direction: column;
   width: 50%;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    justify-content: center;
+    align-items: center;
 }
 .p_right {
   display: flex;
@@ -420,7 +452,7 @@ header .hero-section .hero-content h1{
 .slider {
     position: relative;
     background: #000116;
-    width: 47%;
+    width: 100%;
     height: 420px;
     margin: 20px;
     overflow: hidden;
@@ -649,7 +681,7 @@ header .hero-section .hero-content h1{
   color: #fff;
 }
 #tracks .container .card .face {
-  width: 300px;
+  width: 310px;
   height: 200px;
   transition: 0.5s;
 }

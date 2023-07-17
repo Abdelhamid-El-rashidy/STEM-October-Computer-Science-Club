@@ -9,7 +9,6 @@
 
 /* start page */
 header {
-    height: 80vh;
     position: relative;
     background-image: url(imgs/sl_031420_28950_10.png) !important;
     background-color: var(--bg-color) !important;
@@ -40,7 +39,7 @@ header p {
 .track-hero-section {
     position: absolute;
     left: 50%;
-    top: 20%;
+    top: 25%;
     translate: -50%;
     width: 100%;
 }
@@ -128,10 +127,10 @@ header .member {
         font-size: 85% ;
     }
     header {
-        height: 110vh;
+        height: 80vh !important;
     }
     header h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     p.track-info {
         font-size: 9px !important;
