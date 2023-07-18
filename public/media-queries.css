@@ -12,7 +12,6 @@
     }
     header .hero-section {
         width: auto;
-        padding: 0 1rem;
         background-size: cover;
         background-position: top;
     }
@@ -93,8 +92,14 @@
     /* navbar */
 
     /* navbar */
-    header .hero-section .hero-content h1 {
+    header .hero-section .hero-content .hero-title {
+        width: 95%;
+    }
+    header .hero-section .hero-content .welcome {
         font-size: 1rem !important;
+    }
+    header .hero-section .hero-content .typewriter {
+        font-size: 1.3rem !important;
     }
     header .hero-section .hero-content {
         width: 100% !important;
