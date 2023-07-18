@@ -26,10 +26,11 @@
         border-radius: 5px;
         margin: 0 0.5rem;
     }
-    header p {
+    .hero-section .hero-content p {
+        font-size: 1rem !important;
         padding: 0rem !important;
-        font-size: 12px !important;
-    }
+
+      }
     .hero-section .hero-stats {
         align-items: center;
     }
