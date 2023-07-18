@@ -363,7 +363,7 @@ wrapper.addEventListener("mouseleave", autoPlay);
 
 // clicking effect
 var clickSound = new Audio();
-clickSound.src = "Sounds/Keyboard.mp3";
+clickSound.src = "Sounds/click-button.mp3";
 
 var clickedButtons = document.getElementsByClassName('click');
 for (var i = 0; i < clickedButtons.length; i++) {
