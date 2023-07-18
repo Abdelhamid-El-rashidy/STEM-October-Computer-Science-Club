@@ -373,25 +373,4 @@ for (var i = 0; i < clickedButtons.length; i++) {
 }
 
 
-// window.addEventListener('load', function() {
-//   setTimeout(playSound, 3000);
-// });
-
-// function playSound() {
-//   var keyboard = new Audio('Sounds/Keyboard.mp3');
-//   setTimeout(function() {
-//     keyboard.pause();
-//   }, 5000);
-// }
-
-window.addEventListener('DOMContentLoaded', function() {
-  var audio = new Audio('Sounds/Keyboard.mp3'); // Replace 'sound.mp3' with the actual path to your sound file
-
-  setTimeout(function() {
-    audio.play();
-    setTimeout(function() {
-      audio.pause();
-    }, 2000); // Pause after 6 seconds (6000 milliseconds)
-  }, 1000); // Delay autoplay by 3 seconds (3000 milliseconds)
-});
 
