@@ -22,6 +22,23 @@
 }
 
 /* Global elements start */
+.typewriter {
+  border-right: 4px solid var(--bg-color);
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  animation: typing 2s steps(21), cursor .4s step-end infinite alternate;
+  animation-delay: 2s;
+}
+img.amr-taha {
+  object-position: top;
+}
+@keyframes cursor {
+  50% {border-color: transparent;}
+}
+@keyframes typing {
+  from {width: 0;}
+}
 iconify-icon {
   font-size: 2.5rem;
   border-radius: 10px;
@@ -67,6 +84,7 @@ span.bef-header {
   transition: 0.5s;
   margin: 1rem 2rem;
   border-radius: 30px;
+  width: fit-content;
 }
 .bt:hover {
   box-shadow: 0 0 10px #2f51eb;
@@ -188,12 +206,12 @@ section .container {
 
 /* header start */
 header {
-    height: 100vh;
-    background-color: hsl(0deg 0% 0% / 45%);
-    background-image: url('imgs/sl_031420_28950_10.png'), url(imgs/Team.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: color-dodge;
+  height: 100vh;
+  background-color: #090f27ab;
+  background-image: url(imgs/sl_031420_28950_10.png), url(imgs/media5.jpg), linear-gradient(180deg,#0093ff7d 0%,#040405CC 100%);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: color-dodge;
 }
 nav {
   height: 10vh;
@@ -205,6 +223,7 @@ nav {
   width: 100%;
   z-index: 999;
   background-color: hsl(0deg 0% 0% / 40%);
+  transform: translate(0px, -60px);
 }
 
 nav .logo {
@@ -290,15 +309,35 @@ header .hero-section {
   align-items: center;
   height: 90vh;
   padding-top: 10vh;
+  overflow: hidden;
 }
 header .hero-section .hero-content {
   padding: 1.5rem 0;
-  width: 30rem;
+  width: 45rem;
+  display: flex;
   text-align: center !important;
+  flex-direction: column;
+  align-items: center;
+  /* transform: translate(0px, -60px); */
+  z-index: 1;
 }
 header .hero-section .hero-content h1{
-  font-size: 2.2rem;
+  font-size: 3rem;
   letter-spacing: 3px;
+  opacity: 0;
+  margin: 0;
+}
+.hero-content .welcome {
+  font-size: 2rem !important;
+}
+.hero-section .social-bar .social-link {
+  padding: 0 0.6rem;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    margin: 1rem;
+}
+.hero-section .hero-content p {
+  font-size: 1.5rem;
 }
 .community {
   margin: 0;
@@ -326,21 +365,23 @@ header .hero-section .hero-content h1{
   }
 }
 .hero-section .hero-stats {
-  height: 220px;
-  width: 80%;
+  padding: 1rem 0;
+  width: fit-content;
   display: flex;
   justify-content: space-evenly;
+  transform: translate(0px, 200px);
 }
 .hero-section .hero-stats div {
-  height: 140px;
-  width: 140px;
+  height: 120px;
+  width: 120px;
   background-image: var(--primary-gd);  
   border-radius: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  margin: 0 1rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   box-shadow: 0 0 10px #2f51eb;
   transition: all 0.5s;
@@ -356,21 +397,6 @@ header .hero-section .hero-content h1{
 }
 .hero-section .hero-stats div span {
   font-size: 1.4rem;
-}
-.team-img {
-  display: none;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.team-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -4;
-  filter: brightness(0.7);
 }
 /* header end */
 /* Tech start */
@@ -467,16 +493,15 @@ section#tech {
   height: 100%;
   clip-path: circle(0% at 0 50%);
 }
-.slide::before {
+.slide::after {
   content: '';
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: black;
+  background-image: linear-gradient(180deg,#0093ff7d 0%,#040405CC 100%);
   z-index: 1;
-  opacity: 0.2;
 }
 
 .slider .slide.active{
@@ -1129,7 +1154,43 @@ i.fa-solid.fa-user {
     grid-auto-columns: 100%;
   }
 }
-
+.contact-form {
+  background-color: var(--sec-bg-color);
+  position: relative;
+  padding: 2rem;
+}
+#contactform::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--sec-bg-color);
+  background-image: url(imgs/undraw_code_thinking_re_gka2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+form#contactform {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  z-index: 1;
+}
+.contact-form input {
+  border: 1px solid var(--bg-color);
+  padding: 0.5rem;
+  border-radius: 15px;
+  outline: 0;
+  width: 40%;
+  margin: 1rem;
+  z-index: 1;
+}
 /* team section end */
 
 /* Footer Start */
@@ -1189,3 +1250,18 @@ footer .lower-footer {
 }
 
 /* Footer end */
+
+
+
+
+
+
+
+canvas.particles-js-canvas-el {
+  width: 100% !important;
+  height: 100vh !important;
+  background-color: #00000096;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

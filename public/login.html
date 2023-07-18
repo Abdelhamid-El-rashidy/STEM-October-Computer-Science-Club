@@ -17,9 +17,11 @@
           <span>0</span><span><img src="imgs/official-logo.png" alt=""></span><span>1</span>
         </div>
       </div>
-    <a href="index.html">    <div class="back">
-        <i class="fa-sharp fa-solid fa-house"></i>
-    </div></a>
+    <a href="index.html">    
+        <div class="back">
+            <i class="fa-sharp fa-solid fa-house"></i>
+        </div>
+    </a>
     <div class="container" id="container">
         <div class="form-container sign-up-container">
             <form action="#">
@@ -27,21 +29,17 @@
                     <img src="imgs/official-logo.png" alt="" srcset="">
                 </div>
                 <h1>Add liscence</h1>
-                <button><a href="https://forms.gle/KW4otmPZ4MmBwKJ56" target="_blank">liscence Form</a></button>
+                <button class="liscence"><a href="https://forms.gle/KW4otmPZ4MmBwKJ56" target="_blank">liscence Form</a></button>
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <button><a href="https://forms.gle/KW4otmPZ4MmBwKJ56" target="_blank">liscence Form</a></button>
-            <form method="post" action="https://script.google.com/macros/s/AKfycbyE7XyC6_bsbm-NnIEMKf_TGxmIl-JKnAL9KwkWgnVB_KNHC2MrkGl3shi4MfQHOGB0hw/exec" name="contactform" id="contactform">
+            <button class="liscence"><a href="https://forms.gle/KW4otmPZ4MmBwKJ56" target="_blank">liscence Form</a></button>
+            <form method="post">
                 <div class="official-logo">
                     <img src="imgs/official-logo.png" alt="" srcset="">
                 </div>
-                <h1>Subscribe</h1>
-                <input name="name" id="name" type="text" placeholder="Your Name" required/>
-                <input name="email" id="email" type="email" placeholder="Your Email" required/>
-                <input name="number" id="phone" type="number" placeholder="Your Phone" required/>
-                <input type="submit" id="submit" value="Submit" class="bt">
-                <span id="success" style="color: blue;"></span>
+                <h1>Hackathon</h1>
+                <button><a href="https://forms.gle/KW4otmPZ4MmBwKJ56" target="_blank">Hackathon Form</a></button>
             </form>
         </div>
         <div class="overlay-container">
@@ -64,15 +62,7 @@
         const signUpButton = document.getElementById('signUp');
         const signInButton = document.getElementById('signIn');
         const container = document.getElementById('container');
-        const submitButton = document.getElementById('submit');
 
-        submitButton.addEventListener('click', () => {
-            // Access the input element
-            const inputElement = document.getElementById('submit');
-
-            // Change the value attribute
-            inputElement.value = 'Sending....';
-        });
         signUpButton.addEventListener('click', () => {
             container.classList.add("right-panel-active");
         });
@@ -80,30 +70,7 @@
         signInButton.addEventListener('click', () => {
             container.classList.remove("right-panel-active");
         });
-
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyE7XyC6_bsbm-NnIEMKf_TGxmIl-JKnAL9KwkWgnVB_KNHC2MrkGl3shi4MfQHOGB0hw/exec'
-			const form = document.forms['contactform']
-            const success = document.getElementById('success');
 		  
-			form.addEventListener('submit', e => {
-			  e.preventDefault()
-			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-				.then(response => {
-                    success.innerHTML = "Data submission successful&#x1F389! Welcome to our club. Stay tuned for email updates."
-                    const inputElement = document.getElementById('submit');
-
-                    // Change the value attribute
-                    inputElement.value = 'Submitted';
-
-
-                    setTimeout(function() {
-                        success.innerHTML= "";
-                    }, 5000);
-
-                    form.reset();
-                })
-				.catch(error => console.error('Error!', error.message))
-			})
 
             // Preloader
             window.addEventListener('load', () => {

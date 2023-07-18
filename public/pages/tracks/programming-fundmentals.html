@@ -48,7 +48,7 @@
         </div>
     </div>
     
-    <nav>
+    <nav id="navbar">
         <a class="logo" href="../../index.html">
           <div  class="logo"><img src="../../imgs/official-logo.png" alt=""></div>
         </a>
@@ -83,7 +83,7 @@
             <p class="instructors"><span>Instructors</p>
             <div class="instructor-imgs">
               <div class="member">
-                <img src="../../imgs/members/Amr taha.jpeg" alt="" srcset="">
+                <img class="amr-taha" src="../../imgs/members/Amr taha.jpeg" alt="" srcset="">
                 <p>Amr Taha</p>
               </div>
               <div class="member">
@@ -161,6 +161,7 @@
       </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
       <script>
 
         // Articles
@@ -195,7 +196,7 @@
           </div>
           <div class="card-bottom">
             <a href="${data["readMoreLink"]}" target="_blank" class="read-more">Read more</a>
-            <a href="${data["trackTagLink"]}" class="track-tag">${data["trackTagName"]}</a> 
+            <a href="../../${data["trackTagLink"]}" class="track-tag">${data["trackTagName"]}</a> 
           </div>
         </a> 
       `;

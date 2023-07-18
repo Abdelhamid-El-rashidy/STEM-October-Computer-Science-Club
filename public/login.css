@@ -270,7 +270,7 @@ footer a {
     color: #3c97bf;
     text-decoration: none;
 }
-.sign-in-container button {
+.sign-in-container .liscence {
 	display: none;
     position: absolute;
     top: -5px;
@@ -313,7 +313,7 @@ footer a {
 	.sign-up-container {
 		display: none;
 	}
-	.sign-in-container button {
+	.sign-in-container .liscence {
 		display: block;
 	}
 	a {

@@ -6,35 +6,28 @@
     section h2 {
         font-size: 1.5rem;
       }
-    .team-img {
-        display: block;
-      }
     header {
-        height: 100vh;
-        background-color: var(--bg-color);
-        background-image: url(imgs/sl_031420_28950_10.png), url(imgs/Team.jpeg);
-        background-size: contain;
         background-repeat: no-repeat;
         background-position: top;
-        background-blend-mode: normal;
     }
     header .hero-section {
+        width: auto;
         padding: 0 1rem;
-        background-image: url(imgs/sl_031420_28950_10.png);
         background-size: cover;
         background-position: top;
     }
     header .hero-section .hero-content {
-        width: auto;
-        padding: 2.5rem 0 1.5rem 0;
+        width: 100% !important;
+        padding: 5.5rem 0 1.5rem 0;
     }
     .hero-section .social-bar .social-link {
         padding: 0 0.6rem;
         background-color: var(--bg-color);
         border-radius: 5px;
+        margin: 0 0.5rem;
     }
     header p {
-        padding: 1rem !important;
+        padding: 0rem !important;
         font-size: 12px !important;
     }
     .hero-section .hero-stats {
@@ -81,6 +74,9 @@
     .extra-contact ul li {
         font-size: 0.6rem;
     }
+    .contact-form input {
+        width: 80%;
+      }
 }
 @media only screen and (max-width: 700px) {
     .bt {
@@ -97,14 +93,15 @@
 
     /* navbar */
     header .hero-section .hero-content h1 {
-        font-size: 2rem;
+        font-size: 1rem !important;
+    }
+    header .hero-section .hero-content {
+        width: 100% !important;
+        padding: 5.5rem 0 1.5rem 0;
     }
     
     header p {
         padding: 0 1rem;
-    }
-    .hero-section .hero-stats {
-        width: 100%;
     }
     .hero-section .hero-stats div {
         height: 100px;
@@ -177,6 +174,9 @@
     .social-bar .social-link {
         padding: 0 0.4rem;
     }
+    .contact-form input {
+        width: 70%;
+      }
 }
 
 
@@ -269,7 +269,7 @@
     display: none;
    }
    
-   .main{
+   .main {
     height: 100vh;
     display: flex;
     justify-content: center;

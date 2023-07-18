@@ -5,39 +5,6 @@ AOS.init({
 
 
 
-// Counter hero section
-const updatedCounters = [
-  { target: 60, elementId: "applicants-stats" },
-  { target: 5, elementId: "projects-stats" },
-  { target: 5, elementId: "articles-stats" }
-];
-
-const updatedDuration = 3000; // The duration in milliseconds for the counter effect
-const updatedInterval = 100; // The interval in milliseconds between each count update
-
-function updatedEaseOutQuad(t) {
-  return t * (2 - t);
-}
-
-updatedCounters.forEach(updatedCounter => {
-  let currentNumber = 0;
-  const increment = updatedCounter.target / (updatedDuration / updatedInterval);
-  const counterElement = document.getElementById(updatedCounter.elementId);
-  
-  const counterInterval = setInterval(() => {
-    currentNumber += increment;
-    const progress = updatedEaseOutQuad(currentNumber / updatedCounter.target);
-    const currentValue = Math.ceil(progress * updatedCounter.target);
-    
-    if (currentValue >= updatedCounter.target) {
-      clearInterval(counterInterval);
-      currentNumber = updatedCounter.target;
-    }
-    
-    counterElement.textContent = currentValue + "+";
-  }, updatedInterval);
-});
-
 
 // Counter tracks stats
 const counters = [
@@ -392,3 +359,39 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
+
+
+// clicking effect
+var clickSound = new Audio();
+clickSound.src = "Sounds/Keyboard.mp3";
+
+var clickedButtons = document.getElementsByClassName('click');
+for (var i = 0; i < clickedButtons.length; i++) {
+  clickedButtons[i].addEventListener('mousedown', function() {
+    clickSound.play();
+  });
+}
+
+
+// window.addEventListener('load', function() {
+//   setTimeout(playSound, 3000);
+// });
+
+// function playSound() {
+//   var keyboard = new Audio('Sounds/Keyboard.mp3');
+//   setTimeout(function() {
+//     keyboard.pause();
+//   }, 5000);
+// }
+
+window.addEventListener('DOMContentLoaded', function() {
+  var audio = new Audio('Sounds/Keyboard.mp3'); // Replace 'sound.mp3' with the actual path to your sound file
+
+  setTimeout(function() {
+    audio.play();
+    setTimeout(function() {
+      audio.pause();
+    }, 2000); // Pause after 6 seconds (6000 milliseconds)
+  }, 1000); // Delay autoplay by 3 seconds (3000 milliseconds)
+});
+
