@@ -208,7 +208,7 @@ section .container {
 header {
   height: 100vh;
   background-color: #090f27ab;
-  background-image: url(imgs/sl_031420_28950_10.png), url(imgs/media5.jpg), linear-gradient(180deg,#0093ff7d 0%,#040405CC 100%);
+  background-image: url(imgs/sl_031420_28950_10.png), url(imgs/media5.JPG), linear-gradient(180deg,#0093ff7d 0%,#040405CC 100%);
   background-size: cover;
   background-position: center;
   background-blend-mode: color-dodge;
