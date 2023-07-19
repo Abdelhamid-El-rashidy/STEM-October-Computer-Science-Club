@@ -6,6 +6,10 @@
     section h2 {
         font-size: 1.5rem;
       }
+      header .hero-section {
+        padding: 0 1rem !important;
+        flex-direction: column;
+    }
     header .hero-section .hero-content {
         width: 100% !important;
     }
@@ -19,6 +23,7 @@
         font-size: 0.8rem !important;
         padding: 0rem !important;
     }
+    
     .hero-section .hero-stats {
         align-items: center;
     }
@@ -97,15 +102,14 @@
         margin-bottom: 8rem;
     }
     .hero-img {
-        position: absolute;
-        left: 0;
+        left: 0 !important;
         width: 100%;
-        z-index: 2;
-        bottom: -33px;
+        bottom: -33px !important;
     }
     
     header p {
         padding: 0 1rem;
+        font-size: 0.9rem;
     }
     .hero-section .hero-stats div {
         height: 100px;
