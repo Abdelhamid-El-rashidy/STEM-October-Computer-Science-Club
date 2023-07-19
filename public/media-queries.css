@@ -6,6 +6,9 @@
     section h2 {
         font-size: 1.5rem;
       }
+    header {
+        overflow: hidden;
+    }    
       header .hero-section {
         padding: 4ren 1rem 0 0  !important;
         flex-direction: column;
@@ -13,6 +16,7 @@
     }
     header .hero-section .hero-content {
         width: 100% !important;
+        margin: 0 !important;
     }
     .hero-section .social-bar .social-link {
         padding: 0 0.6rem;
