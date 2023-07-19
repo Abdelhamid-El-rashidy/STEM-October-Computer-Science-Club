@@ -112,7 +112,7 @@
     
     header p {
         padding: 0 1rem;
-        font-size: 0.9rem;
+        font-size: 0.9rem !important;
     }
     .hero-section .hero-stats div {
         height: 100px;
