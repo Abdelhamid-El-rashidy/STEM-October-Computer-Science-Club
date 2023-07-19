@@ -579,16 +579,21 @@ loop();
 
 // Counter tracks stats
 const counters = [
-  { target: 2, elementId: "alg-DS-art" },
+  { target: 3, elementId: "alg-DS-art" },
   { target: 0, elementId: "alg-DS-proj" },
+
   { target: 0, elementId: "web-art" },
   { target: 2, elementId: "web-proj" },
-  { target: 0, elementId: "mobile-art" },
-  { target: 0, elementId: "mobile-proj" },
-  { target: 1, elementId: "machine-learning-art" },
+
+  { target: 1, elementId: "mobile-art" },
+  { target: 1, elementId: "mobile-proj" },
+
+  { target: 2, elementId: "machine-learning-art" },
   { target: 0, elementId: "machine-learning-proj" },
+
   { target: 2, elementId: "robotics-art" },
   { target: 0, elementId: "robotics-proj" },
+  
   { target: 0, elementId: "fundamentals-art" },
   { target: 0, elementId: "fundamentals-proj" }
 ];
