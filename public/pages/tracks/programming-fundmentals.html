@@ -168,7 +168,7 @@
         let articleContainer = document.getElementById("articles-container");
 
         // fetch json data
-        fetch("https://csc-e925.onrender.com/api/articles?trackTagName=Fundamentals")
+        fetch("https://www.stemcomputerscienceclub.org/api/articles?trackTagName=Fundamentals")
         .then(res => res.json())
         .then(json => {
             json.map(data => {
@@ -210,7 +210,7 @@
 
 
         // fetch json data
-        fetch("https://csc-e925.onrender.com/api/projects?trackTagName=fundamentals")
+        fetch("https://www.stemcomputerscienceclub.org/api/projects?trackTagName=fundamentals")
           .then(res => res.json())
           .then(json => {
             json.map(data => {
