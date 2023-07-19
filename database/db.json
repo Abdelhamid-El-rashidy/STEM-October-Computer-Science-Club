@@ -2,6 +2,16 @@
     "articles": [
       {
         "id": 1,
+        "image": "imgs/articles-cover/article-img-8.jpg",
+        "title": "Dynamic Programming: Unlocking Efficient Solutions in Computer Science",
+        "date": "Tuesday, July 18, 2023",
+        "intro": "Dynamic Programming has emerged as a game-changer in computer science. Its impacts on algorithm design is huge as we will know in this article.",
+        "readMoreLink": "https://www.linkedin.com/pulse/dynamic-programming-unlocking-efficient-solutions?utm_source=share&utm_medium=member_android&utm_campaign=share_via",
+        "trackTagName": "Alg&DS",
+        "trackTagLink": "pages/tracks/Alg&DS.html"
+      },
+      {
+        "id": 2,
         "image": "imgs/articles-cover/article-img-7.jpg",
         "title": "Numpy and Pandas",
         "date": "Sunday, July 9, 2023",
@@ -11,7 +21,7 @@
         "trackTagLink": "pages/tracks/machine-learning.html"
       },
       {
-        "id": 2,
+        "id": 3,
         "image": "imgs/articles-cover/article-img-6.jpg",
         "title": "Cross-Platform Showdown: Flutter vs. The Rest - A Simplified Deep Dive",
         "date": "Wednesday, July 5, 2023",
@@ -21,7 +31,7 @@
         "trackTagLink": "pages/tracks/app-development.html"
       },
       {
-        "id": 3,
+        "id": 4,
         "image": "imgs/articles-cover/article-img-5.jpeg",
         "title": "Binary Search Vs Linear Search",
         "date": "Sunday, July 2, 2023",
@@ -31,7 +41,7 @@
         "trackTagLink": "pages/tracks/Alg&DS.html"
       },
       {
-        "id": 4,
+        "id": 5,
         "image": "imgs/articles-cover/article-img-4.png",
         "title": "Basics of Electronics",
         "date": "Thursday, June 1, 2023",
@@ -41,7 +51,7 @@
         "trackTagLink": "pages/tracks/Robotics.html"
       },
       {
-        "id": 5,
+        "id": 6,
         "image": "imgs/articles-cover/article-img-3.png",
         "title": "How can modern robots benefit the world",
         "date": "Friday, May 12, 2023",
@@ -51,7 +61,7 @@
         "trackTagLink": "pages/tracks/Robotics.html"
       },
       {
-        "id": 6,
+        "id": 7,
         "image": "imgs/articles-cover/article-img-2.png",
         "title": "How may ChatGPT help you with your studies?",
         "date": "Friday, May 12, 2023",
@@ -61,7 +71,7 @@
         "trackTagLink": "pages/tracks/machine-learning.html"
       },
       {
-        "id": 7,
+        "id": 8,
         "image": "imgs/articles-cover/article-img-1.jpeg",
         "title": "Add To Your Knowledge in Algorithms",
         "date": "Friday, May 12, 2023",
@@ -80,7 +90,7 @@
         "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
         "trackTagName": "Web-Development",
         "trackTagLink": "pages/tracks/web-development.html",
-        "githubLink": "https://example.com/article-1"
+        "githubLink": "https://github.com/Abdelhamid-El-rashidy/Responsive-web-page"
       },
       {
         "id": 2,
@@ -110,7 +120,7 @@
         "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
         "trackTagName": "Web-Development",
         "trackTagLink": "pages/tracks/web-development.html",
-        "githubLink": "https://abdelhamid-el-rashidy.github.io/Guess-Number/"
+        "githubLink": "https://github.com/Abdelhamid-El-rashidy/Guess-game"
       }
     ]
   }
