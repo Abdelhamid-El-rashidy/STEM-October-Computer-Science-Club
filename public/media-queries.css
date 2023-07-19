@@ -9,14 +9,14 @@
     header {
         overflow: hidden;
     }    
-      header .hero-section {
-        padding: 4ren 1rem 0 0  !important;
+    header .hero-section {
+        padding: 4rem 0 0 0 !important;
         flex-direction: column;
-        margin-top: 0 !important;
+        justify-content: center;
     }
     header .hero-section .hero-content {
         width: 100% !important;
-        margin: 0 !important;
+        margin: 0 0 2rem 0 !important;
     }
     .hero-section .social-bar .social-link {
         padding: 0 0.6rem;
@@ -302,7 +302,6 @@
     nav .main-list, nav .bt {
        display: none;
     }
-    
     .our_team .team-info {
         width: 100%;
     }
