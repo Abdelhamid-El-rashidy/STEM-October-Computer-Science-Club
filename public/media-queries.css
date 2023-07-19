@@ -283,21 +283,7 @@
     z-index: 10000;
     display: none;
    }
-   
-   .main {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-   }
-   
-   .main h1{
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 60px;
-    text-align: center;
-    line-height: 80px;
-   }
+
    
    @media (max-width: 1120px){
     body {
