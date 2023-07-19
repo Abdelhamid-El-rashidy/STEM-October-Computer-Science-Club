@@ -307,7 +307,7 @@ header .hero-section {
   /* flex-direction: column; */
   justify-content: space-between;
   align-items: center;
-  height: initial;
+  height: inherit;
   padding-top: 10vh;
   overflow: hidden;
 }
