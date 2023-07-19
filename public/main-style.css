@@ -207,11 +207,11 @@ section .container {
 /* header start */
 header {
   height: 100vh;
-  background-color: #090f27ab;
-  background-image: url(imgs/sl_031420_28950_10.png), url(imgs/media5.JPG), linear-gradient(180deg,#0093ff7d 0%,#040405CC 100%);
+  background-color: var(--bg-color);
+  background-image: url(imgs/sl_031420_28950_10.png), linear-gradient(293deg,#0093ff57 0%,#05056800 100%);
   background-size: cover;
   background-position: center;
-  background-blend-mode: color-dodge;
+  background-blend-mode: difference;
 }
 nav {
   height: 10vh;
@@ -304,10 +304,10 @@ nav ul li {
 header .hero-section {
   padding: 0 2rem;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: space-between;
   align-items: center;
-  height: 90vh;
+  height: initial;
   padding-top: 10vh;
   overflow: hidden;
 }
@@ -338,6 +338,7 @@ header .hero-section .hero-content h1{
 }
 .hero-section .hero-content p {
   font-size: 1.5rem;
+  margin: 0;
 }
 .community {
   margin: 0;
@@ -1159,16 +1160,13 @@ i.fa-solid.fa-user {
   position: relative;
   padding: 2rem;
 }
-#contactform::after {
-  content: '';
+.contact-img {
   width: 100%;
   height: 100%;
   opacity: 0.2;
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: var(--sec-bg-color);
-  background-image: url(imgs/undraw_code_thinking_re_gka2.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1265,3 +1263,74 @@ canvas.particles-js-canvas-el {
   top: 0;
   left: 0;
 }
+
+.hero-img {
+  position: absolute;
+  top: 15%;
+  right: 0;
+  width: 625px;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+	box-sizing: border-box;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	-moz-tap-highlight-color: transparent;
+	-ms-tap-highlight-color: transparent;
+	-o-tap-highlight-color: transparent;
+	tap-highlight-color: transparent;
+}
+
+*,
+:before,
+:after {
+	box-sizing: inherit;
+}
+
+
+canvas {
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-contain: strict;
+  -moz-contain: strict;
+  -ms-contain: strict;
+  -o-contain: strict;
+  contain: strict;
+}
+
+#freepik--character-1--inject-4, #freepik--character-2--inject-4 {
+  translate: -30rem;
+}
+#freepik--character-3--inject-4, #freepik--character-4--inject-4 {
+  translate: 30rem;
+}
+
+
+
+
+
+
+	/* background: linear-gradient(45deg, rgba(255,175,189,.7), rgba(100,216,243,.7), rgba(234,236,198,.7), rgba(245,146,176,.7), rgba(52,219,216,.7)) 0 0 / 1000% no-repeat, url(https://picsum.photos/g/2000/1200?image=443) 0 0 / cover no-repeat; */

@@ -41,6 +41,14 @@ window.addEventListener('load', () => {
   // tl.to(".hero-content", {y: 0, duration: 1});
   tl.to(".hero-content h1", {opacity:1, duration: 0.5});
   tl.to(".hero-stats", {y:0, duration: 1});  
+  tl.to("#freepik--character-1--inject-4", {x:0, duration: 0.5}); 
+  tl.to("#freepik--character-2--inject-4", {x:0, duration: 0.5}); 
+  tl.to("#freepik--character-3--inject-4", {x:0, duration: 0.5}); 
+  tl.to("#freepik--character-4--inject-4", {x:0, duration: 0.5}); 
+
+  
+
+
 
 
   // Counter hero section
