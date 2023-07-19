@@ -14,12 +14,12 @@
     font-size: 16px;
     line-height: 1.5;
   }
-*{
-  scroll-behavior: smooth;
-}
-  .selector-for-some-widget {
-  box-sizing: content-box;
-}
+  *{
+    scroll-behavior: smooth;
+  }
+    .selector-for-some-widget {
+    box-sizing: content-box;
+  }
 
 /* Global elements start */
 .typewriter {
