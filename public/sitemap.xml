@@ -13,62 +13,62 @@
   </url>
 
   <url>
-    <loc>https://www.stemcomputerscienceclub.org/login</loc>
+    <loc>https://www.stemcomputerscienceclub.org/login.html</loc>
     <lastmod>2023-07-19T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://www.stemcomputerscienceclub.org/pages/articles</loc>
+    <loc>https://www.stemcomputerscienceclub.org/pages/articles.html</loc>
     <lastmod>2023-07-19T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.stemcomputerscienceclub.org/pages/projects</loc>
+    <loc>https://www.stemcomputerscienceclub.org/pages/projects.html</loc>
     <lastmod>2023-07-19T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.stemcomputerscienceclub.org/pages/tracks/Alg&amp;DS</loc>
+    <loc>https://www.stemcomputerscienceclub.org/pages/tracks/Alg&amp;DS.html</loc>
     <lastmod>2023-07-19T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.stemcomputerscienceclub.org/pages/tracks/app-development</loc>
+    <loc>https://www.stemcomputerscienceclub.org/pages/tracks/app-development.html</loc>
     <lastmod>2023-07-19T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.stemcomputerscienceclub.org/pages/tracks/machine-learning</loc>
+    <loc>https://www.stemcomputerscienceclub.org/pages/tracks/machine-learning.html</loc>
     <lastmod>2023-07-19T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.stemcomputerscienceclub.org/pages/tracks/programming-fundamentals</loc>
+    <loc>https://www.stemcomputerscienceclub.org/pages/tracks/programming-fundamentals.html</loc>
     <lastmod>2023-07-19T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.stemcomputerscienceclub.org/pages/tracks/Robotics</loc>
+    <loc>https://www.stemcomputerscienceclub.org/pages/tracks/Robotics.html</loc>
     <lastmod>2023-07-19T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.stemcomputerscienceclub.org/pages/tracks/web-development</loc>
+    <loc>https://www.stemcomputerscienceclub.org/pages/tracks/web-development.html</loc>
     <lastmod>2023-07-19T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
     <changefreq>weekly</changefreq>

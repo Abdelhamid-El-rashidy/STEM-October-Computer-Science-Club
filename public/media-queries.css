@@ -18,6 +18,9 @@
         width: 100% !important;
         margin: 3rem 0 0 0 !important;
     }
+    .hero-section .social-bar {
+        margin: 0.5rem 0 !important;
+    }
     .hero-section .social-bar .social-link {
         padding: 0 0.6rem;
         background-color: var(--bg-color);

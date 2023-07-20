@@ -38,7 +38,6 @@ window.addEventListener('load', () => {
 
   var tl = gsap.timeline({Delay: 5});
   tl.to("#navbar", {y: 0, duration: 1});
-  // tl.to(".hero-content", {y: 0, duration: 1});
   tl.to(".hero-content h1", {opacity:1, duration: 0.5});
   tl.to(".hero-stats", {y:0, duration: 1});  
   tl.to("#freepik--character-1--inject-4", {x:0, duration: 0.5}); 

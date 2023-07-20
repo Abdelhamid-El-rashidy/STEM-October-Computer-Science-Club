@@ -386,15 +386,6 @@ header .hero-section .hero-content h1{
   text-transform: uppercase;
   box-shadow: 0 0 10px #2f51eb;
   transition: all 0.5s;
-  animation: beat 1s ease-in-out 0.5s infinite;
-}
-@keyframes beat {
-  from{
-    scale: 1;
-  }
-  to{
-    scale: 1.05;
-  }
 }
 .hero-section .hero-stats div span {
   font-size: 1.4rem;
