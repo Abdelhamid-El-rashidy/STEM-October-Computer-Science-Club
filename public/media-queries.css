@@ -10,13 +10,13 @@
         overflow: hidden;
     }    
     header .hero-section {
-        padding: 4rem 0 0 0 !important;
+        padding: 4rem 0.5rem 0rem 0.5rem !important;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
     }
     header .hero-section .hero-content {
         width: 100% !important;
-        margin: 0 0 8rem 0 !important;
+        margin: 3rem 0 0 0 !important;
     }
     .hero-section .social-bar .social-link {
         padding: 0 0.6rem;
