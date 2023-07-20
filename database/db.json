@@ -8,7 +8,7 @@
         "intro": "Dynamic Programming has emerged as a game-changer in computer science. Its impacts on algorithm design is huge as we will know in this article.",
         "readMoreLink": "https://www.linkedin.com/pulse/dynamic-programming-unlocking-efficient-solutions?utm_source=share&utm_medium=member_android&utm_campaign=share_via",
         "trackTagName": "Alg-DS",
-        "trackTagLink": "pages/tracks/Alg&DS.html"
+        "trackTagLink": "pages/tracks/Alg&DS"
       },
       {
         "id": 2,
@@ -18,7 +18,7 @@
         "intro": "Numpy and Pandas are indispensable tools in machine learning. Numpy is a fundamental package for scientific computing. Pandas is an open-source data manipulation for Python.",
         "readMoreLink": "https://www.linkedin.com/feed/update/urn:li:activity:7081019136008421376",
         "trackTagName": "Machine-Learning",
-        "trackTagLink": "pages/tracks/machine-learning.html"
+        "trackTagLink": "pages/tracks/machine-learning"
       },
       {
         "id": 3,
@@ -28,7 +28,7 @@
         "intro": "In recent years, the tech industry has witnessed a surge in cross-platform frameworks. Among the leading players, Flutter and such each, bring unique strengths to the table.",
         "readMoreLink": "https://www.linkedin.com/feed/update/urn:li:activity:7081019136008421376",
         "trackTagName": "Mobile-Developement",
-        "trackTagLink": "pages/tracks/app-development.html"
+        "trackTagLink": "pages/tracks/app-development"
       },
       {
         "id": 4,
@@ -38,7 +38,7 @@
         "intro": "We discuss the difference between Binary Search and Linear Search.",
         "readMoreLink": "https://www.linkedin.com/feed/update/urn:li:activity:7081019136008421376",
         "trackTagName": "Alg-DS",
-        "trackTagLink": "pages/tracks/Alg&DS.html"
+        "trackTagLink": "pages/tracks/Alg&DS"
       },
       {
         "id": 5,
@@ -48,7 +48,7 @@
         "intro": "This article talks about the main electronic components to make a real circuit.",
         "readMoreLink": "https://www.linkedin.com/feed/update/urn:li:activity:7070134578442551296",
         "trackTagName": "Robotics",
-        "trackTagLink": "pages/tracks/Robotics.html"
+        "trackTagLink": "pages/tracks/Robotics"
       },
       {
         "id": 6,
@@ -58,7 +58,7 @@
         "intro": "This article talks about modern robots and how they develop to benefit our world.",
         "readMoreLink": "https://www.linkedin.com/feed/update/urn:li:activity:7062789766714396673",
         "trackTagName": "Robotics",
-        "trackTagLink": "pages/tracks/Robotics.html"
+        "trackTagLink": "pages/tracks/Robotics"
       },
       {
         "id": 7,
@@ -68,7 +68,7 @@
         "intro": "This article talks about ChatGPT. Additionally, How can it aid in the student’s studies?",
         "readMoreLink": "https://www.linkedin.com/feed/update/urn:li:activity:7062781059028987905",
         "trackTagName": "Machine-Learning",
-        "trackTagLink": "pages/tracks/machine-learning.html"
+        "trackTagLink": "pages/tracks/machine-learning"
       },
       {
         "id": 8,
@@ -78,7 +78,7 @@
         "intro": "This article talks about some types of algorithms that can help in solving challenging problems in the Computer Science field.",
         "readMoreLink": "https://www.linkedin.com/feed/update/urn:li:activity:7062776643328630786",
         "trackTagName": "Alg-DS",
-        "trackTagLink": "pages/tracks/Alg&DS.html"
+        "trackTagLink": "pages/tracks/Alg&DS"
       }
     ],
     "projects": [
@@ -89,7 +89,7 @@
         "contributor": "Abdelhamid Ahmed",
         "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
         "trackTagName": "Web-Development",
-        "trackTagLink": "pages/tracks/web-development.html",
+        "trackTagLink": "pages/tracks/web-development",
         "githubLink": "https://github.com/Abdelhamid-El-rashidy/Responsive-web-page"
       },
       {
@@ -99,7 +99,7 @@
         "contributor": "Ahmed Adel",
         "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
         "trackTagName": "Fundamentals",
-        "trackTagLink": "pages/tracks/programming-fundmentals.html",
+        "trackTagLink": "pages/tracks/programming-fundmentals",
         "githubLink": "https://github.com/medo962006/Ahmed-Adel-Rashad-CS-club-Project"
       },
       {
@@ -109,7 +109,7 @@
         "contributor": "Mostafa Ibrahim & Mina Ashraf",
         "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
         "trackTagName": "Mobile-Developement",
-        "trackTagLink": "pages/tracks/app-development.html",
+        "trackTagLink": "pages/tracks/app-development",
         "githubLink": "https://github.com/mostafaibrahim10010/deafhelper/"
       },
       {
@@ -119,7 +119,7 @@
         "contributor": "Abdelhamid Ahmed",
         "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
         "trackTagName": "Web-Development",
-        "trackTagLink": "pages/tracks/web-development.html",
+        "trackTagLink": "pages/tracks/web-development",
         "githubLink": "https://github.com/Abdelhamid-El-rashidy/Guess-game"
       }
     ]
