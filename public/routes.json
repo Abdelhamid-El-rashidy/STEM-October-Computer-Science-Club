@@ -1,0 +1,16 @@
+[
+    {
+      "handle": "filesystem",
+      "src": "/(.*)\\.html",
+      "status": 200,
+      "headers": {
+        "Location": "/$1"
+      }
+    },
+    {
+      "handle": "filesystem",
+      "src": "/*",
+      "destination": "/index.html"
+    }
+  ]
+  
