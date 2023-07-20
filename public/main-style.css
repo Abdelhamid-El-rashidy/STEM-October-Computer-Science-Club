@@ -111,7 +111,7 @@ section h2 {
 section h2::after {
     content: '';
     display: block;
-    width: 110%;
+    width: 120%;
     height: 100%;
     position: absolute;
     left: 50%;
@@ -1174,11 +1174,14 @@ form#contactform {
 .contact-form input {
   border: 1px solid var(--bg-color);
   padding: 0.5rem;
-  border-radius: 15px;
+  border-radius: 10px;
   outline: 0;
   width: 40%;
   margin: 1rem;
   z-index: 1;
+}
+.contact-form input[type="submit"] {
+  border-radius: 10px;
 }
 /* team section end */
 
