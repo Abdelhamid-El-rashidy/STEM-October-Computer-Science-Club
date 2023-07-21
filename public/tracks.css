@@ -53,6 +53,7 @@ header .instructors {
 .instructor-imgs {
     display: flex;
     justify-content: center;
+    margin-bottom: 4rem;
 }
 header .member {
     margin: 1rem;
@@ -71,7 +72,6 @@ header .member {
 .member p {
     text-align: center;
     font-size: 14px;
-    text-wrap: nowrap;
 }
 .track-hero-section .track-info {
     text-align: center;
