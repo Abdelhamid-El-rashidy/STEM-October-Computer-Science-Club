@@ -112,7 +112,7 @@
       },
       {
         "id": 3,
-        "image": "imgs/Projects/Home page - Grumpy Potato.JPG",
+        "image": "imgs/Projects/Home page - Grumpy Potato.jpg",
         "title": "Cooking Cat",
         "contributor": "salma karim & Sara karim & Retal Muhammad",
         "intro": "Our project is a website that offers desserts , lunch and breakfast recipes. It contain easy and fast recipes.  We tried to make the website colorful and fun to look at as good as possible. We tried to make our design cute and be loved by everyone. We get the idea of the website because we love both cats and cooking so we combine them to get this idea and we really hope that you will love it.",
@@ -162,7 +162,7 @@
       },
       {
         "id": 8,
-        "image": "imgs/Projects/Mohamed Zaki.png",
+        "image": "imgs/Projects/Mohamed Zaki.PNG",
         "title": "Interactive quiz",
         "contributor": "Mohamed Zaki",
         "intro": "ِِِِِِِِِِِِِِِِِِِِِِِِAn interactive quiz application that allows users to answer multiple-choice questions on Computer science. A set of multiple-choice questions on different topics of computer science. One question is displayed at a time, with radio buttons for the answer options that allow users to select an answer and move to the next question. There is a timer to each quiz to make it more challenging. The users are free to choose the difficulty of the exam (Easy, Medium, or Hard). I used HTML for creating the quiz structure, CSS for styling the user interface, and JavaScript for handling user interactions and scoring. ",
@@ -172,7 +172,7 @@
       },
       {
         "id": 9,
-        "image": "imgs/Projects/Omar Hossam.png",
+        "image": "imgs/Projects/Omar Hossam.PNG",
         "title": "MailCrafter",
         "contributor": "Omar Hossam",
         "intro": "MailCrafter service provides a web application with the ability to craft new mails in an easier way. You can also schedule your mails for a later send. The application is composed of several inputs and a schedule section. Insert your first, and last name, then the targeted email, and lastly the message. After that, you may schedule the mail if you wish(optional). Lastly, press the submit button :)",
@@ -182,7 +182,7 @@
       },
       {
         "id": 10,
-        "image": "imgs/Projects/todo_app - Farouk Farag.JPG",
+        "image": "imgs/Projects/todo_app - Farouk Farag.jpg",
         "title": "Todo app",
         "contributor": "Farouk Farrag",
         "intro": "One of two things can be accomplished with the use of the to-do app. The app's initial feature allows you to create a to-do list with as many items as you like. You may customize the task's title, description, and due date. The work can be removed or marked as finished with a smooth transition. The app's second page can be accessed by swiping or from the bottom navigation bar. The notes page is the second page of the program, where you can write anything you want and edit or erase it as well",
@@ -221,7 +221,7 @@
       },
       {
         "id": 14,
-        "image": "imgs/Projects/Robotics - farouk farag.JPG",
+        "image": "imgs/Projects/Robotics - farouk farag.jpg",
         "title": "JUST SEED IT!",
         "contributor": "Farouk Farrag & Jomana Abdelmohsen & Ammar Mohamed & Asmara Fares & Seif-eldin Ali", 
         "intro": "The project's objective is to offer the ideal atmosphere for plants to grow in, not just one species but any specie of plants, as the project can alter the environment to suit any specie by adjusting the fertilizer, pesticide, light, water, and temperature. You only can get all these results without any human intervention. All you have to do is JUST SEED IT!",
@@ -231,7 +231,7 @@
       },
       {
         "id": 15,
-        "image": "imgs/Projects/Ahmed Tolba.png",
+        "image": "imgs/Projects/sg - Ahmed Tolba.PNG",
         "title": "BioSensPlant",
         "contributor": "Ahmed Tolba",
         "intro": "An automated plant care system with three sensors has been developed to monitor soil moisture, air temperature, and light levels. Soil moisture is assessed, and if necessary, irrigation is activated. Air temperature is monitored, triggering irrigation when needed. The LDR sensor measures light levels, activating RGB LEDs in low light conditions. This passive system ensures optimal plant care and environmental conditions for growth.",
@@ -241,7 +241,7 @@
       },
       {
         "id": 16,
-        "image": "imgs/Projects/Biocare Robot.png",
+        "image": "imgs/Projects/Biocare Robot.PNG",
         "title": "PlantCare Robot",
         "contributor": "Ahmed Saif Eldeen & Ahmed Abd El-Hamid &  Menna Hany & Seif Atwaa & Arwa Salah",
         "intro": "PlantCareBot is an intelligent gardening assistant designed to enhance plant care and growth. The robot utilizes sensors, including soil moisture, PIR, and light sensors, to monitor and respond to the plant's needs. It automatically waters the plants when the soil moisture is low, detects animal movement for plant protection, and provides artificial lighting during low-light conditions. PlantCareBot combines robotics and sensor technology to create an efficient and autonomous solution for maintaining healthy and thriving plants.",

@@ -224,7 +224,6 @@ nav {
   width: 100%;
   z-index: 999;
   background-color: hsl(0deg 0% 0% / 40%);
-  transform: translate(0px, -60px);
 }
 
 nav .logo {
@@ -325,7 +324,6 @@ header .hero-section .hero-content {
 header .hero-section .hero-content h1{
   font-size: 3rem;
   letter-spacing: 3px;
-  opacity: 0;
   margin: 0;
 }
 .hero-content .welcome {
@@ -371,7 +369,6 @@ header .hero-section .hero-content h1{
   width: fit-content;
   display: flex;
   justify-content: space-evenly;
-  transform: translate(0px, 200px);
 }
 .hero-section .hero-stats div {
   height: 120px;
@@ -1266,13 +1263,6 @@ canvas {
   -ms-contain: strict;
   -o-contain: strict;
   contain: strict;
-}
-
-#freepik--character-1--inject-4, #freepik--character-2--inject-4 {
-  translate: -30rem;
-}
-#freepik--character-3--inject-4, #freepik--character-4--inject-4 {
-  translate: 30rem;
 }
 
 
