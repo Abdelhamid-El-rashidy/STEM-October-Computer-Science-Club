@@ -5,6 +5,7 @@
         "image": "imgs/articles-cover/article-img-8.jpg",
         "title": "Dynamic Programming: Unlocking Efficient Solutions in Computer Science",
         "date": "Tuesday, July 18, 2023",
+        "writer": "Ahmed Gamal",
         "intro": "Dynamic Programming has emerged as a game-changer in computer science. Its impacts on algorithm design is huge as we will know in this article.",
         "readMoreLink": "https://www.linkedin.com/pulse/dynamic-programming-unlocking-efficient-solutions?utm_source=share&utm_medium=member_android&utm_campaign=share_via",
         "trackTagName": "Alg-DS",
@@ -15,6 +16,7 @@
         "image": "imgs/articles-cover/article-img-7.jpg",
         "title": "Numpy and Pandas",
         "date": "Sunday, July 9, 2023",
+        "writer": "Ahmed Shalaby",
         "intro": "Numpy and Pandas are indispensable tools in machine learning. Numpy is a fundamental package for scientific computing. Pandas is an open-source data manipulation for Python.",
         "readMoreLink": "https://www.linkedin.com/feed/update/urn:li:activity:7081019136008421376",
         "trackTagName": "Machine-Learning",
@@ -25,6 +27,7 @@
         "image": "imgs/articles-cover/article-img-6.jpg",
         "title": "Cross-Platform Showdown: Flutter vs. The Rest - A Simplified Deep Dive",
         "date": "Wednesday, July 5, 2023",
+        "writer": "Ahmed Gamal",
         "intro": "In recent years, the tech industry has witnessed a surge in cross-platform frameworks. Among the leading players, Flutter and such each, bring unique strengths to the table.",
         "readMoreLink": "https://www.linkedin.com/feed/update/urn:li:activity:7081019136008421376",
         "trackTagName": "Mobile-Developement",
@@ -35,6 +38,7 @@
         "image": "imgs/articles-cover/article-img-5.jpeg",
         "title": "Binary Search Vs Linear Search",
         "date": "Sunday, July 2, 2023",
+        "writer": "Ahmed Gamal",
         "intro": "We discuss the difference between Binary Search and Linear Search.",
         "readMoreLink": "https://www.linkedin.com/feed/update/urn:li:activity:7081019136008421376",
         "trackTagName": "Alg-DS",
@@ -45,6 +49,7 @@
         "image": "imgs/articles-cover/article-img-4.png",
         "title": "Basics of Electronics",
         "date": "Thursday, June 1, 2023",
+        "writer": "Mohammed Abdallah",
         "intro": "This article talks about the main electronic components to make a real circuit.",
         "readMoreLink": "https://www.linkedin.com/feed/update/urn:li:activity:7070134578442551296",
         "trackTagName": "Robotics",
@@ -55,6 +60,7 @@
         "image": "imgs/articles-cover/article-img-3.png",
         "title": "How can modern robots benefit the world",
         "date": "Friday, May 12, 2023",
+        "writer": "Ahmed Gamal",
         "intro": "This article talks about modern robots and how they develop to benefit our world.",
         "readMoreLink": "https://www.linkedin.com/feed/update/urn:li:activity:7062789766714396673",
         "trackTagName": "Robotics",
@@ -65,6 +71,7 @@
         "image": "imgs/articles-cover/article-img-2.png",
         "title": "How may ChatGPT help you with your studies?",
         "date": "Friday, May 12, 2023",
+        "writer": "Ahmed Gamal",
         "intro": "This article talks about ChatGPT. Additionally, How can it aid in the student’s studies?",
         "readMoreLink": "https://www.linkedin.com/feed/update/urn:li:activity:7062781059028987905",
         "trackTagName": "Machine-Learning",
@@ -75,6 +82,7 @@
         "image": "imgs/articles-cover/article-img-1.jpeg",
         "title": "Add To Your Knowledge in Algorithms",
         "date": "Friday, May 12, 2023",
+        "writer": "Ahmed Shalaby",
         "intro": "This article talks about some types of algorithms that can help in solving challenging problems in the Computer Science field.",
         "readMoreLink": "https://www.linkedin.com/feed/update/urn:li:activity:7062776643328630786",
         "trackTagName": "Alg-DS",
@@ -84,16 +92,219 @@
     "projects": [
       {
         "id": 1,
-        "image": "imgs/Projects/web-page.png",
-        "title": "Web developer page",
-        "contributor": "Abdelhamid Ahmed",
-        "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
-        "trackTagName": "Web-Development",
-        "trackTagLink": "pages/tracks/web-development",
-        "githubLink": "https://github.com/Abdelhamid-El-rashidy/Responsive-web-page"
+        "image": "imgs/Projects/CurrencyConv.jpg",
+        "title": "CurrencyConv",
+        "contributor": "Ahmed Shalaby",
+        "intro": "The application is used to convert currency from USD to currency like EGP, EUR, GBP, SAR, AED, CAD, JPY, and KWD. The application is designed by Flutter. There's an icon that is used on the interface of the application. The application is designed for both android and iOS.",
+        "trackTagName": "Mobile-Developement",
+        "trackTagLink": "pages/tracks/app-development",
+        "githubLink": "https://github.com/shalaby2004/CurrencyConv.git"
       },
       {
         "id": 2,
+        "image": "imgs/Projects/Omar Elgaar.jpg",
+        "title": "RoboCup Maze track",
+        "contributor": "Omar Elgaar",
+        "intro": "This is the start of my project that I will use in RoboCup in the maze track. This project will be edited more for RoboCup. This robot aims to rescue people from a maze and in the end get out from the maze.",
+        "trackTagName": "Robotics",
+        "trackTagLink": "pages/tracks/Robotics",
+        "githubLink": "https://drive.google.com/file/d/1XRXhsSQ30GS4X6NSckFugLyG0AybjISX/view?usp=sharing"
+      },
+      {
+        "id": 3,
+        "image": "imgs/Projects/Steps.png",
+        "title": "Maram Soliman",
+        "contributor": "Maram Soliman",
+        "intro": "Steps is an mobile application that is developed by Flutter and Dart and aims to help people who face panic attacks in dealing with it in a simple way according to scientific steps and through it I hope to help people to feel safe and good when they face panic attacks.",
+        "trackTagName": "Mobile-Developement",
+        "trackTagLink": "pages/tracks/app-development",
+        "githubLink": "https://github.com/Rio006/Steps"
+      },
+      {
+        "id": 4,
+        "image": "imgs/Projects/CS-Quiz-app.jpg",
+        "title": "Cs Club Quiz App",
+        "contributor": "Marwan Mohamed",
+        "intro": "A simple platform on which to build and run quizzes. You can choose the length of each question as well as the option to upload images for each one. with a unique quiz ID, which consists of 16 random alphanumeric characters, to run the quiz and share it with your friends.",
+        "trackTagName": "Mobile-Developement",
+        "trackTagLink": "pages/tracks/app-development",
+        "githubLink": "https://github.com/marwan92006/CsClubQuizApp/tree/main/CsQuizApp"
+      },
+      {
+        "id": 5,
+        "image": "imgs/Projects/Omar Elshaib.png",
+        "title": "Sunnyside Curtains",
+        "contributor": "Omar Muhammad & Muhammad Sameh",
+        "intro": "The project is a smart-life application, it is a smart curtain whose function is to detect sunlight and close automatically to avoid annoying sleeping people. The system detects sunlight using a light sensor (LDR) with a photoresistor, and the curtain gets closed and opened using a system consisting of a servo motor fixed at the side of the curtain, and robe attached to the servo, and the furthest clip of the curtain, with a bully at the other side of the curtain which make the oval path of the robe. Using the path of the robe when the servo rotates clockwise the curtain closes, and the same at the counter-clockwise direction the curtain opens.",
+        "trackTagName": "Robotics",
+        "trackTagLink": "pages/tracks/Robotics",
+        "githubLink": "github.com/Msm077/Sunnyside/blob/main/Curtains"
+      },
+      {
+        "id": 6,
+        "image": "imgs/Projects/Abdo essa.png",
+        "title": "Water System",
+        "contributor": "Mohamed Ayman & Abdelrahman Essa",
+        "intro": "The project briefly makes people avoid some water problems. These problems are PH, humidity, and temperature. This system will be programmed automatically to call the call center and inform them that there's a probem.",
+        "trackTagName": "Robotics",
+        "trackTagLink": "pages/tracks/Robotics",
+        "githubLink": "https://github.com/Stemermohamedayman"
+      },
+      {
+        "id": 7,
+        "image": "imgs/Projects/Omar Elgaar.jpg",
+        "title": "RoboCup Maze track",
+        "contributor": "Omar Elgaar",
+        "intro": "This is the start of my project that I will use in RoboCup in the maze track. This project will be edited more for RoboCup. This robot aims to rescue people from a maze and in the end get out from the maze.",
+        "trackTagName": "Robotics",
+        "trackTagLink": "pages/tracks/Robotics",
+        "githubLink": "https://drive.google.com/file/d/1XRXhsSQ30GS4X6NSckFugLyG0AybjISX/view?usp=sharing"
+      },
+      {
+        "id": 8,
+        "image": "imgs/Projects/omar ahmed.jpeg",
+        "title": "I will water it for you",
+        "contributor": "Omar Saad",
+        "intro": "An innovative idea aims to cultivate a distant planet using an automatic watering system controlled by moisture sensors. These sensors continuously track soil moisture, and when levels fall, they precisely start watering. The system also makes use of photoresistors to measure ambient light levels. An array of LEDs turns on in reaction to less sunshine, supplying crops with necessary illumination and providing a visible indicator of the health of the ecosystem. Intelligent lighting and sensor-driven irrigation have been combined in a novel way that could lead to sustainable interplanetary agriculture.",
+        "trackTagName": "Robotics",
+        "trackTagLink": "pages/tracks/Robotics",
+        "githubLink": "https://drive.google.com/file/d/1quhHgdyA1dsCFttHWIdeRlk41p2D6FY9/view?usp=sharing"
+      },
+      {
+        "id": 9,
+        "image": "imgs/Projects/Mohamed Zaki.png",
+        "title": "Interactive quiz",
+        "contributor": "Mohamed Zaki",
+        "intro": "ِِِِِِِِِِِِِِِِِِِِِِِِAn interactive quiz application that allows users to answer multiple-choice questions on Computer science. A set of multiple-choice questions on different topics of computer science. One question is displayed at a time, with radio buttons for the answer options that allow users to select an answer and move to the next question. There is a timer to each quiz to make it more challenging. The users are free to choose the difficulty of the exam (Easy, Medium, or Hard). I used HTML for creating the quiz structure, CSS for styling the user interface, and JavaScript for handling user interactions and scoring. ",
+        "trackTagName": "Web-Development",
+        "trackTagLink": "pages/tracks/web-development",
+        "githubLink": "https://github.com/zakiiiii77/Interactive_quiz"
+      },
+      {
+        "id": 10,
+        "image": "imgs/Projects/Omar Hossam.png",
+        "title": "MailCrafter",
+        "contributor": "Omar Hossam",
+        "intro": "MailCrafter service provides a web application with the ability to craft new mails in an easier way. You can also schedule your mails for a later send. The application is composed of several inputs and a schedule section. Insert your first, and last name, then the targeted email, and lastly the message. After that, you may schedule the mail if you wish(optional). Lastly, press the submit button :)",
+        "trackTagName": "Web-Development",
+        "trackTagLink": "pages/tracks/web-development",
+        "githubLink": "https://omar-hossamm.github.io/MailCrafter/"
+      },
+      {
+        "id": 11,
+        "image": "imgs/Projects/todo_app - Farouk Farag.jpg",
+        "title": "Todo app",
+        "contributor": "Farouk Farrag",
+        "intro": "One of two things can be accomplished with the use of the to-do app. The app's initial feature allows you to create a to-do list with as many items as you like. You may customize the task's title, description, and due date. The work can be removed or marked as finished with a smooth transition. The app's second page can be accessed by swiping or from the bottom navigation bar. The notes page is the second page of the program, where you can write anything you want and edit or erase it as well",
+        "trackTagName": "Mobile-Developement",
+        "trackTagLink": "pages/tracks/app-development",
+        "githubLink": "https://github.com/Far69k/Farouk-Farrag/tree/master/todo_app"
+      },
+      {
+        "id": 12,
+        "image": "imgs/Projects/Calculator.png",
+        "title": "Basic Calculator",
+        "contributor": "Mostafa Abdelhamed",
+        "intro": "It is project which make some math operations as a calculator, It calculates numbers and performs various arithmetic operations on them, such as multiplication, division, addition, and subtraction. It has no problem with incorrect numbers, as it deals with decimal numbers with ease.",
+        "trackTagName": "Mobile-Developement",
+        "trackTagLink": "pages/tracks/app-development",
+        "githubLink": "https://github.com/MostafaAyad/Basic-Calculator.git"
+      },
+      {
+        "id": 13,
+        "title": "Translator",
+        "contributor": "Ziad Mohamed",
+        "intro": "The project is about the Translator. It provided it with everything, such as the data itself, sentence translation, voice translating, and the Copy Icon.",
+        "trackTagName": "Machine-Learning",
+        "trackTagLink": "pages/tracks/machine-learning",
+        "githubLink": "https://github.com/ziad390"
+      },
+      {
+        "id": 14,
+        "image": "imgs/Projects/Home page - Grumpy Potato",
+        "title": "Cooking Cat",
+        "contributor": "salma karim & Sara karim & Retal Muhammad",
+        "intro": "Our project is a website that offers desserts , lunch and breakfast recipes. It contain easy and fast recipes.  We tried to make the website colorful and fun to look at as good as possible. We tried to make our design cute and be loved by everyone. We get the idea of the website because we love both cats and cooking so we combine them to get this idea and we really hope that you will love it.",
+        "trackTagName": "Web-Development",
+        "trackTagLink": "pages/tracks/web-development",
+        "githubLink": " https://saalmmaaa.github.io/Cooking-cat/"
+      },
+      {
+        "id": 15,
+        "image": "imgs/Projects/Robotics - farouk farag",
+        "title": "JUST SEED IT!",
+        "contributor": "Farouk Farrag & Jomana Abdelmohsen & Ammar Mohamed & Asmara Fares & Seif-eldin Ali", 
+        "intro": "The project's objective is to offer the ideal atmosphere for plants to grow in, not just one species but any specie of plants, as the project can alter the environment to suit any specie by adjusting the fertilizer, pesticide, light, water, and temperature. You only can get all these results without any human intervention. All you have to do is JUST SEED IT!",
+        "trackTagName": "Robotics",
+        "trackTagLink": "pages/tracks/Robotics",
+        "githubLink": "https://github.com/Far69k/Farouk-Farrag/blob/9fb1359577defac3b9d5b2513c41730e0367071b/justseeditcode"
+      },
+      {
+        "id": 16,
+        "image": "imgs/Projects/Ahmed Tolba.png",
+        "title": "BioSensPlant",
+        "contributor": "Ahmed Tolba",
+        "intro": "An automated plant care system with three sensors has been developed to monitor soil moisture, air temperature, and light levels. Soil moisture is assessed, and if necessary, irrigation is activated. Air temperature is monitored, triggering irrigation when needed. The LDR sensor measures light levels, activating RGB LEDs in low light conditions. This passive system ensures optimal plant care and environmental conditions for growth.",
+        "trackTagName": "Robotics",
+        "trackTagLink": "pages/tracks/Robotics",
+        "githubLink": "https://www.tinkercad.com/things/kJbdvbJGrpl-daring-lahdi-amur/editel?sharecode=LrauNo0GvXOvSDLay5yZQerie1MgqJYXMZgr1--ZD0o"
+      },
+      {
+        "id": 17,
+        "image": "imgs/Projects/Biocare Robot.png",
+        "title": "PlantCare Robot",
+        "contributor": "Ahmed Saif Eldeen & Ahmed Abd El-Hamid &  Menna Hany & Seif Atwaa & Arwa Salah",
+        "intro": "PlantCareBot is an intelligent gardening assistant designed to enhance plant care and growth. The robot utilizes sensors, including soil moisture, PIR, and light sensors, to monitor and respond to the plant's needs. It automatically waters the plants when the soil moisture is low, detects animal movement for plant protection, and provides artificial lighting during low-light conditions. PlantCareBot combines robotics and sensor technology to create an efficient and autonomous solution for maintaining healthy and thriving plants.",
+        "trackTagName": "Robotics",
+        "trackTagLink": "pages/tracks/Robotics",
+        "githubLink": "https://github.com/ahmed-saif-abdulhamid/PlantCare-Robot-Intelligent-Gardening-Assistant-code/blob/main/code"
+      },
+      {
+        "id": 18,
+        "title": "Beautiful Matrix",
+        "contributor": "Mohammed Mostafa",
+        "trackTagLink": "pages/tracks/Alg&DS",
+        "problemLink": "https://codeforces.com/problemset/problem/263/A",
+        "githubLink": "https://github.com/N-M-Mdev1010101/CodeForces-Problem-Solutions/blob/main/A.Beautiful%20Matrix.cpp"
+      },
+      {
+        "id": 19,
+        "title": "Beautiful Year",
+        "contributor": "Ahmed Adel",
+        "trackTagName": "Alg-DS",
+        "trackTagLink": "pages/tracks/Alg&DS",
+        "problemLink": "https://codeforces.com/problemset/problem/271/A",
+        "githubLink": "https://github.com/medo962006/ProblemSubmission"
+      },
+      {
+        "id": 20,
+        "title": "Vanya and Fence",
+        "contributor": "Mohamed Elhussain",
+        "trackTagName": "Alg-DS",
+        "trackTagLink": "pages/tracks/Alg&DS",
+        "problemLink": "https://codeforces.com/problemset/problem/677/A",
+        "githubLink": "https://github.com/Mohamed-Elhussain/Algorithms-and-DS/blob/main/Problem%204/main.cpp"
+      },
+      {
+        "id": 21,
+        "title": "4A Watermelon",
+        "contributor": "Adam Saeed Futuh",
+        "trackTagName": "Alg-DS",
+        "trackTagLink": "pages/tracks/Alg&DS",
+        "problemLink": "https://codeforces.com/problemset/problem/4/A",
+        "githubLink": "https://github.com/Adam-Saeed-Futuh/4A-Watermelon_Practice-assignment.git"
+      },
+      {
+        "id": 22,
+        "title": "Team Olympiad",
+        "contributor": "Mohamed Elhussain",
+        "trackTagName": "Alg-DS",
+        "trackTagLink": "pages/tracks/Alg&DS",
+        "problemLink": "https://codeforces.com/problemset/problem/490/A",
+        "githubLink": "https://github.com/Mohamed-Elhussain/Algorithms-and-DS/blob/main/Problem%2011/main.cpp"
+      },
+      {
+        "id": 23,
         "image": "imgs/Projects/telegram-bot.jpeg",
         "title": "Telegram bot",
         "contributor": "Ahmed Adel",
@@ -103,7 +314,17 @@
         "githubLink": "https://github.com/medo962006/Ahmed-Adel-Rashad-CS-club-Project"
       },
       {
-        "id": 3,
+        "id": 24,
+        "image": "imgs/Projects/web-page.png",
+        "title": "Web developer page",
+        "contributor": "Abdelhamid Ahmed",
+        "intro": "Possimus rerum tempora fugit, impedit modi, eos quaerat atque quasi excepturi maxime a officiis quia odit voluptatem iusto incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus minima molestiae, soluta saepe nam et voluptatum dicta quis amet accusamus harum in laboriosam reiciendis aliquid ad perferendis, hic dignissimos tempore.",
+        "trackTagName": "Alg-DS",
+        "trackTagLink": "pages/tracks/Alg&DS",
+        "githubLink": "https://github.com/Mohamed-Elhussain/Algorithms-and-DS"
+      },
+      {
+        "id": 25,
         "image": "imgs/Projects/deaf-helper.jpeg",
         "title": "Deaf Helper",
         "contributor": "Mostafa Ibrahim & Mina Ashraf",
@@ -113,7 +334,7 @@
         "githubLink": "https://github.com/mostafaibrahim10010/deafhelper/"
       },
       {
-        "id": 4,
+        "id": 26,
         "image": "imgs/Projects/Guess-game.png",
         "title": "Guess Game",
         "contributor": "Abdelhamid Ahmed",

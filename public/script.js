@@ -4,33 +4,6 @@ AOS.init({
 
 /* Please ❤ this and follow me if you like it! */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Dots {
 	constructor(width, height, spacing) {
 		this.spacing = spacing;
@@ -770,6 +743,7 @@ function article_fun(data) {
       <div class="card-info">
         <h3>${data["title"]}</h3>
         <span>${data["date"]}</span>
+<span>${data["writer"]}</span>
         <p class="intro">${data["intro"]}</p>
       </div>
       <div class="card-bottom">

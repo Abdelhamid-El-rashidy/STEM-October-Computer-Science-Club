@@ -197,6 +197,7 @@
           <div class="card-info">
             <h3>${data["title"]}</h3>
             <span>${data["date"]}</span>
+<span>${data["writer"]}</span>
           </div>
           <div class="card-bottom">
             <a href="${data["readMoreLink"]}" target="_blank" class="read-more">Read more</a>
@@ -232,7 +233,6 @@
           projectCard.classList.add('project-card');
 
           projectCard.innerHTML = `
-            <img src="../../${data["image"]}" alt="">
             <div class="info">
               <h4>${data["title"]}</h4>
               <p><i class="fa-solid fa-user"></i>${data["contributor"]}</p>
