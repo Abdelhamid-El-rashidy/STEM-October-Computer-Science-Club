@@ -132,7 +132,7 @@
       },
       {
         "id": 5,
-        "image": "imgs/Projects/Omar Elshaib.PNG",
+        "image": "imgs/Projects/Omar Elshaib.png",
         "title": "Sunnyside Curtains",
         "contributor": "Omar Muhammad & Muhammad Sameh",
         "intro": "The project is a smart-life application, it is a smart curtain whose function is to detect sunlight and close automatically to avoid annoying sleeping people. The system detects sunlight using a light sensor (LDR) with a photoresistor, and the curtain gets closed and opened using a system consisting of a servo motor fixed at the side of the curtain, and robe attached to the servo, and the furthest clip of the curtain, with a bully at the other side of the curtain which make the oval path of the robe. Using the path of the robe when the servo rotates clockwise the curtain closes, and the same at the counter-clockwise direction the curtain opens.",
@@ -142,7 +142,7 @@
       },
       {
         "id": 6,
-        "image": "imgs/Projects/Abdo essa.PNG",
+        "image": "imgs/Projects/Abdo essa.png",
         "title": "Water System",
         "contributor": "Mohamed Ayman & Abdelrahman Essa",
         "intro": "The project briefly makes people avoid some water problems. These problems are PH, humidity, and temperature. This system will be programmed automatically to call the call center and inform them that there's a probem.",
@@ -162,7 +162,7 @@
       },
       {
         "id": 8,
-        "image": "imgs/Projects/Mohamed Zaki.PNG",
+        "image": "imgs/Projects/Mohamed Zaki.png",
         "title": "Interactive quiz",
         "contributor": "Mohamed Zaki",
         "intro": "ِِِِِِِِِِِِِِِِِِِِِِِِAn interactive quiz application that allows users to answer multiple-choice questions on Computer science. A set of multiple-choice questions on different topics of computer science. One question is displayed at a time, with radio buttons for the answer options that allow users to select an answer and move to the next question. There is a timer to each quiz to make it more challenging. The users are free to choose the difficulty of the exam (Easy, Medium, or Hard). I used HTML for creating the quiz structure, CSS for styling the user interface, and JavaScript for handling user interactions and scoring. ",
@@ -172,7 +172,7 @@
       },
       {
         "id": 9,
-        "image": "imgs/Projects/Omar Hossam.PNG",
+        "image": "imgs/Projects/Omar Hossam.png",
         "title": "MailCrafter",
         "contributor": "Omar Hossam",
         "intro": "MailCrafter service provides a web application with the ability to craft new mails in an easier way. You can also schedule your mails for a later send. The application is composed of several inputs and a schedule section. Insert your first, and last name, then the targeted email, and lastly the message. After that, you may schedule the mail if you wish(optional). Lastly, press the submit button :)",
