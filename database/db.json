@@ -102,7 +102,7 @@
       },
       {
         "id": 2,
-        "image": "imgs/Projects/Omar Elgaar.jpg",
+        "image": "imgs/Projects/Omar Elgaar.JPG",
         "title": "RoboCup Maze track",
         "contributor": "Omar Elgaar",
         "intro": "This is the start of my project that I will use in RoboCup in the maze track. This project will be edited more for RoboCup. This robot aims to rescue people from a maze and in the end get out from the maze.",
@@ -112,13 +112,13 @@
       },
       {
         "id": 3,
-        "image": "imgs/Projects/Steps.png",
-        "title": "Maram Soliman",
-        "contributor": "Maram Soliman",
-        "intro": "Steps is an mobile application that is developed by Flutter and Dart and aims to help people who face panic attacks in dealing with it in a simple way according to scientific steps and through it I hope to help people to feel safe and good when they face panic attacks.",
-        "trackTagName": "Mobile-Developement",
-        "trackTagLink": "pages/tracks/app-development",
-        "githubLink": "https://github.com/Rio006/Steps"
+        "image": "imgs/Projects/Home page - Grumpy Potato.JPG",
+        "title": "Cooking Cat",
+        "contributor": "salma karim & Sara karim & Retal Muhammad",
+        "intro": "Our project is a website that offers desserts , lunch and breakfast recipes. It contain easy and fast recipes.  We tried to make the website colorful and fun to look at as good as possible. We tried to make our design cute and be loved by everyone. We get the idea of the website because we love both cats and cooking so we combine them to get this idea and we really hope that you will love it.",
+        "trackTagName": "Web-Development",
+        "trackTagLink": "pages/tracks/web-development",
+        "githubLink": " https://saalmmaaa.github.io/Cooking-cat/"
       },
       {
         "id": 4,
@@ -132,7 +132,7 @@
       },
       {
         "id": 5,
-        "image": "imgs/Projects/Omar Elshaib.png",
+        "image": "imgs/Projects/Omar Elshaib.PNG",
         "title": "Sunnyside Curtains",
         "contributor": "Omar Muhammad & Muhammad Sameh",
         "intro": "The project is a smart-life application, it is a smart curtain whose function is to detect sunlight and close automatically to avoid annoying sleeping people. The system detects sunlight using a light sensor (LDR) with a photoresistor, and the curtain gets closed and opened using a system consisting of a servo motor fixed at the side of the curtain, and robe attached to the servo, and the furthest clip of the curtain, with a bully at the other side of the curtain which make the oval path of the robe. Using the path of the robe when the servo rotates clockwise the curtain closes, and the same at the counter-clockwise direction the curtain opens.",
@@ -142,7 +142,7 @@
       },
       {
         "id": 6,
-        "image": "imgs/Projects/Abdo essa.png",
+        "image": "imgs/Projects/Abdo essa.PNG",
         "title": "Water System",
         "contributor": "Mohamed Ayman & Abdelrahman Essa",
         "intro": "The project briefly makes people avoid some water problems. These problems are PH, humidity, and temperature. This system will be programmed automatically to call the call center and inform them that there's a probem.",
@@ -152,16 +152,6 @@
       },
       {
         "id": 7,
-        "image": "imgs/Projects/Omar Elgaar.jpg",
-        "title": "RoboCup Maze track",
-        "contributor": "Omar Elgaar",
-        "intro": "This is the start of my project that I will use in RoboCup in the maze track. This project will be edited more for RoboCup. This robot aims to rescue people from a maze and in the end get out from the maze.",
-        "trackTagName": "Robotics",
-        "trackTagLink": "pages/tracks/Robotics",
-        "githubLink": "https://drive.google.com/file/d/1XRXhsSQ30GS4X6NSckFugLyG0AybjISX/view?usp=sharing"
-      },
-      {
-        "id": 8,
         "image": "imgs/Projects/omar ahmed.jpeg",
         "title": "I will water it for you",
         "contributor": "Omar Saad",
@@ -171,7 +161,7 @@
         "githubLink": "https://drive.google.com/file/d/1quhHgdyA1dsCFttHWIdeRlk41p2D6FY9/view?usp=sharing"
       },
       {
-        "id": 9,
+        "id": 8,
         "image": "imgs/Projects/Mohamed Zaki.png",
         "title": "Interactive quiz",
         "contributor": "Mohamed Zaki",
@@ -181,7 +171,7 @@
         "githubLink": "https://github.com/zakiiiii77/Interactive_quiz"
       },
       {
-        "id": 10,
+        "id": 9,
         "image": "imgs/Projects/Omar Hossam.png",
         "title": "MailCrafter",
         "contributor": "Omar Hossam",
@@ -191,8 +181,8 @@
         "githubLink": "https://omar-hossamm.github.io/MailCrafter/"
       },
       {
-        "id": 11,
-        "image": "imgs/Projects/todo_app - Farouk Farag.jpg",
+        "id": 10,
+        "image": "imgs/Projects/todo_app - Farouk Farag.JPG",
         "title": "Todo app",
         "contributor": "Farouk Farrag",
         "intro": "One of two things can be accomplished with the use of the to-do app. The app's initial feature allows you to create a to-do list with as many items as you like. You may customize the task's title, description, and due date. The work can be removed or marked as finished with a smooth transition. The app's second page can be accessed by swiping or from the bottom navigation bar. The notes page is the second page of the program, where you can write anything you want and edit or erase it as well",
@@ -201,8 +191,8 @@
         "githubLink": "https://github.com/Far69k/Farouk-Farrag/tree/master/todo_app"
       },
       {
-        "id": 12,
-        "image": "imgs/Projects/Calculator.png",
+        "id": 11,
+        "image": "imgs/Projects/Calculator.PNG",
         "title": "Basic Calculator",
         "contributor": "Mostafa Abdelhamed",
         "intro": "It is project which make some math operations as a calculator, It calculates numbers and performs various arithmetic operations on them, such as multiplication, division, addition, and subtraction. It has no problem with incorrect numbers, as it deals with decimal numbers with ease.",
@@ -211,7 +201,7 @@
         "githubLink": "https://github.com/MostafaAyad/Basic-Calculator.git"
       },
       {
-        "id": 13,
+        "id": 12,
         "title": "Translator",
         "contributor": "Ziad Mohamed",
         "intro": "The project is about the Translator. It provided it with everything, such as the data itself, sentence translation, voice translating, and the Copy Icon.",
@@ -220,18 +210,18 @@
         "githubLink": "https://github.com/ziad390"
       },
       {
-        "id": 14,
-        "image": "imgs/Projects/Home page - Grumpy Potato",
-        "title": "Cooking Cat",
-        "contributor": "salma karim & Sara karim & Retal Muhammad",
-        "intro": "Our project is a website that offers desserts , lunch and breakfast recipes. It contain easy and fast recipes.  We tried to make the website colorful and fun to look at as good as possible. We tried to make our design cute and be loved by everyone. We get the idea of the website because we love both cats and cooking so we combine them to get this idea and we really hope that you will love it.",
-        "trackTagName": "Web-Development",
-        "trackTagLink": "pages/tracks/web-development",
-        "githubLink": " https://saalmmaaa.github.io/Cooking-cat/"
+        "id": 13,
+        "image": "imgs/Projects/Steps.PNG",
+        "title": "Maram Soliman",
+        "contributor": "Maram Soliman",
+        "intro": "Steps is an mobile application that is developed by Flutter and Dart and aims to help people who face panic attacks in dealing with it in a simple way according to scientific steps and through it I hope to help people to feel safe and good when they face panic attacks.",
+        "trackTagName": "Mobile-Developement",
+        "trackTagLink": "pages/tracks/app-development",
+        "githubLink": "https://github.com/Rio006/Steps"
       },
       {
-        "id": 15,
-        "image": "imgs/Projects/Robotics - farouk farag",
+        "id": 14,
+        "image": "imgs/Projects/Robotics - farouk farag.JPG",
         "title": "JUST SEED IT!",
         "contributor": "Farouk Farrag & Jomana Abdelmohsen & Ammar Mohamed & Asmara Fares & Seif-eldin Ali", 
         "intro": "The project's objective is to offer the ideal atmosphere for plants to grow in, not just one species but any specie of plants, as the project can alter the environment to suit any specie by adjusting the fertilizer, pesticide, light, water, and temperature. You only can get all these results without any human intervention. All you have to do is JUST SEED IT!",
@@ -240,7 +230,7 @@
         "githubLink": "https://github.com/Far69k/Farouk-Farrag/blob/9fb1359577defac3b9d5b2513c41730e0367071b/justseeditcode"
       },
       {
-        "id": 16,
+        "id": 15,
         "image": "imgs/Projects/Ahmed Tolba.png",
         "title": "BioSensPlant",
         "contributor": "Ahmed Tolba",
@@ -250,7 +240,7 @@
         "githubLink": "https://www.tinkercad.com/things/kJbdvbJGrpl-daring-lahdi-amur/editel?sharecode=LrauNo0GvXOvSDLay5yZQerie1MgqJYXMZgr1--ZD0o"
       },
       {
-        "id": 17,
+        "id": 16,
         "image": "imgs/Projects/Biocare Robot.png",
         "title": "PlantCare Robot",
         "contributor": "Ahmed Saif Eldeen & Ahmed Abd El-Hamid &  Menna Hany & Seif Atwaa & Arwa Salah",
@@ -260,7 +250,7 @@
         "githubLink": "https://github.com/ahmed-saif-abdulhamid/PlantCare-Robot-Intelligent-Gardening-Assistant-code/blob/main/code"
       },
       {
-        "id": 18,
+        "id": 17,
         "title": "Beautiful Matrix",
         "contributor": "Mohammed Mostafa",
         "trackTagLink": "pages/tracks/Alg&DS",
@@ -268,7 +258,7 @@
         "githubLink": "https://github.com/N-M-Mdev1010101/CodeForces-Problem-Solutions/blob/main/A.Beautiful%20Matrix.cpp"
       },
       {
-        "id": 19,
+        "id": 18,
         "title": "Beautiful Year",
         "contributor": "Ahmed Adel",
         "trackTagName": "Alg-DS",
@@ -277,7 +267,7 @@
         "githubLink": "https://github.com/medo962006/ProblemSubmission"
       },
       {
-        "id": 20,
+        "id": 19,
         "title": "Vanya and Fence",
         "contributor": "Mohamed Elhussain",
         "trackTagName": "Alg-DS",
@@ -286,7 +276,7 @@
         "githubLink": "https://github.com/Mohamed-Elhussain/Algorithms-and-DS/blob/main/Problem%204/main.cpp"
       },
       {
-        "id": 21,
+        "id": 20,
         "title": "4A Watermelon",
         "contributor": "Adam Saeed Futuh",
         "trackTagName": "Alg-DS",
@@ -295,7 +285,7 @@
         "githubLink": "https://github.com/Adam-Saeed-Futuh/4A-Watermelon_Practice-assignment.git"
       },
       {
-        "id": 22,
+        "id": 21,
         "title": "Team Olympiad",
         "contributor": "Mohamed Elhussain",
         "trackTagName": "Alg-DS",
@@ -304,7 +294,7 @@
         "githubLink": "https://github.com/Mohamed-Elhussain/Algorithms-and-DS/blob/main/Problem%2011/main.cpp"
       },
       {
-        "id": 23,
+        "id": 22,
         "image": "imgs/Projects/telegram-bot.jpeg",
         "title": "Telegram bot",
         "contributor": "Ahmed Adel",
@@ -314,7 +304,7 @@
         "githubLink": "https://github.com/medo962006/Ahmed-Adel-Rashad-CS-club-Project"
       },
       {
-        "id": 24,
+        "id": 23,
         "image": "imgs/Projects/web-page.png",
         "title": "Web developer page",
         "contributor": "Abdelhamid Ahmed",
@@ -324,7 +314,7 @@
         "githubLink": "https://github.com/Mohamed-Elhussain/Algorithms-and-DS"
       },
       {
-        "id": 25,
+        "id": 24,
         "image": "imgs/Projects/deaf-helper.jpeg",
         "title": "Deaf Helper",
         "contributor": "Mostafa Ibrahim & Mina Ashraf",
@@ -334,7 +324,7 @@
         "githubLink": "https://github.com/mostafaibrahim10010/deafhelper/"
       },
       {
-        "id": 26,
+        "id": 25,
         "image": "imgs/Projects/Guess-game.png",
         "title": "Guess Game",
         "contributor": "Abdelhamid Ahmed",
