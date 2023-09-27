@@ -250,50 +250,6 @@
         "githubLink": "https://github.com/ahmed-saif-abdulhamid/PlantCare-Robot-Intelligent-Gardening-Assistant-code/blob/main/code"
       },
       {
-        "id": 17,
-        "title": "Beautiful Matrix",
-        "contributor": "Mohammed Mostafa",
-        "trackTagLink": "pages/tracks/Alg&DS",
-        "problemLink": "https://codeforces.com/problemset/problem/263/A",
-        "githubLink": "https://github.com/N-M-Mdev1010101/CodeForces-Problem-Solutions/blob/main/A.Beautiful%20Matrix.cpp"
-      },
-      {
-        "id": 18,
-        "title": "Beautiful Year",
-        "contributor": "Ahmed Adel",
-        "trackTagName": "Alg-DS",
-        "trackTagLink": "pages/tracks/Alg&DS",
-        "problemLink": "https://codeforces.com/problemset/problem/271/A",
-        "githubLink": "https://github.com/medo962006/ProblemSubmission"
-      },
-      {
-        "id": 19,
-        "title": "Vanya and Fence",
-        "contributor": "Mohamed Elhussain",
-        "trackTagName": "Alg-DS",
-        "trackTagLink": "pages/tracks/Alg&DS",
-        "problemLink": "https://codeforces.com/problemset/problem/677/A",
-        "githubLink": "https://github.com/Mohamed-Elhussain/Algorithms-and-DS/blob/main/Problem%204/main.cpp"
-      },
-      {
-        "id": 20,
-        "title": "4A Watermelon",
-        "contributor": "Adam Saeed Futuh",
-        "trackTagName": "Alg-DS",
-        "trackTagLink": "pages/tracks/Alg&DS",
-        "problemLink": "https://codeforces.com/problemset/problem/4/A",
-        "githubLink": "https://github.com/Adam-Saeed-Futuh/4A-Watermelon_Practice-assignment.git"
-      },
-      {
-        "id": 21,
-        "title": "Team Olympiad",
-        "contributor": "Mohamed Elhussain",
-        "trackTagName": "Alg-DS",
-        "trackTagLink": "pages/tracks/Alg&DS",
-        "problemLink": "https://codeforces.com/problemset/problem/490/A",
-        "githubLink": "https://github.com/Mohamed-Elhussain/Algorithms-and-DS/blob/main/Problem%2011/main.cpp"
-      },
-      {
         "id": 22,
         "image": "imgs/Projects/telegram-bot.jpeg",
         "title": "Telegram bot",
@@ -332,6 +288,53 @@
         "trackTagName": "Web-Development",
         "trackTagLink": "pages/tracks/web-development",
         "githubLink": "https://github.com/Abdelhamid-El-rashidy/Guess-game"
+      }
+    ],
+    "problems": [
+      {
+        "id": 1,
+        "title": "Beautiful Matrix",
+        "contributor": "Mohammed Mostafa",
+        "trackTagName": "Alg-DS",
+        "trackTagLink": "pages/tracks/Alg&DS",
+        "problemLink": "https://codeforces.com/problemset/problem/263/A",
+        "githubLink": "https://github.com/N-M-Mdev1010101/CodeForces-Problem-Solutions/blob/main/A.Beautiful%20Matrix.cpp"
+      },
+      {
+        "id": 2,
+        "title": "Beautiful Year",
+        "contributor": "Ahmed Adel",
+        "trackTagName": "Alg-DS",
+        "trackTagLink": "pages/tracks/Alg&DS",
+        "problemLink": "https://codeforces.com/problemset/problem/271/A",
+        "githubLink": "https://github.com/medo962006/ProblemSubmission"
+      },
+      {
+        "id": 3,
+        "title": "Vanya and Fence",
+        "contributor": "Mohamed Elhussain",
+        "trackTagName": "Alg-DS",
+        "trackTagLink": "pages/tracks/Alg&DS",
+        "problemLink": "https://codeforces.com/problemset/problem/677/A",
+        "githubLink": "https://github.com/Mohamed-Elhussain/Algorithms-and-DS/blob/main/Problem%204/main.cpp"
+      },
+      {
+        "id": 4,
+        "title": "4A Watermelon",
+        "contributor": "Adam Saeed Futuh",
+        "trackTagName": "Alg-DS",
+        "trackTagLink": "pages/tracks/Alg&DS",
+        "problemLink": "https://codeforces.com/problemset/problem/4/A",
+        "githubLink": "https://github.com/Adam-Saeed-Futuh/4A-Watermelon_Practice-assignment.git"
+      },
+      {
+        "id": 5,
+        "title": "Team Olympiad",
+        "contributor": "Mohamed Elhussain",
+        "trackTagName": "Alg-DS",
+        "trackTagLink": "pages/tracks/Alg&DS",
+        "problemLink": "https://codeforces.com/problemset/problem/490/A",
+        "githubLink": "https://github.com/Mohamed-Elhussain/Algorithms-and-DS/blob/main/Problem%2011/main.cpp"
       }
     ]
   }
