@@ -774,19 +774,24 @@ let projectContainer = document.getElementById("project-contianer");
 
 // fetch json data
 fetch("https://www.stemcomputerscienceclub.org/api/projects")
-	.then((res) => res.json())
-	.then((json) => {
+.then((res) => res.json())
+.then((json) => {
+  // Check if json.projects exists and is an array
+  if (json.projects && Array.isArray(json.projects)) {
 	// Get the first 6 projects
 	const firstSixProjects = json.projects.slice(0, 6);
 
 	// Loop through the first 6 projects and append them to the container
 	firstSixProjects.forEach((data) => {
-		projectContainer.appendChild(project_fun(data));
+	  projectContainer.appendChild(project_fun(data));
 	});
-	})
-	.catch((error) => {
-	console.log("Error fetching JSON data:", error);
-	});
+  } else {
+	console.log("No projects data found in the API response.");
+  }
+})
+.catch((error) => {
+  console.log("Error fetching JSON data:", error);
+});
 
 // Project card 
 function project_fun(data) {
