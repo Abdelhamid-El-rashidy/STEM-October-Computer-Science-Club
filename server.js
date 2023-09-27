@@ -17,6 +17,9 @@ server.get('/', (req, res) => {
 server.get('/login', (req, res) => {
   res.sendFile(__dirname + '/public/login.html');
 });
+server.get('/team', (req, res) => {
+  res.sendFile(__dirname + '/public/team.html');
+});
 
 // Routes for pages inside the 'pages' directory
 server.get('/pages/articles', (req, res) => {

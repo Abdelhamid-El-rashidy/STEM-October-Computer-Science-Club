@@ -1097,7 +1097,7 @@ i.fa-solid.fa-user {
   }
 }
 .contact-form {
-  background-color: var(--sec-bg-color);
+  background-color: var(--bg-color);
   position: relative;
   padding: 2rem;
 }
