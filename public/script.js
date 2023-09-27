@@ -773,36 +773,36 @@ let projectContainer = document.getElementById("project-contianer");
 
 
 // fetch json data
-fetch("https://www.stemcomputerscienceclub.org/api/projects")
-  .then(res => res.json())
-  .then(json => {
-    json.map(data => {
-      projectContainer.appendChild(project_fun(data));
-    })
-  });
-
-// Project card 
-for (let i = 0; i < 6; i++) {
-	function project_fun(data) {
-		let projectCard = document.createElement('div');
-		projectCard.classList.add('project-card');
-		projectCard.setAttribute('data-aos', 'zoom-in-up');
-	  
-		projectCard.innerHTML = `
-		  <img src="${data["image"]}" alt="">
-		  <div class="info">
-		  <h4>${data["title"]}</h4>
-		  <p><i class="fa-solid fa-user"></i>${data["contributor"]}</p>
-		  <a class="track-tag" href="${data["trackTagLink"]}">${data["trackTagName"]}</a>
-		  <ul class="social-bar">
-			<li class="social-link"><a href="${data["githubLink"]}"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-		  </ul>
-		</div>
-		`;
-	  
-		return projectCard;
+function project_fun(data) {
+	let projectCard = document.createElement('div');
+	projectCard.classList.add('project-card');
+	projectCard.setAttribute('data-aos', 'zoom-in-up');
+  
+	projectCard.innerHTML = `
+	  <img src="${data["image"]}" alt="">
+	  <div class="info">
+		<h4>${data["title"]}</h4>
+		<p><i class="fa-solid fa-user"></i>${data["contributor"]}</p>
+		<a class="track-tag" href="${data["trackTagLink"]}">${data["trackTagName"]}</a>
+		<ul class="social-bar">
+		  <li class="social-link"><a href="${data["githubLink"]}"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+		</ul>
+	  </div>
+	`;
+  
+	return projectCard;
+  }
+  
+  // Fetch data from the API
+  fetch("https://www.stemcomputerscienceclub.org/api/projects")
+	.then(res => res.json())
+	.then(json => {
+	  // Iterate through the JSON data and append the first 6 projects to the container
+	  for (let i = 0; i < Math.min(6, json.length); i++) {
+		projectContainer.appendChild(project_fun(json[i]));
 	  }
-}
+	});
+
 
 // // Select and process odd nth-child elements
 // var project_oddChildren = projectContainer.querySelectorAll(":nth-child(odd)");
