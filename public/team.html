@@ -23,34 +23,31 @@
       .track-hero-section {
         padding-top: 8vh;
       }
-      blockquote {
-          width: 50%;
-          margin: 2rem auto;
-          text-align: center;
+      .track-hero-section h2 {
+        text-align: center;
       }
-      .bg-artilce-imgs {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url(../imgs/articles-hero.png);
-        background-repeat: no-repeat;
-        opacity: 0.2;
-        background-size: contain;
-        background-position: center;
-      }
-      @media only screen and (max-width: 440px){
-      blockquote {
-        font-size: 0.7rem;
-        width: 80%;
-      }
-    }
-    @media only screen and (max-width: 800px){
-      blockquote {
-        font-size: 0.8rem;
-        width: 70%;
-      }
-    }
+      .carousel {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+      .carousel .card {
+            scroll-snap-align: start;
+            height: 380px;
+            list-style: none;
+            background-image: url(imgs/sl_031420_28950_10.png);
+            background-image: url(imgs/sl_031420_28950_10.png), var(--primary-gd);
+            background-size: cover;
+            cursor: pointer;
+            width: 20rem;
+            padding-bottom: 15px;
+            flex-direction: column;
+            border-radius: 8px;
+            margin: 1.5rem;
+        }
     </style>    
   </head>
     <body id="home">
@@ -122,102 +119,101 @@
 
     </header>
     <main>
-      <section id="articles-section">
-        <div class="cards-article-grid" id="articles-container">
-            <div class="wrapper">
-                <i id="left" class="fa-solid fa-angle-left"></i>
+        <section style="background-color: var(--sec-bg-color);">
+          <div class="team-container">
+            <div>   
                 <ul class="carousel">
-                  <li class="card">
-                    <div class="img"><img src="imgs/members/Mostafa.jpeg" alt="img" draggable="false"></div>
-                    <h2>Mostafa Ibrahim</h2>
-                    <span>President & Mobile Developement Head</span>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img src="imgs/members/Mody.jpg" alt="img" draggable="false"></div>
-                    <h2>Mohammed Abdallah</h2>
-                    <span>Vice-President & Robotics Head</span>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img src="imgs/members/Belal.jpg" alt="img" draggable="false"></div>
-                    <h2>Belal Hassan</h2>
-                    <span>Robotics Vice-head</span>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img src="imgs/members/3bha.jpg" alt="img" draggable="false"></div>
-                    <h2>Abdelhamid Ahmed</h2>
-                    <span>Website Manager & Web developement Head</span>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img src="imgs/members/Talaat.jpg" alt="img" draggable="false"></div>
-                    <h2>Mohammed Talaat</h2>
-                    <span>Web developement Vice-head</span>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img src="imgs/members/Ragab.jpeg" alt="img" draggable="false"></div>
-                    <h2>Mohammed Ragab</h2>
-                    <span>Machine Learning Head</span>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img src="imgs/members/Kevin.jpeg" alt="img" draggable="false"></div>
-                    <h2>Kevin Atef</h2>
-                    <span>Alg & DS Co-Head</span>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img src="imgs/members/Moi.jpg" alt="img" draggable="false"></div>
-                    <h2>Mohamed Omar</h2>
-                    <span>Alg & DS Co-Head</span>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img class="amr-taha" src="imgs/members/Amr taha.jpeg" alt="img" draggable="false"></div>
-                    <h2>Amr ElGamal</h2>
-                    <span>Fundamentals of proogramming Co-Head</span>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img src="imgs/members/Abido.jpg" alt="img" draggable="false"></div>
-                    <h2>Malek Abido</h2>
-                    <span>Fundmentals of programming Co-Head</span>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img src="imgs/members/Amir.jpg" alt="img" draggable="false"></div>
-                    <h2>Mohammed Amir</h2>
-                    <span>Human Resources Head</span>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img src="imgs/members/Ziad.jpg" alt="img" draggable="false"></div>
-                    <h2>Ziad Aboud</h2>
-                    <span>Human Resources Vice-Head</span>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img src="imgs/members/Bavly.jpeg" alt="img" draggable="false"></div>
-                    <h2>Bavly Romany</h2>
-                    <span>Social Media Head</span>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img src="imgs/members/Marwan.jpeg" alt="img" draggable="false"></div>
-                    <h2>Marwan Ahmed</h2>
-                    <span>Graphic design Co-Head</span>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img src="imgs/members/Omar-Negm.jpeg" alt="img" draggable="false"></div>
-                    <h2>Omar Negm</h2>
-                    <span>Graphic design Co-Head</span>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img src="imgs/members/Jimmy.jpeg" alt="img" draggable="false"></div>
-                    <h2>Ahmed Gamal</h2>
-                    <span>Content Writing Co-Head</span>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img src="imgs/members/Shalaby.jpeg" alt="img" draggable="false"></div>
-                    <h2>Ahmed Shalaby</h2>
-                    <span>Content Writing Co-Head</span>
-                  </li>
+                    <li class="card">
+                      <div class="img"><img src="imgs/members/Mostafa.jpeg" alt="img" draggable="false"></div>
+                      <h2>Mostafa Ibrahim</h2>
+                      <span>President &amp; Mobile Developement Head</span>
+                    </li>
+                    <li class="card">
+                      <div class="img"><img src="imgs/members/Mody.jpg" alt="img" draggable="false"></div>
+                      <h2>Mohammed Abdallah</h2>
+                      <span>Vice-President &amp; Robotics Head</span>
+                    </li>
+                    <li class="card">
+                      <div class="img"><img src="imgs/members/Belal.jpg" alt="img" draggable="false"></div>
+                      <h2>Belal Hassan</h2>
+                      <span>Robotics Vice-head</span>
+                    </li>
+                    <li class="card">
+                      <div class="img"><img src="imgs/members/3bha.jpg" alt="img" draggable="false"></div>
+                      <h2>Abdelhamid Ahmed</h2>
+                      <span>Website Manager &amp; Web developement Head</span>
+                    </li>
+                    <li class="card">
+                      <div class="img"><img src="imgs/members/Talaat.jpg" alt="img" draggable="false"></div>
+                      <h2>Mohammed Talaat</h2>
+                      <span>Web developement Vice-head</span>
+                    </li>
+                    <li class="card">
+                      <div class="img"><img src="imgs/members/Ragab.jpeg" alt="img" draggable="false"></div>
+                      <h2>Mohammed Ragab</h2>
+                      <span>Machine Learning Head</span>
+                    </li>
+                    <li class="card">
+                      <div class="img"><img src="imgs/members/Kevin.jpeg" alt="img" draggable="false"></div>
+                      <h2>Kevin Atef</h2>
+                      <span>Alg &amp; DS Co-Head</span>
+                    </li>
+                    <li class="card">
+                      <div class="img"><img src="imgs/members/Moi.jpg" alt="img" draggable="false"></div>
+                      <h2>Mohamed Omar</h2>
+                      <span>Alg &amp; DS Co-Head</span>
+                    </li>
+                    <li class="card">
+                      <div class="img"><img class="amr-taha" src="imgs/members/Amr taha.jpeg" alt="img" draggable="false"></div>
+                      <h2>Amr ElGamal</h2>
+                      <span>Fundamentals of proogramming Co-Head</span>
+                    </li>
+                    <li class="card">
+                      <div class="img"><img src="imgs/members/Abido.jpg" alt="img" draggable="false"></div>
+                      <h2>Malek Abido</h2>
+                      <span>Fundmentals of programming Co-Head</span>
+                    </li>
+                    <li class="card">
+                      <div class="img"><img src="imgs/members/Amir.jpg" alt="img" draggable="false"></div>
+                      <h2>Mohammed Amir</h2>
+                      <span>Human Resources Head</span>
+                    </li>
+                    <li class="card">
+                      <div class="img"><img src="imgs/members/Ziad.jpg" alt="img" draggable="false"></div>
+                      <h2>Ziad Aboud</h2>
+                      <span>Human Resources Vice-Head</span>
+                    </li>
+                    <li class="card">
+                      <div class="img"><img src="imgs/members/Bavly.jpeg" alt="img" draggable="false"></div>
+                      <h2>Bavly Romany</h2>
+                      <span>Social Media Head</span>
+                    </li>
+                    <li class="card">
+                      <div class="img"><img src="imgs/members/Marwan.jpeg" alt="img" draggable="false"></div>
+                      <h2>Marwan Ahmed</h2>
+                      <span>Graphic design Co-Head</span>
+                    </li>
+                    <li class="card">
+                      <div class="img"><img src="imgs/members/Omar-Negm.jpeg" alt="img" draggable="false"></div>
+                      <h2>Omar Negm</h2>
+                      <span>Graphic design Co-Head</span>
+                    </li>
+                    <li class="card">
+                      <div class="img"><img src="imgs/members/Jimmy.jpeg" alt="img" draggable="false"></div>
+                      <h2>Ahmed Gamal</h2>
+                      <span>Content Writing Co-Head</span>
+                    </li>
+                    <li class="card">
+                      <div class="img"><img src="imgs/members/Shalaby.jpeg" alt="img" draggable="false"></div>
+                      <h2>Ahmed Shalaby</h2>
+                      <span>Content Writing Co-Head</span>
+                    </li>
                 </ul>
-                <i id="right" class="fa-solid fa-angle-right"></i>
-              </div>
-        </div>
-    </section>
-    </main>
+                  
+            </div>
+          </div>
+      </section>
+      </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
