@@ -553,22 +553,22 @@ loop();
 // Counter tracks stats
 const counters = [
   { target: 3, elementId: "alg-DS-art" },
-  { target: 0, elementId: "alg-DS-proj" },
+  { target: 10, elementId: "alg-DS-proj" },
 
   { target: 0, elementId: "web-art" },
-  { target: 2, elementId: "web-proj" },
+  { target: 4, elementId: "web-proj" },
 
   { target: 1, elementId: "mobile-art" },
-  { target: 1, elementId: "mobile-proj" },
+  { target: 6, elementId: "mobile-proj" },
 
   { target: 2, elementId: "machine-learning-art" },
-  { target: 0, elementId: "machine-learning-proj" },
+  { target: 2, elementId: "machine-learning-proj" },
 
   { target: 2, elementId: "robotics-art" },
-  { target: 0, elementId: "robotics-proj" },
+  { target: 8, elementId: "robotics-proj" },
 
   { target: 0, elementId: "fundamentals-art" },
-  { target: 0, elementId: "fundamentals-proj" }
+  { target: 1, elementId: "fundamentals-proj" }
 ];
 
 const duration = 1500; // The duration in milliseconds for the counter effect
