@@ -776,42 +776,39 @@ let projectContainer = document.getElementById("project-contianer");
 fetch("https://www.stemcomputerscienceclub.org/api/projects")
 .then((res) => res.json())
 .then((json) => {
-  // Check if json.projects exists and is an array
-  if (json.projects && Array.isArray(json.projects)) {
-	// Get the first 6 projects
-	const firstSixProjects = json.projects.slice(0, 6);
+  // Get the first 6 projects
+  const firstSixProjects = json.projects.slice(0, 6);
 
-	// Loop through the first 6 projects and append them to the container
-	firstSixProjects.forEach((data) => {
-	  projectContainer.appendChild(project_fun(data));
-	});
-  } else {
-	console.log("No projects data found in the API response.");
-  }
+  // Loop through the first 6 projects and append them to the container
+  firstSixProjects.forEach((data) => {
+	projectContainer.appendChild(project_fun(data));
+  });
 })
 .catch((error) => {
   console.log("Error fetching JSON data:", error);
 });
 
 // Project card 
-function project_fun(data) {
-  let projectCard = document.createElement('div');
-  projectCard.classList.add('project-card');
-  projectCard.setAttribute('data-aos', 'zoom-in-up');
-
-  projectCard.innerHTML = `
-    <img src="${data["image"]}" alt="">
-    <div class="info">
-    <h4>${data["title"]}</h4>
-    <p><i class="fa-solid fa-user"></i>${data["contributor"]}</p>
-    <a class="track-tag" href="${data["trackTagLink"]}">${data["trackTagName"]}</a>
-    <ul class="social-bar">
-      <li class="social-link"><a href="${data["githubLink"]}"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-    </ul>
-  </div>
-  `;
-
-  return projectCard;
+for (let i = 0; i < 6; i++) {
+	function project_fun(data) {
+		let projectCard = document.createElement('div');
+		projectCard.classList.add('project-card');
+		projectCard.setAttribute('data-aos', 'zoom-in-up');
+	  
+		projectCard.innerHTML = `
+		  <img src="${data["image"]}" alt="">
+		  <div class="info">
+		  <h4>${data["title"]}</h4>
+		  <p><i class="fa-solid fa-user"></i>${data["contributor"]}</p>
+		  <a class="track-tag" href="${data["trackTagLink"]}">${data["trackTagName"]}</a>
+		  <ul class="social-bar">
+			<li class="social-link"><a href="${data["githubLink"]}"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+		  </ul>
+		</div>
+		`;
+	  
+		return projectCard;
+	  }
 }
 
 // // Select and process odd nth-child elements
