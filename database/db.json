@@ -320,6 +320,24 @@
       },
       {
         "id": 4,
+        "title": "Han Solo and Lazer Gun",
+        "contributor": "Mohamed Elhussain",
+        "trackTagName": "Alg-DS",
+        "trackTagLink": "pages/tracks/Alg&DS",
+        "problemLink": "https://codeforces.com/contest/514/problem/B",
+        "githubLink": "https://github.com/Mohamed-Elhussain/Algorithms-and-DS/blob/main/B%20Problems/Problem%2025/main.cpp"
+      },
+      {
+        "id": 5,
+        "title": "Rudolph and Tic-Tac-Toe",
+        "contributor": "Mohamed Elhussain",
+        "trackTagName": "Alg-DS",
+        "trackTagLink": "pages/tracks/Alg&DS",
+        "problemLink": "https://codeforces.com/contest/1846/problem/B",
+        "githubLink": "https://github.com/Mohamed-Elhussain/Algorithms-and-DS/blob/main/B%20Problems/Problem%2027/main.cpp"
+      },
+      {
+        "id": 6,
         "title": "4A Watermelon",
         "contributor": "Adam Saeed Futuh",
         "trackTagName": "Alg-DS",
@@ -328,13 +346,49 @@
         "githubLink": "https://github.com/Adam-Saeed-Futuh/4A-Watermelon_Practice-assignment.git"
       },
       {
-        "id": 5,
-        "title": "Team Olympiad",
+        "id": 7,
+        "title": "Jeff and Periods",
         "contributor": "Mohamed Elhussain",
         "trackTagName": "Alg-DS",
         "trackTagLink": "pages/tracks/Alg&DS",
-        "problemLink": "https://codeforces.com/problemset/problem/490/A",
-        "githubLink": "https://github.com/Mohamed-Elhussain/Algorithms-and-DS/blob/main/Problem%2011/main.cpp"
+        "problemLink": "Jeff and Periods",
+        "githubLink": "https://github.com/Mohamed-Elhussain/Algorithms-and-DS/blob/main/B%20Problems/Problem%2029/main.cpp"
+      },
+      {
+        "id": 8,
+        "title": "Fibonaccharsis",
+        "contributor": "Mohamed Elhussain",
+        "trackTagName": "Alg-DS",
+        "trackTagLink": "pages/tracks/Alg&DS",
+        "problemLink": "https://codeforces.com/contest/1853/problem/B",
+        "githubLink": "https://github.com/Mohamed-Elhussain/Algorithms-and-DS/blob/main/B%20Problems/Problem%2016/main.cpp"
+      },
+      {
+        "id": 9,
+        "title": "Fox And Two Dots",
+        "contributor": "Mohamed Elhussain",
+        "trackTagName": "Alg-DS",
+        "trackTagLink": "pages/tracks/Alg&DS",
+        "problemLink": "https://codeforces.com/contest/510/problem/B",
+        "githubLink": "https://github.com/Mohamed-Elhussain/Algorithms-and-DS/blob/main/B%20Problems/Problem%206/main.cpp"
+      },
+      {
+        "id": 10,
+        "title": "Vasya and Wrestling",
+        "contributor": "Mohamed Elhussain",
+        "trackTagName": "Alg-DS",
+        "trackTagLink": "pages/tracks/Alg&DS",
+        "problemLink": "https://codeforces.com/contest/493/problem/B",
+        "githubLink": "https://github.com/Mohamed-Elhussain/Algorithms-and-DS/blob/main/B%20Problems/Problem%203/main.cpp"
+      },
+      {
+        "id": 11,
+        "title": "Hamming Distance Sum",
+        "contributor": "Mohamed Elhussain",
+        "trackTagName": "Alg-DS",
+        "trackTagLink": "pages/tracks/Alg&DS",
+        "problemLink": "https://codeforces.com/contest/608/problem/B",
+        "githubLink": "https://github.com/Mohamed-Elhussain/Algorithms-and-DS/blob/main/B%20Problems/Problem%202/main.cpp"
       }
     ]
   }
