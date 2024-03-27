@@ -321,8 +321,8 @@ header .hero-section .hero-content {
   /* transform: translate(0px, -60px); */
   z-index: 1;
 }
-header .hero-section .hero-content h1{
-  font-size: 3rem;
+header .hero-section .hero-content h1 {
+  font-size: 2.2rem;
   letter-spacing: 3px;
   margin: 0;
 }
