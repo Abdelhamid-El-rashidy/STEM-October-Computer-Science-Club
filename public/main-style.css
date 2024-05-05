@@ -304,12 +304,12 @@ nav ul li {
 header .hero-section {
   padding: 0 2rem;
   display: flex;
-  /* flex-direction: column; */
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   height: inherit;
   padding-top: 10vh;
   overflow: hidden;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 header .hero-section .hero-content {
   padding: 1.5rem 0;

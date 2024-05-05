@@ -43,7 +43,7 @@ window.addEventListener('load', () => {
 
   // Counter hero section
   const updatedCounters = [
-    { target: 60, elementId: "applicants-stats" },
+    { target: 200, elementId: "applicants-stats" },
     { target: 25, elementId: "projects-stats" },
     { target: 5, elementId: "articles-stats" }
   ];
