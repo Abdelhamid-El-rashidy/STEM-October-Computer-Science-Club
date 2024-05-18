@@ -27,9 +27,12 @@
 
     <!-- external links -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <script src="https://kit.fontawesome.com/6617a0ca29.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js" integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
   <body id="home">
 
@@ -59,17 +62,17 @@
                 <div class="item"><a href="pages/articles"><i class="fas fa-th"></i>Articles</a></div>
                 <div class="item"><a href="pages/projects"><i class="fas fa-cogs"></i>Projects</a></div>
                 <div class="item"><a href="team"><i class="fas fa-info-circle"></i>Our Team</a></div>
-                <div class="nav-extra">      
+                <div class="nav-extra animate__animated animate__fadeInRight">      
                   <a href="https://discord.gg/bhNm7jc7js" target="_blank"><i class="discord fa-brands fa-discord"></i></a>
                   <a class="bt click" style="cursor: default;" href="#">Coming Soon</a>
                 </div>      
               </div>
             </div>
             <nav id="navbar">
-              <a class="logo" href="/">
+              <a class="logo animate__animated animate__fadeInLeft" href="/">
                 <div  class="logo"><img src="imgs/official-logo.png" alt=""></div>
               </a>
-              <ul class="main-list">
+              <ul class="main-list animate__animated animate__fadeInUp">
                 <li><a class="text-link" href="#home">Home</a></li>
                 <li><a class="text-link" href="#why-us">About Us</a></li>
                 <div class="dropdown">
@@ -99,7 +102,7 @@
             </nav>
       
             <section id="hero-section" class="hero-section" data-scene>
-              <div class="hero-content">
+              <div class="hero-content animate__animated animate__fadeIn">
                 <div class="hero-title" style="width: 85%;">
                   <h1 class="welcome">Welcome to</h1>
                   <h1 class="typewriter" style="font-weight: bold; color: var(--secondary-color);">STEM Computer Science Club</h1>
@@ -112,10 +115,10 @@
                 </ul>
                 <p>Transform Your Life's Algorithm: <br> Let Code Rewrite Your Journey!</p>
                 <!-- <a class="bt click" href="login">Coming Soon</a> -->
-                <div class="hero-stats">
-                  <div class="applicants-stats"><span id="applicants-stats" >200+</span> Members</div>
-                  <div class="projects-stats"><span id="projects-stats" >25+</span> projects</div>
-                  <div class="articles-stats"><span id="articles-stats">5+</span> articles</div>
+                <div class="hero-stats" >
+                  <div class="applicants-stats"><span id="applicants-stats" >200</span> Members</div>
+                  <div class="projects-stats"><span id="projects-stats" >25</span> projects</div>
+                  <div class="articles-stats"><span id="articles-stats">5</span> articles</div>
                 </div>
               </div>
             </section>
@@ -332,7 +335,54 @@
               <h2 data-aos="zoom-in-up">Our Latest Articles</h2>
               <div class="container">
                 <div class="cards-article-grid" id="articles-container">
-  
+                  <div class="article-card" data-aos="zoom-in-up">
+                    <a href="https://www.linkedin.com/pulse/dynamic-programming-unlocking-efficient-solutions?utm_source=share&amp;utm_medium=member_android&amp;utm_campaign=share_via" previewlistener="true">
+                      <div class="card-top">
+                        <img src="imgs/articles-cover/article-img-8.jpg" alt="">
+                      </div>
+                      <div class="card-info">
+                        <h3>Dynamic Programming: Unlocking Efficient Solutions in Computer Science</h3>
+                        <span>Tuesday, July 18, 2023</span>
+                        <span>Ahmed Gamal</span>
+                      </div>
+                      </a><div class="card-bottom"><a href="https://www.linkedin.com/pulse/dynamic-programming-unlocking-efficient-solutions?utm_source=share&amp;utm_medium=member_android&amp;utm_campaign=share_via" previewlistener="true">
+                        </a><a href="https://www.linkedin.com/pulse/dynamic-programming-unlocking-efficient-solutions?utm_source=share&amp;utm_medium=member_android&amp;utm_campaign=share_via" target="_blank" class="read-more" previewlistener="true">Read more</a>
+                        <a href="../pages/tracks/Alg&amp;DS" class="track-tag" previewlistener="true">Alg-DS</a> 
+                      </div>
+                     
+                  </div>
+                  <div class="article-card" data-aos="zoom-in-up">
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7081019136008421376" previewlistener="true">
+                      <div class="card-top">
+                        <img src="imgs/articles-cover/article-img-7.jpg" alt="">
+                      </div>
+                      <div class="card-info">
+                        <h3>Numpy and Pandas</h3>
+                        <span>Sunday, July 9, 2023</span>
+            <span>Ahmed Shalaby</span>
+                      </div>
+                      </a><div class="card-bottom"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7081019136008421376" previewlistener="true">
+                        </a><a href="https://www.linkedin.com/feed/update/urn:li:activity:7081019136008421376" target="_blank" class="read-more" previewlistener="true">Read more</a>
+                        <a href="../pages/tracks/machine-learning" class="track-tag" previewlistener="true">Machine-Learning</a> 
+                      </div>
+                     
+                  </div>
+                  <div class="article-card" data-aos="zoom-in-up">
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7081019136008421376" previewlistener="true">
+                      <div class="card-top">
+                        <img src="imgs/articles-cover/article-img-5.jpeg" alt="">
+                      </div>
+                      <div class="card-info">
+                        <h3>Binary Search Vs Linear Search</h3>
+                        <span>Sunday, July 2, 2023</span>
+                        <span>Ahmed Gamal</span>
+                      </div>
+                      </a><div class="card-bottom"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7081019136008421376" previewlistener="true">
+                        </a><a href="https://www.linkedin.com/feed/update/urn:li:activity:7081019136008421376" target="_blank" class="read-more" previewlistener="true">Read more</a>
+                        <a href="../pages/tracks/Alg&amp;DS" class="track-tag" previewlistener="true">Alg-DS</a> 
+                      </div>
+                     
+                  </div>
                 </div>
               </div>
               <a class="explore" href="pages/articles">Explore More </a>
@@ -341,7 +391,7 @@
           </main>
 
           <div class="contact-form">
-            <form method="post" action="https://script.google.com/macros/s/AKfycbyE7XyC6_bsbm-NnIEMKf_TGxmIl-JKnAL9KwkWgnVB_KNHC2MrkGl3shi4MfQHOGB0hw/exec" name="contactform" id="contactform">
+            <form method="post" action="https://script.google.com/macros/s/AKfycbyE7XyC6_bsbm-NnIEMKf_TGxmIl-JKnAL9KwkWgnVB_KNHC2MrkGl3shi4MfQHOGB0hw/exec" name="contactform" id="contactform" data-aos="zoom-in-up">
                 <h1>Subscribe</h1>
                 <input name="name" id="name" type="text" placeholder="Your Name" required/>
                 <input name="email" id="email" type="email" placeholder="Your Email" required/>
@@ -396,6 +446,10 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <!-- Include CounterUp and Waypoints libraries -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/waypoints/lib/jquery.waypoints.min.js"></script>
     <script src="script.js"></script>
     
     <script>
@@ -424,48 +478,14 @@
               })
       .catch(error => console.error('Error!', error.message))
     })
+      
+    $('#projects-stats').counterUp({delay:10,time:1200});
+
+    $('#applicants-stats').counterUp({delay:10,time:1200});
+
+    $('#articles-stats').counterUp({delay:10,time:1200});
 
 
-      // Articles
-      let articleContainer = document.getElementById("articles-container");
-
-      // fetch json data
-      fetch("https://www.stemcomputerscienceclub.org/api/articles")
-      .then(res => res.json())
-      .then(json => {
-          json.map(data => {
-          articleContainer.appendChild(article_fun(data));
-          })
-      })
-
-      .catch(error => {
-          console.log("Error fetching JSON data:", error);
-      });
-
-      // Articles card 
-      function article_fun(data) {
-      let articleCard = document.createElement('div');
-      articleCard.classList.add('article-card');
-
-      articleCard.innerHTML = `
-        <a href="${data["readMoreLink"]}">
-          <div class="card-top">
-            <img src="../../${data["image"]}" alt="">
-          </div>
-          <div class="card-info">
-            <h3>${data["title"]}</h3>
-            <span>${data["date"]}</span>
-      <span>${data["writer"]}</span>
-          </div>
-          <div class="card-bottom">
-            <a href="${data["readMoreLink"]}" target="_blank" class="read-more">Read more</a>
-            <a href="../${data["trackTagLink"]}" class="track-tag">${data["trackTagName"]}</a> 
-          </div>
-        </a> 
-      `;
-
-      return articleCard;
-      }
   </script>
   </body>
 </html>
