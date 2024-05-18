@@ -1085,8 +1085,8 @@ width: 188px;
 border-radius: 50%;
 }
 .card .img img {
-width: 90%;
-height: 90%;
+width: 100%;
+height: 100%;
 border-radius: 50%;
 object-fit: cover;
 border: 4px solid var(--bg-color);
@@ -1287,7 +1287,6 @@ contain: strict;
     opacity: 0;
     transition: .3s;
 }
-
 
 
 
