@@ -71,10 +71,11 @@ iconify-icon:active {
 box-shadow: 0px 0px 4px 0px var(--main-color);
 }
 a.explore {
-text-align: center;
-display: block;
-color: var(--secondary-color);
-text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  color: #fff;
+  text-decoration: underline;
 }
 span.bef-header {
 display: block;
