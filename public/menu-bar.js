@@ -73,6 +73,11 @@ setTimeout(() => {
 
       counterElement.textContent = currentValue + "+";
     }, updatedInterval);
+    
+    $('.nav-extra').addClass('animate__fadeInRight');
+    $('.hero-content').addClass('animate__fadeIn');
+    $('.logo').addClass('animate__fadeInLeft');
+    $('.main-list').addClass('animate__fadeInUp');
   });
 },1000); // Delay of 3 seconds
 
