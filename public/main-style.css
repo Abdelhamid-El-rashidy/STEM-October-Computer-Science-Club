@@ -16,6 +16,10 @@ body {
 }
 *{
   scroll-behavior: smooth;
+  transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
 }
   .selector-for-some-widget {
   box-sizing: content-box;
@@ -778,7 +782,8 @@ transition: 0.5s;
 }
 .article-card:hover {
 box-shadow: 0 0 10px #2f51eb;
-scale: 1.01;
+/* scale: 1.01; */
+transition: all 0.3s ease-in-out;
 }
 .article-card .card-top {
 border-top-left-radius: 20px;
@@ -1252,6 +1257,12 @@ user-select: none;
 box-sizing: inherit;
 }
 
+* {
+  transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
 
 canvas {
 opacity: 0.1;
@@ -1270,6 +1281,11 @@ height: 100%;
 contain: strict;
 }
 
+.contact-form form input:not([type="submit"]):focus::-webkit-input-placeholder,
+.contact form textarea:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: .3s;
+}
 
 
 
