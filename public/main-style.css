@@ -22,6 +22,22 @@ body {
 }
 
 /* Global elements start */
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track:vertical {
+  background: #fff }
+
+::-webkit-scrollbar-track:horizontal {
+  background: #fff  }
+
+::-webkit-scrollbar-thumb {
+  background-image: var(--primary-gd);
+}
+
 .typewriter {
 border-right: 4px solid var(--bg-color);
 white-space: nowrap;
@@ -110,7 +126,6 @@ text-align: center;
 padding: 0 1rem;
 }
 section h2::after {
-  content: '';
   display: block;
   width: 100%;
   height: 100%;
@@ -1217,17 +1232,6 @@ width: 625px;
 z-index: 2;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 :root {
 box-sizing: border-box;
 -webkit-user-select: none;
@@ -1239,7 +1243,6 @@ user-select: none;
 -moz-tap-highlight-color: transparent;
 -ms-tap-highlight-color: transparent;
 -o-tap-highlight-color: transparent;
-tap-highlight-color: transparent;
 }
 
 *,
