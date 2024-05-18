@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="tracks.css">
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
     <script src="menu-bar.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <!-- external links -->
     <script src="https://kit.fontawesome.com/6617a0ca29.js" crossorigin="anonymous"></script>
     <style>
@@ -58,12 +60,16 @@
             border-radius: 8px;
             margin: 1.5rem;
         }
+        .owl-item {
+          width: 385px;
+        }
+
     </style>    
   </head>
     <body id="home">
       <div class="preload">
         <div class="loader">
-          <span>0</span><span><img src="../imgs/official-logo.png" alt=""></span><span>1</span>
+          <span>0</span><span><img src="imgs/official-logo.png" alt=""></span><span>1</span>
         </div>
       </div>
       <header>
@@ -137,45 +143,45 @@
           </div>  
           <div class="team-container">
             <div>   
-                <ul class="carousel">
-                    <li class="card">
+                <ul class="carousel owl-carousel">
+                    <li class="card item">
                       <div class="img"><img src="imgs/members/karim.jpeg" alt="img" draggable="false"></div>
                       <h2>Karim Atef</h2>
                       <span>President &amp; Web Developement Head &amp; Website Manager</span>
                     </li>
-                    <li class="card">
+                    <li class="card item">
                       <div class="img"><img src="imgs/members/Adam.jpeg" alt="img" draggable="false"></div>
                       <h2>Adam Dahshan</h2>
                       <span>Vice-President &amp; Fundamentals of Programming Head</span>
                     </li>
 
-                    <li class="card">
+                    <li class="card item">
                       <div class="img"><img src="imgs/members/Zaki.jpg" alt="img" draggable="false"></div>
                       <h2>Mohamed Zaki</h2>
                       <span>Website Manager &amp; Web developement Vice-Head</span>
                     </li>
 
-                    <li class="card">
+                    <li class="card item">
                       <div class="img"><img src="imgs/members/Ahmed Adel.jpg" alt="img" draggable="false"></div>
                       <h2>Ahmed Adel</h2>
                       <span>Machine Learning Head</span>
                     </li>
-                    <li class="card">
+                    <li class="card item">
                       <div class="img"><img src="imgs/members/Abdelrahman.jpeg" alt="img" draggable="false"></div>
                       <h2>Abdelrahman Ahmed</h2>
                       <span>Machine Learning Vice-Head</span>
                     </li>
-                    <li class="card">
+                    <li class="card item">
                       <div class="img"><img src="imgs/members/Mohammed-Mostafa.jpeg" alt="img" draggable="false"></div>
                       <h2>Mohammed Mostafa</h2>
                       <span>Alg &amp; DS Head</span>
                     </li>
-                    <li class="card">
+                    <li class="card item">
                       <div class="img"><img src="imgs/members/Elhusssien.jpeg" alt="img" draggable="false"></div>
                       <h2>Mohammed Alhussien</h2>
                       <span>Alg &amp; DS Vice-Head</span>
                     </li>
-                    <li class="card">
+                    <li class="card item">
                       <div class="img"><img src="imgs/members/Farouk.jpeg" alt="img" draggable="false"></div>
                       <h2>Farouk Farrag</h2>
                       <span>App Development Head</span>
@@ -284,9 +290,18 @@
       </footer>
       
     </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+          items: 5,
+          autoplay: true,
+          dots : true,
+          loop : true,
+        });
+      });
+    </script>
 
     </body>
 </html>
