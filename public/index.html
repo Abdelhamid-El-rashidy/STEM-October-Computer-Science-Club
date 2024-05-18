@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="main-style.css">
     <link rel="stylesheet" href="media-queries.css">
     <script src="menu-bar.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- external links -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -65,17 +66,17 @@
                 <div class="item"><a href="pages/articles"><i class="fas fa-th"></i>Articles</a></div>
                 <div class="item"><a href="pages/projects"><i class="fas fa-cogs"></i>Projects</a></div>
                 <div class="item"><a href="team"><i class="fas fa-info-circle"></i>Our Team</a></div>
-                <div class="nav-extra animate__animated animate__fadeInRight">      
+                <div class="nav-extra animate__animated">      
                   <a href="https://discord.gg/bhNm7jc7js" target="_blank"><i class="discord fa-brands fa-discord"></i></a>
                   <a class="bt click" style="cursor: default;" href="#">Coming Soon</a>
                 </div>      
               </div>
             </div>
             <nav id="navbar">
-              <a class="logo animate__animated animate__fadeInLeft" href="/">
+              <a class="logo animate__animated " href="/">
                 <div  class="logo"><img src="imgs/official-logo.png" alt=""></div>
               </a>
-              <ul class="main-list animate__animated animate__fadeInUp">
+              <ul class="main-list animate__animated ">
                 <li><a class="text-link" href="#home">Home</a></li>
                 <li><a class="text-link" href="#why-us">About Us</a></li>
                 <div class="dropdown">
@@ -105,7 +106,7 @@
             </nav>
       
             <section id="hero-section" class="hero-section" data-scene>
-              <div class="hero-content animate__animated animate__fadeIn">
+              <div class="hero-content animate__animated">
                 <div class="hero-title" style="width: 85%;">
                   <h1 class="welcome">Welcome to</h1>
                   <h1 class="typewriter" style="font-weight: bold; color: var(--secondary-color);">STEM Computer Science Club</h1>
@@ -119,9 +120,9 @@
                 <p>Transform Your Life's Algorithm: <br> Let Code Rewrite Your Journey!</p>
                 <!-- <a class="bt click" href="login">Coming Soon</a> -->
                 <div class="hero-stats" >
-                  <div class="applicants-stats"><span id="applicants-stats" >200</span> Members</div>
-                  <div class="projects-stats"><span id="projects-stats" >25</span> projects</div>
-                  <div class="articles-stats"><span id="articles-stats">5</span> articles</div>
+                  <div class="applicants-stats"><span id="applicants-stats" >0</span> Members</div>
+                  <div class="projects-stats"><span id="projects-stats" >0</span> projects</div>
+                  <div class="articles-stats"><span id="articles-stats">0</span> articles</div>
                 </div>
               </div>
             </section>
@@ -482,11 +483,11 @@
       .catch(error => console.error('Error!', error.message))
     })
       
-    $('#projects-stats').counterUp({delay:10,time:1200});
+    // $('#projects-stats').counterUp({delay:10,time:1200});
 
-    $('#applicants-stats').counterUp({delay:10,time:1200});
+    // $('#applicants-stats').counterUp({delay:10,time:1200});
 
-    $('#articles-stats').counterUp({delay:10,time:1200});
+    // $('#articles-stats').counterUp({delay:10,time:1200});
 
 
   </script>
