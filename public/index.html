@@ -146,8 +146,8 @@
                   </li>
                   <li data-aos="fade-down"><iconify-icon icon="simple-icons:javascript"></iconify-icon>
                   </li>
-                  <li data-aos="fade-down"><iconify-icon icon="devicon-plain:arduino-wordmark"></iconify-icon>
-                  </li>
+                  <!-- <li data-aos="fade-down"><iconify-icon icon="devicon-plain:arduino-wordmark"></iconify-icon>
+                  </li> -->
                   <li data-aos="fade-down"><iconify-icon icon="simple-icons:python"></iconify-icon>
                   </li>
                   <li data-aos="fade-down"><iconify-icon icon="file-icons:c"></iconify-icon>
@@ -332,7 +332,7 @@
               <h2 data-aos="zoom-in-up">Our Latest Articles</h2>
               <div class="container">
                 <div class="cards-article-grid" id="articles-container">
-      
+  
                 </div>
               </div>
               <a class="explore" href="pages/articles">Explore More </a>
@@ -424,6 +424,48 @@
               })
       .catch(error => console.error('Error!', error.message))
     })
+
+
+      // Articles
+      let articleContainer = document.getElementById("articles-container");
+
+      // fetch json data
+      fetch("https://www.stemcomputerscienceclub.org/api/articles")
+      .then(res => res.json())
+      .then(json => {
+          json.map(data => {
+          articleContainer.appendChild(article_fun(data));
+          })
+      })
+
+      .catch(error => {
+          console.log("Error fetching JSON data:", error);
+      });
+
+      // Articles card 
+      function article_fun(data) {
+      let articleCard = document.createElement('div');
+      articleCard.classList.add('article-card');
+
+      articleCard.innerHTML = `
+        <a href="${data["readMoreLink"]}">
+          <div class="card-top">
+            <img src="../../${data["image"]}" alt="">
+          </div>
+          <div class="card-info">
+            <h3>${data["title"]}</h3>
+            <span>${data["date"]}</span>
+      <span>${data["writer"]}</span>
+          </div>
+          <div class="card-bottom">
+            <a href="${data["readMoreLink"]}" target="_blank" class="read-more">Read more</a>
+            <a href="../${data["trackTagLink"]}" class="track-tag">${data["trackTagName"]}</a> 
+          </div>
+        </a> 
+      `;
+
+      return articleCard;
+      }
   </script>
   </body>
 </html>
