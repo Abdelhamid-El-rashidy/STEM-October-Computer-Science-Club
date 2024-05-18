@@ -74,7 +74,7 @@ setTimeout(() => {
       counterElement.textContent = currentValue + "+";
     }, updatedInterval);
   });
-}, 3000); // Delay of 3 seconds
+},1000); // Delay of 3 seconds
 
 });
 
