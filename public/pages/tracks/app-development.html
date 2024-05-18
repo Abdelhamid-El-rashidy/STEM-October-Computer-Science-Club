@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
-    <title> Mobile Developement | STEM CS Club</title>
+    <title> Alg&DS | STEM CS Club</title>
     <link rel="stylesheet" href="../../main-style.css">
     <link rel="stylesheet" href="../../tracks.css">
     <link rel="stylesheet" href="../../media-queries.css">
@@ -13,7 +13,17 @@
     <!-- external links -->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://kit.fontawesome.com/6617a0ca29.js" crossorigin="anonymous"></script>
+    <style>
+      .project-card {
+        width: auto;
+      }
+      .project-card .info {
+        transform: none;
+        opacity: 1;
+      }
+    </style>
     </head>
+
     <body id="home">
       <div class="preload">
         <div class="loader">
@@ -41,7 +51,6 @@
           <div class="item"><a href="../../pages/articles"><i class="fas fa-th"></i>Articles</a></div>
           <div class="item"><a href="../../pages/projects"><i class="fas fa-cogs"></i>Projects</a></div>
           <div class="item"><a href="../../team.html"><i class="fas fa-info-circle"></i>Our Team</a></div>
-
           <div class="nav-extra">      
             <a href="https://discord.gg/bhNm7jc7js" target="_blank"><i class="discord fa-brands fa-discord"></i></a>
           <a class="bt click" style="cursor: default;" href="#">Coming Soon</a>
@@ -72,6 +81,7 @@
           <li><a class="text-link" href="../../pages/projects">Projects</a></li>
           <li><a class="text-link" href="../../team.html">Our Team</a></li>
         </ul>
+
           <div class="nav-extra">      
             <a href="https://discord.gg/bhNm7jc7js" target="_blank"><i class="discord fa-brands fa-discord"></i></a>
           <a class="bt click" style="cursor: default;" href="#">Coming Soon</a>
@@ -80,33 +90,40 @@
           <i class="fas fa-bars"></i>
         </div>
     </nav>
-        <div class="track-hero-section">
-            <h1><span>Tracks/</span>Mobile App Development</h1>
+
+
+    <div class="track-hero-section">
+            <h1><span>Tracks/</span>Algorithms & Data Structures</h1>
             <p class="instructors"><span>Instructors</p>
             <div class="instructor-imgs">
               <div class="member">
-                <img src="../../imgs/members/Farouk.jpeg" alt="" srcset="">
-                <p>Farouk Farrag</p>
+                <img src="../../imgs/members/Mohammed-Mostafa.jpeg" alt="" srcset="">
+                <p>Mohammed Mostafa</p>
+              </div>
+              <div class="member">
+                <img src="../../imgs/members/Elhusssien.jpeg" alt="" srcset="">
+                <p>Mahmoud Elhussien</p>
               </div>
             </div>
             <p class="track-info">
-                Unleash your imagination and bring your app ideas to life in our Mobile App Development Track. 
-                Delve into the core concepts of programming using Dart as your tool of choice. Harness the power 
-                of Flutter, a cutting-edge framework, and witness your apps come alive with stunning visuals and 
-                seamless functionality. As you journey through this track, you'll not only create mobile apps but 
-                also discover how to integrate them with robotics projects and machine learning models using state-of-the-art
-                 technologies like Firebase. Get ready to become a trailblazer in the mobile app development landscape.
+              Unleash your inner problem-solving genius with our Algorithms and Data Structures Track.
+               Embark on a thrilling adventure through the enchanting realm of algorithms, 
+               where you'll unravel the mysteries of C++ and its powerful applications. From greedy algorithms to dynamic programming,
+                you'll unlock the secrets of efficient coding techniques that shape the digital landscape. Sharpen your coding sword,
+                 embrace the challenges, and become a master of computational wizardry.
+               Get ready to conquer the coding realm and leave your mark on the world of technology.
             </p>
             <ul>
-                <li title="Firebase"><iconify-icon icon="logos:firebase"></iconify-icon>
+                <li title="problem Solving"><iconify-icon icon="icon-park:thinking-problem"></iconify-icon>
                 </li>
-                <li title="Flutter"><iconify-icon icon="logos:flutter"></iconify-icon>
-                </li>
-                <li title="Dart"><iconify-icon icon="logos:dart"></iconify-icon>
+                <li title="Data Structures"><iconify-icon icon="carbon:data-structured" style="color: #2f51eb;"></iconify-icon></li>
+                <li title="C++ language"><iconify-icon icon="logos:c-plusplus"></iconify-icon>
                 </li>
             </ul>
-        </div>
+    </div>
+
     </header>
+
     <main>
         
         <section id="articles-section">
@@ -116,9 +133,9 @@
             </div>
         </section>
         <section id="projects">
-          <h2>Projects</h2>
+          <h2>Problems</h2>
           <div class="container" id="project-contianer">
-    
+              
           </div>
         </section>
 
@@ -143,7 +160,7 @@
         <div class="extra-contact">
           <div class="subscribe">
             <p>Monthly digest of what's new and exciting from us.</p>
-          <a class="bt click" style="cursor: default;" href="#">Coming Soon</a>
+            <a class="bt" href="../../login">Subscribe</a>
           </div>
           <ul>
             <li><i class="fa-solid fa-envelope"></i><a href="mailto:csse@stemegypt.edu.eg" target="_blank">Email Us</a></li>
@@ -170,7 +187,7 @@
         let articleContainer = document.getElementById("articles-container");
 
         // fetch json data
-        fetch("https://www.stemcomputerscienceclub.org/api/articles?trackTagName=Mobile-Developement")
+        fetch("https://www.stemcomputerscienceclub.org/api/articles?trackTagName=Alg-DS")
         .then(res => res.json())
         .then(json => {
             json.map(data => {
@@ -195,7 +212,7 @@
           <div class="card-info">
             <h3>${data["title"]}</h3>
             <span>${data["date"]}</span>
-<span>${data["writer"]}</span>
+            <span>${data["writer"]}</span>
           </div>
           <div class="card-bottom">
             <a href="${data["readMoreLink"]}" target="_blank" class="read-more">Read more</a>
@@ -213,7 +230,7 @@
 
 
         // fetch json data
-        fetch("https://www.stemcomputerscienceclub.org/api/projects?trackTagName=Mobile-Developement")
+        fetch("https://www.stemcomputerscienceclub.org/api/problems")
           .then(res => res.json())
           .then(json => {
             json.map(data => {
@@ -231,12 +248,12 @@
           projectCard.classList.add('project-card');
 
           projectCard.innerHTML = `
-            <img src="../../${data["image"]}" alt="">
-            <div class="info">
+            <div class="problems info">
               <h4>${data["title"]}</h4>
               <p><i class="fa-solid fa-user"></i>${data["contributor"]}</p>
               <a class="track-tag" href="../../../${data["trackTagLink"]}">${data["trackTagName"]}</a>
-                        <ul class="social-bar">
+              <a class="track-tag" href="${data["problemLink"]}">Problem</a>
+              <ul class="social-bar">
                 <li class="social-link"><a href="${data["githubLink"]}"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
               </ul>
             </div>
