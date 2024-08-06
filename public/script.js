@@ -718,7 +718,7 @@ slider.addEventListener("mouseout", () => {
 let articleContainer = document.getElementById("articles-container");
 
 // fetch json data
-fetch("https://www.stemcomputerscienceclub.org/api/articles?id_like=1&id_like=2&id_like=3")
+fetch("https://www.stemcsclub.org/api/articles?id_like=1&id_like=2&id_like=3")
     .then(res => res.json())
     .then(json => {
         json.map(data => {
@@ -794,7 +794,7 @@ function project_fun(data) {
   }
   
   // Fetch data from the API
-  fetch("https://www.stemcomputerscienceclub.org/api/projects")
+  fetch("https://www.stemcsclub.org/api/projects")
 	.then(res => res.json())
 	.then(json => {
 	  // Iterate through the JSON data and append the first 6 projects to the container
