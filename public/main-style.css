@@ -1289,6 +1289,32 @@ contain: strict;
 }
 
 
+.years {
+  margin: 45px 0 0 25px;
+  
+}
 
+.year {  
+  cursor: pointer;
+  background-color:transparent;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.year:hover {
+  border: 2px solid #169acd;
+  transition: .3s;
+}
+
+.selected {
+  background-color: #169acd;
+  border: 2px solid #fff;
+}
+
+.hidden {
+  display: none;
+}
 
 /* background: linear-gradient(45deg, rgba(255,175,189,.7), rgba(100,216,243,.7), rgba(234,236,198,.7), rgba(245,146,176,.7), rgba(52,219,216,.7)) 0 0 / 1000% no-repeat, url(https://picsum.photos/g/2000/1200?image=443) 0 0 / cover no-repeat; */
