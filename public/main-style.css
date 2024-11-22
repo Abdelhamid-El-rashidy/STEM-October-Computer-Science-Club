@@ -1168,7 +1168,6 @@ flex-direction: column;
 footer .upper-footer {
 display: flex;
   justify-content: space-evenly;
-  height: 160px;
   align-items: center;
 }
 footer .upper-footer .footer-logo {
