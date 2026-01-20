@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Varela+Round&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    /* Account for fixed header */
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    @apply bg-white dark:bg-secondary-900 text-secondary-900 dark:text-white transition-colors duration-300;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Varela Round', sans-serif;
+  }
+}
+
+/* Component Styles */
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary-200 dark:bg-secondary-700 hover:bg-secondary-300 dark:hover:bg-secondary-600 text-secondary-900 dark:text-white px-6 py-3 rounded-lg font-medium transition-all duration-300;
+  }
+
+  .card {
+    @apply bg-white dark:bg-secondary-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-secondary-200 dark:border-secondary-700;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent;
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 lg:py-24;
+  }
+
+  /* Responsive section padding for very small screens */
+  @media (max-width: 320px) {
+    .section-padding {
+      @apply px-2 py-8;
+    }
+  }
+
+  @media (max-width: 250px) {
+    .section-padding {
+      @apply px-1 py-4;
+    }
+  }
+
+  /* Chat and modal responsive fixes */
+  .chat-container {
+    @apply max-w-full;
+  }
+
+  @media (max-width: 320px) {
+    .chat-container {
+      max-width: calc(100vw - 1rem);
+      margin: 0 0.5rem;
+    }
+  }
+
+  @media (max-width: 250px) {
+    .chat-container {
+      max-width: calc(100vw - 0.5rem);
+      margin: 0 0.25rem;
+    }
+  }
+
+  /* Card responsive fixes */
+  .card-responsive {
+    @apply w-full max-w-full;
+  }
+
+  @media (max-width: 320px) {
+    .card-responsive {
+      margin: 0.25rem;
+      padding: 0.5rem;
+    }
+  }
+
+  /* Tech Card Light/Dark Mode Styling */
+  .tech-item {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(241, 245, 249, 0.9) 100%);
+    border: 1px solid rgba(203, 213, 225, 0.5);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  .dark .tech-item {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.8) 100%);
+    border: 1px solid rgba(51, 65, 85, 0.5);
+    box-shadow: none;
+  }
+
+  .tech-item h3 {
+    color: rgb(30, 41, 59);
+  }
+
+  .dark .tech-item h3 {
+    color: rgb(255, 255, 255);
+  }
+
+  .tech-item p {
+    color: rgb(71, 85, 105);
+  }
+
+  .dark .tech-item p {
+    color: rgb(148, 163, 184);
+  }
+
+  /* Tech Card Light/Dark Mode Styling End */
+}
+
+/* Utility Styles */
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .glass {
+    @apply bg-white/10 dark:bg-black/10 backdrop-blur-md border border-white/20 dark:border-white/10;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Responsive utilities for very small screens */
+  @media (max-width: 320px) {
+    .text-xs-responsive {
+      font-size: 0.6rem;
+      line-height: 0.8rem;
+    }
+
+    .text-sm-responsive {
+      font-size: 0.7rem;
+      line-height: 0.9rem;
+    }
+
+    .text-base-responsive {
+      font-size: 0.8rem;
+      line-height: 1rem;
+    }
+
+    .px-2-xs {
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+    }
+
+    .py-1-xs {
+      padding-top: 0.125rem;
+      padding-bottom: 0.125rem;
+    }
+
+    .max-w-xs-screen {
+      max-width: calc(100vw - 1rem);
+    }
+
+    .w-xs-screen {
+      width: calc(100vw - 1rem);
+    }
+  }
+
+  /* Smartwatch specific styles (very tiny screens) */
+  @media (max-width: 250px) {
+    .text-micro {
+      font-size: 0.5rem;
+      line-height: 0.6rem;
+    }
+
+    .p-micro {
+      padding: 0.125rem;
+    }
+
+    .max-w-micro-screen {
+      max-width: calc(100vw - 0.5rem);
+    }
+  }
+}
+
+/* Custom Animations */
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Responsive overflow protection */
+@media (max-width: 320px) {
+  * {
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+
+  .overflow-protect {
+    overflow-x: hidden;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* Hero section responsive fixes */
+  .hero-title-responsive {
+    font-size: clamp(1.5rem, 8vw, 3rem) !important;
+    line-height: 1.1;
+  }
+
+  .hero-subtitle-responsive {
+    font-size: clamp(0.9rem, 4vw, 1.2rem) !important;
+    line-height: 1.3;
+  }
+
+  /* Button responsive fixes */
+  .btn-responsive {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    min-width: auto;
+  }
+
+  /* Grid responsive fixes */
+  .grid-responsive {
+    grid-template-columns: 1fr !important;
+    gap: 0.5rem !important;
+  }
+}
+
+/* Background Patterns */
+.tech-grid-pattern {
+  background-image: linear-gradient(rgba(59, 130, 246, 0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(59, 130, 246, 0.3) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.circuit-board-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%232563eb' stroke-width='1.5'%3E%3Cpath d='M15 15h90v90H15z'/%3E%3Cpath d='M25 25h70v70H25z'/%3E%3Cpath d='M35 35h50v50H35z'/%3E%3Ccircle cx='40' cy='40' r='4'/%3E%3Ccircle cx='80' cy='40' r='4'/%3E%3Ccircle cx='40' cy='80' r='4'/%3E%3Ccircle cx='80' cy='80' r='4'/%3E%3Ccircle cx='60' cy='60' r='6'/%3E%3Cpath d='M40 40h40M40 80h40M40 40v40M80 40v40M60 25v70M25 60h70'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 120px 120px;
+}
+
+.hexagonal-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%233b82f6' stroke-width='1'%3E%3Cpolygon points='40,10 60,25 60,55 40,70 20,55 20,25'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 80px 80px;
+}
+
+.foundation-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%233b82f6' stroke-width='1'%3E%3Cpath d='M15 15h30v30H15z'/%3E%3Ccircle cx='30' cy='30' r='8'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 60px 60px;
+}
+
+.dots-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23334155' fill-opacity='0.4'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Loading Animation */
+.loading-dots {
+  display: inline-block;
+}
+
+.loading-dots::after {
+  content: '';
+  animation: dots 1.5s steps(4, end) infinite;
+}
+
+@keyframes dots {
+
+  0%,
+  20% {
+    content: '';
+  }
+
+  40% {
+    content: '.';
+  }
+
+  60% {
+    content: '..';
+  }
+
+  80%,
+  100% {
+    content: '...';
+  }
+}
+
+/* 3D Background Component */
+.cs-3d-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+
+
+/* Hero content overlay */
+.hero-content {
+  position: relative;
+  z-index: 10;
+}
+
+/* Animation Delays */
+.animate-bounce-delay-1 {
+  animation-delay: 0.1s;
+}
+
+.animate-bounce-delay-2 {
+  animation-delay: 0.2s;
+}
+
+.animate-pulse-delay-1 {
+  animation-delay: 0.5s;
+}
+
+/* Smartwatch and very small screen optimizations */
+@media (max-width: 250px) {
+  body {
+    font-size: 0.7rem;
+  }
+
+  .smartwatch-hide {
+    display: none !important;
+  }
+
+  .smartwatch-minimal {
+    padding: 0.125rem !important;
+    margin: 0.125rem !important;
+    font-size: 0.6rem !important;
+  }
+
+  /* Terminal/code block fixes for tiny screens */
+  .terminal-responsive {
+    font-size: 0.5rem !important;
+    padding: 0.25rem !important;
+    border-radius: 0.25rem !important;
+  }
+
+  .code-responsive {
+    font-size: 0.5rem !important;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  /* Stats counter responsive */
+  .stats-micro {
+    font-size: 0.8rem !important;
+    padding: 0.25rem !important;
+  }
+
+  .stats-icon-micro {
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+}
+
+/* Terminal responsive fixes for mobile */
+.terminal-responsive {
+  width: 100%;
+  max-width: 90vw;
+}
+
+@media (max-width: 480px) {
+  .terminal-responsive {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    max-width: 95vw;
+  }
+  
+  .terminal-dots {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  
+  .terminal-spacing {
+    margin-right: 0.75rem;
+  }
+  
+  .terminal-spacing > * + * {
+    margin-left: 0.5rem;
+  }
+  
+  .terminal-text {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .terminal-responsive {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    max-width: 98vw;
+  }
+  
+  .terminal-dots {
+    width: 0.25rem;
+    height: 0.25rem;
+  }
+  
+  .terminal-spacing {
+    margin-right: 0.5rem;
+  }
+  
+  .terminal-spacing > * + * {
+    margin-left: 0.25rem;
+  }
+  
+  .terminal-text {
+    font-size: 0.75rem;
+  }
+  
+  .terminal-hide-long {
+    display: none;
+  }
+  
+  .terminal-show-short {
+    display: inline !important;
+  }
+}
+
+/* Button responsive fixes for tiny screens */
+@media (max-width: 480px) {
+  .btn-responsive {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .btn-icon-responsive {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .btn-responsive {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .btn-icon-responsive {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+}
+
+@media (max-width: 250px) {
+  .btn-responsive {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .btn-icon-responsive {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+}
+
+nav a.flex.items-center.space-x-2.px-3.py-2.rounded-lg.transition-all.duration-300.group.text-secondary-700 {
+  margin: 0;
+}
+
+@media screen and (max-width: 1080px){
+  nav a.flex.items-center.rounded-lg.transition-all.duration-300.group.text-secondary-700 {
+  font-size: 0.8rem;
+}
+}
+
+
+/* dark:text-secondary-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-secondary-100 dark:hover:bg-secondary-800 */
+
+/* Tech Section Horizontal Scroll Styles */
+.tech-scroll-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.tech-track {
+  will-change: transform;
+  width: max-content;
+  /* Removed auto-scroll animation - will use scroll-based movement */
+}
+
+@keyframes slowScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.tech-item {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Light mode enhancements */
+@media (prefers-color-scheme: light) {
+  .tech-item::before {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(147, 51, 234, 0.08) 100%);
+  }
+}
+
+/* Dark mode explicit styling */
+.dark .tech-item::before {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(147, 51, 234, 0.15) 100%);
+}
+
+/* Removed pause animation on hover since we no longer have auto-scroll */
+
+/* Responsive adjustments for tech section */
+@media (max-width: 768px) {
+  .tech-item {
+    width: 200px !important;
+    height: 280px !important;
+    padding: 1.5rem !important;
+  }
+  
+  .tech-item .w-20 {
+    width: 4rem !important;
+    height: 4rem !important;
+  }
+  
+  .tech-item h3 {
+    font-size: 1.125rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-item {
+    width: 180px !important;
+    height: 260px !important;
+    padding: 1rem !important;
+  }
+  
+  .tech-item .w-20 {
+    width: 3rem !important;
+    height: 3rem !important;
+  }
+  
+  .tech-item h3 {
+    font-size: 1rem !important;
+  }
+  
+  .tech-item p {
+    font-size: 0.75rem !important;
+  }
+}

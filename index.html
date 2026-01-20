@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Verification | STEM CSC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="matrixCanvas"></canvas>
+    
+    <div class="verification-container">
+        <!-- Header -->
+        <header class="verification-header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h2>STEM CSC</h2>
+                        <p>Certificate Verification</p>
+                    </div>
+                </div>
+                <p class="tagline">Verify your achievement. Validate your skills.</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="verification-main">
+            <div class="verification-box">
+                <h1>Verify Your Certificate</h1>
+                <p class="subtitle">Enter your certificate ID to view and validate your achievement</p>
+
+                <!-- Search Form -->
+                <form id="certificateForm" class="search-form">
+                    <div class="input-group">
+                        <div class="input-wrapper">
+                            <input 
+                                type="text" 
+                                id="certificateId" 
+                                name="certificateId" 
+                                placeholder=" " 
+                                required
+                                autocomplete="off"
+                                maxlength="7"
+                            >
+                            <label for="certificateId">Certificate ID</label>
+                            <i class="fas fa-id-card input-icon"></i>
+                            <div class="input-hint">Format: YYSSCCC (e.g., 2501001)</div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="search-btn">
+                        <span>Verify Certificate</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+
+                    <div class="format-info">
+                        <p><strong>How to read your Certificate ID:</strong></p>
+                        <ul>
+                            <li><span class="format-label">YY</span> - Year awarded (e.g., 25 = 2025)</li>
+                            <li><span class="format-label">SS</span> - Sub-program (01=Online, 02=Bootcamp, 00=Main Club, etc.)</li>
+                            <li><span class="format-label">CCC</span> - Serial number (001-9999)</li>
+                        </ul>
+                    </div>
+                </form>
+
+                <!-- Loading State -->
+                <div id="loadingState" class="loading-state hidden">
+                    <div class="loader">
+                        <div class="spinner"></div>
+                        <p>Verifying certificate...</p>
+                    </div>
+                </div>
+
+                <!-- Error State -->
+                <div id="errorState" class="error-state hidden">
+                    <div class="error-content">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <h3>Certificate Not Found</h3>
+                        <p id="errorMessage">The certificate ID you entered could not be found in our system.</p>
+                        <button type="button" class="reset-btn" onclick="resetForm()">
+                            <i class="fas fa-redo"></i> Try Another
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Success State -->
+                <div id="successState" class="success-state hidden">
+                    <div class="certificate-preview">
+                        <div class="certificate-card">
+                            <!-- Certificate Design -->
+                            <div class="cert-header">
+                                <div class="cert-logo">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h2>Certificate of Achievement</h2>
+                            </div>
+
+                            <div class="cert-body">
+                                <p class="cert-label">This is to certify that</p>
+                                <h3 id="certName" class="cert-name">Name</h3>
+                                <p class="cert-label">has successfully completed the</p>
+                                <h4 id="certProgram" class="cert-program">Program Name</h4>
+                                <p class="cert-label">awarded on</p>
+                                <p id="certDate" class="cert-date">Date</p>
+                            </div>
+
+                            <div class="cert-footer">
+                                <div class="cert-id-box">
+                                    <small>Certificate ID</small>
+                                    <p id="certIdDisplay">2501001</p>
+                                </div>
+                                <div class="cert-verification">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>VERIFIED</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-details">
+                        <h3>Certificate Details</h3>
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <span class="detail-label">Year</span>
+                                <span id="detailYear" class="detail-value">2025</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Program</span>
+                                <span id="detailProgram" class="detail-value">Online Chapter</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Serial Number</span>
+                                <span id="detailSerial" class="detail-value">001/9999</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Status</span>
+                                <span id="detailStatus" class="detail-value verified">Verified ✓</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-actions">
+                        <button type="button" class="action-btn download-btn">
+                            <i class="fas fa-download"></i> Download Certificate
+                        </button>
+                        <button type="button" class="action-btn share-btn" onclick="shareCertificate()">
+                            <i class="fas fa-share-alt"></i> Share
+                        </button>
+                        <button type="button" class="action-btn reset-btn" onclick="resetForm()">
+                            <i class="fas fa-redo"></i> Verify Another
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="verification-footer">
+            <div class="footer-content">
+                <p>&copy; 2025 STEM CS Club. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://www.stemcsclub.org" target="_blank">Official Website</a>
+                    <a href="https://discord.gg/bhNm7jc7js" target="_blank">Discord Community</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
